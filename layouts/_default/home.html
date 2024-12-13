@@ -1,0 +1,105 @@
+{{define "main"}}
+<!-- ======= Hero Section ======= -->
+{{with .Params.hero_section}}
+<section
+  id="hero"
+  class="hero d-flex align-items-center justify-content-center"
+  style="background-image: url('/assets/img/ems-star-ai.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;"
+>
+  <!-- Dark Overlay for Contrast -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6);"></div>
+
+  <div class="container" style="position: relative; z-index: 1;">
+    <div class="row justify-content-center">
+      <div
+        class="col-lg-9 d-flex flex-column justify-content-center text-center"
+      >
+        <h1 data-aos="fade-up" style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">{{.title}}</h1>
+        <h2 data-aos="fade-up" data-aos-delay="400" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);">{{.content}}</h2>
+        <div data-aos="fade-up" data-aos-delay="600">
+          {{ with .buttons}}
+          <div class="text-center">
+            {{ range . }}
+            <a href="{{.link}}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center" style="background-color: #007bff; color: white;">
+              <span>{{.label}}</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            {{ end }}
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+<!-- End Hero -->
+<!-- ======= About Section ======= -->
+{{with .Params.about_section}}
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+    <div class="row gx-0">
+      <div
+        class="col-lg-6 d-flex flex-column justify-content-center"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="content">
+          <h3>{{.title}}</h3>
+          <h2>{{.sub_title}}</h2>
+          <p>{{.content}}</p>
+          <div class="text-center text-lg-start">
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-6 d-flex align-items-center"
+        data-aos="zoom-out"
+        data-aos-delay="200"
+      >
+        <img src="{{.image}}" class="img-fluid img" alt="About img" />
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+<!-- End About Section -->
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up" style="display: flex; flex-direction: column; align-items: center;">
+    <header class="section-header" style="text-align: center;">
+      <h3>Contact</h3>
+      <p>Contact Us</p>
+    </header>
+
+    <div class="row gy-4" style="justify-content: center; width: 100%;">
+      <div class="col-lg-6">
+        <div class="row gy-4" style="justify-content: center;">
+          <div class="col-md-6">
+            <a href="mailto:info@intellux.ai" target="_blank" rel="noopener noreferrer">
+              <div class="info-box" style="text-align: center;">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p>info@intellux.ai</p>
+              </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact Section -->
+<!-- Cookie Consent -->
+<div id="cookieConsentContainer" class="cookie-consent-container">
+  <div class="cookie-text">
+    We use cookies to better serve your needs. <a href="/privacy-policy">Learn more</a>.
+  </div>
+  <div class="cookie-buttons">
+    <button id="acceptCookiesButton" class="btn-cookie">Accept</button>
+    <button id="declineCookiesButton" class="btn-cookie btn-cookie-alt">Decline</button>
+  </div>
+</div>
+{{end}}
