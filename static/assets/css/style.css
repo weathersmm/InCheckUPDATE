@@ -813,9 +813,6 @@ section {
 /*---------------------------------------------------------------
 # Coverage/Deployed
 ----------------------------------------------------------------*/
-.deployed {
-  
-}
 .deployed .content {
   background-image: linear-gradient(to bottom, rgba(45, 176, 232, 0.2), #ffffff);
   padding: 40px; /* Adjust spacing for text content */
