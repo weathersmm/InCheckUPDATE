@@ -628,7 +628,6 @@ section {
   transform: scale(1.05) translateY(-10px); /* Grows and lifts the box on hover */
   box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* Increases shadow to enhance 3D effect */
 }
-}
 
 .values .box > * {
   width: 100%; /* Ensures full width for child elements */
