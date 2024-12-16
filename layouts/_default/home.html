@@ -34,6 +34,105 @@
 </section>
 {{end}}
 <!-- End Hero -->
+
+<!-- ======= Services Section ======= -->
+{{with .Params.services_section}}
+<section id="values" class="values">
+  <div class="specificClass" data-aos="fade-up">
+    <header class="section-header">
+      <h3>{{.title}}</h3>
+      <h2>{{.sub_title}}</h2>
+    </header>
+    <div class="row">
+      {{range .services}}
+      <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+        <a href="{{.link}}" class="service-link">
+          <div class="box">              
+            <img src="{{.logo}}" class="logo" alt="" /> 
+            <h3>{{.title}}</h3>
+            {{range .strikePrice}}
+              <h1>{{.}}</h1>
+            {{end}}
+            {{range .price}}
+              <h2>{{.}}</h2>
+            {{end}}
+              <div class="title2"><h2>{{.title2}}</h2></div>
+              {{range .content2}}
+                <div class="content2"><p><i class="fas fa-check"></i> {{.}}</p></div>
+              {{end}}
+            
+            <div class="finePrint">
+              <p>{{.finePrint}}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+
+
+
+<!-- End Values Section -->
+<!-- Begin Coverage Area-->
+<!-- ======= Deployed Section ======= -->
+{{with .Params.deployed_section}}
+<section id="deployed" class="deployed">
+  <div class="container" data-aos="fade-up">
+    <div class="row gx-0 align-items-center">
+    
+      <!-- Text Column -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="content">
+          <h3>{{.title}}</h3>
+          <h2>{{.description}}</h2>
+          <div class="row">
+            <div class="col">
+              <ul>
+                {{ range first 25 .states }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            {{ if gt (len .states) 25 }}
+            <div class="col">
+              <ul>
+                {{ range after 25 .states }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Image Column -->
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+        <img src="{{.image}}" class="img-fluid" alt="Deployed States Image" />
+      </div>
+      
+    </div>
+  <!-- Progress Bar -->
+  <!-- Assuming 50 as the total number of states -->
+  {{ $totalStates := 50 }}
+  {{ $deployedCount := len .states }}
+  {{ $progress := mul (div (float $deployedCount) (float $totalStates)) 100 }}
+
+  <div class="progress deployed-progress" data-aos="fade-up" data-aos-delay="400">
+    <div class="progress-bar" role="progressbar" style="width: {{ printf "%.0f" $progress }}%;" aria-valuenow="{{ printf "%.0f" $progress }}" aria-valuemin="0" aria-valuemax="100">{{ printf "%.0f" $progress }}% Deployed</div>
+  </div>
+
+  </div>
+</section>
+{{end}}
+<!-- End Deployed Section -->
+
+
+<!-- End coverage area-->
 <!-- ======= About Section ======= -->
 {{with .Params.about_section}}
 <section id="about" class="about">
@@ -65,6 +164,47 @@
 </section>
 {{end}}
 <!-- End About Section -->
+
+<!-- ======= F.A.Q Section ======= -->
+{{ with .Params.faq_section }}
+<section id="faq" class="faq">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h3>{{ .title }}</h3>
+      <p>{{ .sub_title }}</p>
+    </header>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <!-- F.A.Q List 1 -->
+        <div class="accordion accordion-flush" id="faqlist1">
+          {{ $counter := 1 }}
+          {{ range .faqs }}
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-{{$counter}}">
+                {{ .q }}
+              </button>
+            </h2>
+            <div id="faq-content-{{$counter}}" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+              <div class="accordion-body">
+                {{ if eq .q "Do you have a mobile application for EVA-AI?" }}
+                  Yes! We now have both Apple and Android mobile applications available. You can visit our <a href="/mobile">Mobile page</a> to download the apps and experience EVA-AI on your device.
+                {{ else }}
+                  {{ .a }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+          {{ $counter = add $counter 1 }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End F.A.Q Section -->
 
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
