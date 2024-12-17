@@ -3,7 +3,7 @@ title: Empowering EMS
 
 hero_section:
   title: Introducing EVA-AI
-  content: "The world's first EMS Virtual Assistant powered by Artificial Intelligence"
+  content: "The EMS Virtual Assistant powered by Artificial Intelligence"
   buttons:
     - label: Get Started
       link: "#values"
@@ -70,14 +70,14 @@ services_section:
       logo: /assets/img/logo_hugo.png
       link: "mailto:enterprise@intellux.ai"
 
-deployed_section:
-  title: "Deployed in These States"
-  description: "We have successfully deployed EVA-AI in the following states:"
-  states:
-    - "New Hampshire"
-    - "Massachusetts"
-    - "Vermont"
-  image: "/assets/img/coverage_area.png"
+# deployed_section:
+#   title: "Deployed in These States"
+#   description: "We have successfully deployed EVA-AI in the following states:"
+#   states:
+#     - "New Hampshire"
+#     - "Massachusetts"
+#     - "Vermont"
+#   image: "/assets/img/coverage_area.png"
 
 about_section:
   title: Who We Are
