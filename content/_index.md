@@ -83,7 +83,8 @@ hero_section:
 about_section:
   title_left: Rampart
   title_right: Yoda
-  sub_title: Revolutionizing Healthcare with AI-Powered Solutions
+  sub_title_left: Leading Change for Safer
+  sub_title_right: Smarter Outcomes at the Work Place
   image: /assets/img/ai-ems-brain.png
   content_left: >
     <p>Intellux AI, Ltd. is transforming Healthcare, Pre Hospital Medicine and Mobile Integrated Health with Actual Intelligence (AI). We are proud to introduce Rampart—the ultimate experienced partner and mentor, designed to bridge the gap between emerging professional and seasoned professionals by bringing real-world expertise and guidance directly to the field.</p>
