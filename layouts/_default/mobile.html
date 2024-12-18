@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Redirect</title>
+    <script>
+        window.onload = function() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Redirect to the App Store or Play Store if mobile device
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=ai.fastmedical.eva";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/us/app/eva-ai/id6504193677";
+            } else {
+                // If non-mobile, show the Web App section first and the QR codes below
+                document.getElementById('qr-content').style.display = 'block';
+                document.getElementById('redirecting').style.display = 'none';
+                document.getElementById('web-app-section').style.display = 'block';
+            }
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #DCECF8;
+            color: #045DE8;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .qr-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .qr-code {
+            margin: 20px 0;
+            border: 2px solid #045DE8;
+            padding: 10px;
+            background-color: #F9FBFF;
+        }
+        .web-app-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #F9FBFF;
+            border: 2px solid #045DE8;
+        }
+        button {
+            background-color: #045DE8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #007AFF;
+        }
+        .notice {
+            background-color: #FFF3CD;
+            border: 1px solid #FFEEBA;
+            color: #856404;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="redirecting">Redirecting...</h1>
+
+    <!-- Web App Section for Non-Mobile Users -->
+    <div id="web-app-section" class="web-app-section" style="display: none;">
+        <h1>Use the EVA Web App</h1>
+        <p>You can also use our Web App! If you are already registered, you can log in by clicking the "Login/Chat" button below.</p>
+        <p>If you are not registered, click on the "Sign Up" button to create an account. You can sign up on the web and later log in on the mobile app or vice versa.</p>
+        <div class="web-buttons">
+            <a href="https://signup.intellux.ai" target="_blank"><button>Sign Up</button></a>
+            <a href="https://chat.intellux.ai" target="_blank"><button>Login/Chat</button></a>
+        </div>
+        
+        <!-- Updated notice -->
+        <div class="notice">
+            <strong>Notice:</strong>
+            <p>If you have any issues outside of the apps, please use a browser to sign up.</p>
+        </div>
+    </div>
+
+    <div id="qr-content" class="container" style="display: none;">
+        <h1>Get the EVA App</h1>
+        <p>Scan the QR code below with your mobile device to download the app:</p>
+        <div class="qr-container">
+            <div class="qr-code">
+                <h2>Apple Store</h2>
+                <img src="/assets/img/apple_qr_code.png" alt="Apple Store QR Code">
+            </div>
+            <div class="qr-code">
+                <h2>Google Play</h2>
+                <img src="/assets/img/android_qr_code.png" alt="Google Play QR Code">
+            </div>
+        </div>
+        <p>Or click the button below to visit the app store directly:</p>
+        <a href="https://apps.apple.com/us/app/eva-ai/id6504193677"><button>Apple Store</button></a>
+        <a href="https://play.google.com/store/apps/details?id=ai.fastmedical.eva"><button>Google Play</button></a>
+    </div>
+
+</body>
+</html>

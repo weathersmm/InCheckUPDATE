@@ -89,14 +89,11 @@
    * Back to top button
    */
   let backtotop = select('.back-to-top');
-  let cookiesConsent = select('#cookieConsentContainer');
   const toggleBacktotop = () => {
     if (window.scrollY > 100) {
       backtotop.classList.add('active');
-      cookiesConsent.classList.add('active');
     } else {
       backtotop.classList.remove('active');
-      cookiesConsent.classList.remove('active');
     }
   };
 
@@ -193,7 +190,7 @@
     navbarlinksActive();
     headerScrolled();
     toggleBacktotop();
-    initializeCookieConsent();
+    //initializeCookieConsent();
     aos_init();
   });
 

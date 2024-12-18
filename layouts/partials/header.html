@@ -7,16 +7,33 @@
     <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto active" href="/#hero">Home</a></li>
+        <!-- <li><a class="nav-link scrollto" href="/#values">Services</a></li> -->
         <li><a class="nav-link scrollto" href="/#about">About</a></li>
         <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
-        
+
+        <!-- Conditional buttons based on JavaScript -->
+        <li id="signup-button"><a class="getstarted" href="https://signup.intellux.ai/" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
+        <!-- <li id="install-button"><a class="getstarted" href="/mobile" target="_blank" rel="noopener noreferrer" style="background-color: #045DE8; color: white;">Install on Mobile</a></li> -->
+
+        <!-- Upgrade button that replaces Sign Up and Install on Mobile if the custom logic is met -->
+        <li id="upgrade-button" style="display: none;">
+          <a class="getstarted" id="upgrade-link" href="#" target="_blank" rel="noopener noreferrer">Upgrade Subscription</a>
+        </li>
+
+        <li><a class="getstarted" href="https://chat.intellux.ai" target="_blank" rel="noopener noreferrer">Login/Chat</a></li>
+
         <!-- Social Media Links -->
         <li>
           <ul class="social-section social-mobile-section">
             <li class="social-mobile-section"><h3>check out our social media</h3></li>
             <li class="social-link">
-              <a href="https://www.linkedin.com/company/fast-medical-ai/" target="_blank" rel="noopener noreferrer" class="logo d-flex align-items-center">
-                <img src="/assets/img/linkedin_logo.png" alt="LinkedIn Logo" />
+              <a href="https://www.facebook.com/profile.php?id=61568641943595" target="_blank" rel="noopener noreferrer" class="logo d-flex align-items-center">
+                <img src="/assets/img/fb_logo.png" alt="Facebook Logo" />
+              </a>
+            </li>
+            <li class="social-link">
+              <a href="https://www.instagram.com/intellux.ai/" target="_blank" rel="noopener noreferrer" class="logo d-flex align-items-center">
+                <img src="/assets/img/ig_logo.png" alt="Instagram Logo" />
               </a>
             </li>
           </ul>
@@ -26,3 +43,31 @@
     </nav>
   </div>
 </header>
+
+<!-- JavaScript to conditionally display buttons -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Check if URL contains a special parameter to simulate the Incoming header
+        const urlParams = new URLSearchParams(window.location.search);
+        const incomingParam = urlParams.get('incoming');  // Check for ?incoming=jhgfsid96432
+
+        // If the incoming param is detected, show the Upgrade button
+        if (incomingParam === 'jhgfsid96432') {
+            // Hide the Sign Up and Install on Mobile buttons
+            document.getElementById('signup-button').style.display = 'none';
+            document.getElementById('install-button').style.display = 'none';
+            
+            // Show the Upgrade Subscription button
+            document.getElementById('upgrade-button').style.display = 'block';
+
+            // Modify the upgrade button to append the incoming parameter to the URL
+            document.getElementById('upgrade-link').addEventListener('click', function (event) {
+                event.preventDefault();
+
+                // Redirect to the upgrade URL with the query parameter
+                const upgradeUrl = 'https://signup.intellux.ai/?incoming=5487iuhgfdes';
+                window.location.href = upgradeUrl;
+            });
+        }
+    });
+</script>

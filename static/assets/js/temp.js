@@ -157,7 +157,7 @@
       navbarlinksActive();
       headerScrolled();
       toggleBacktotop();
-      initializeCookieConsent();
+      //initializeCookieConsent();
       aos_init();
     });
   
