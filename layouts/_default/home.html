@@ -139,28 +139,44 @@
 {{with .Params.about_section}}
 <section id="about" class="about">
   <div class="container" data-aos="fade-up">
-    <div class="row gx-0">
+    <div class="row gx-0" style="display: flex; align-items: stretch;">
       <div
         class="col-lg-6 d-flex flex-column justify-content-center"
+        style="height: auto;"
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <div class="content">
+        <div class="content" style="height: 100%;">
           <h3>{{.title}}</h3>
           <h2>{{.sub_title}}</h2>
-          <p>{{.content | safeHTML}}</p>
+          <p>{{.content_left | safeHTML}}</p>
           <div class="text-center text-lg-start">
           </div>
         </div>
       </div>
 
       <div
+        class="col-lg-6 d-flex flex-column justify-content-center"
+        style="height: auto;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="content" style="height: 100%;">
+          <h3>{{.title}}</h3>
+          <h2>{{.sub_title}}</h2>
+          <p>{{.content_right | safeHTML}}</p>
+          <div class="text-center text-lg-start">
+          </div>
+        </div>
+      </div>
+
+      <!-- <div
         class="col-lg-6 d-flex align-items-center"
         data-aos="zoom-out"
         data-aos-delay="200"
       >
         <img src="{{.image}}" class="img-fluid img" alt="About img" />
-      </div>
+      </div> -->
     </div>
   </div>
 </section>

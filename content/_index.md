@@ -84,7 +84,7 @@ about_section:
   title: Who We Are
   sub_title: Revolutionizing Healthcare with AI-Powered Solutions
   image: /assets/img/ai-ems-brain.png
-  content: >
+  content_left: >
     <p>Intellux AI, Ltd. is transforming Healthcare, Pre Hospital Medicine and Mobile Integrated Health with Actual Intelligence (AI). We are proud to introduce Rampart—the ultimate experienced partner and mentor, designed to bridge the gap between emerging professional and seasoned professionals by bringing real-world expertise and guidance directly to the field.</p>
     
     <p>Rampart leverages cutting-edge technology to provide 24/7 support across critical areas, including:</p>
@@ -100,7 +100,24 @@ about_section:
     <p>Our mission is to empower EMS providers to grow into confident, capable practitioners with the support of an experienced mentor at their side. By offering reliable, real-time guidance during every patient interaction, Rampart helps bridge the gap between novice and seasoned medics, accelerating skill development, refining decision-making, and fostering professional growth.</p>
     
     <p>With Rampart, EMS professionals gain more than a tool—they gain a trusted partner and mentor who brings expertise to every call. Together, we are closing the experience gap, elevating confidence, and revolutionizing emergency care with patient safety and professional development at the forefront</p>
+  content_right: >
+    <p>Intellux AI is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team’s hands to enable smarter, safer, and more autonomous decisions in the workplace.
 
+    <p>Introducing Yoda—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Pathfinder transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
+    <ul>
+      <li>Time and Attendance</li>
+      <li>Mandatory Reporting</li>
+      <li>MSDS Sheets</li>
+      <li>Vacation or Paid Time Off Policies</li>
+      <li>Hiring and Firing Policies</li>
+    </ul>
+
+    <p>By providing immediate, reliable access to the most up-to-date, company-specific information, Pathfinder empowers your workforce to make informed decisions with greater independence—reducing the need for constant supervision and oversight.</p>
+
+    <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Pathfinder, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
+
+    <p>No more delays, confusion, or reliance on managers for answers—Pathfinder gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
+    
 
 faq_section:
   title: F.A.Q
