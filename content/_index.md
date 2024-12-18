@@ -5,9 +5,9 @@ hero_section:
   title: Introducing Intellux AI
   content: >
     <div>Empowering Smarter Decisions with <strong>Actual Intelligence</strong>.</div>
-  buttons:
-    - label: Get Started
-      link: "#values"
+  # buttons:
+  #   - label: Get Started
+  #     link: "#values"
 
 # services_section:
 #   title: Affordably priced packages
