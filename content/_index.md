@@ -81,7 +81,8 @@ hero_section:
 #   image: "/assets/img/coverage_area.png"
 
 about_section:
-  title: Who We Are
+  title_left: Rampart
+  title_right: Yoda
   sub_title: Revolutionizing Healthcare with AI-Powered Solutions
   image: /assets/img/ai-ems-brain.png
   content_left: >
@@ -117,7 +118,7 @@ about_section:
     <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Pathfinder, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
 
     <p>No more delays, confusion, or reliance on managers for answers—Pathfinder gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
-    
+
 
 faq_section:
   title: F.A.Q
