@@ -1,74 +1,74 @@
 ---
-title: Empowering EMS
+title: Actual Intelligence
 
 hero_section:
-  title: Introducing EVA-AI
-  content: "The EMS Virtual Assistant powered by Artificial Intelligence"
+  title: Introducing Intellux AI
+  content: "Empowering Smarter Decisions with Actual Intelligence."
   buttons:
     - label: Get Started
       link: "#values"
 
-services_section:
-  title: Affordably priced packages
-  sub_title: EVA-AI
-  services:
-    - title: EVA-AI Basic
-      price:
-        - "FREE"
+# services_section:
+#   title: Affordably priced packages
+#   sub_title: EVA-AI
+#   services:
+#     - title: EVA-AI Basic
+#       price:
+#         - "FREE"
 
-      title2: Benefits
-      content2:
-        - "Access to (EVA) EMS Virtual Assistant."
-        - "Limited to 10 Requests per 3 hours."
-      finePrint:
-      logo: /assets/img/logo_hugo.png
-      link: "https://signup.intellux.ai/"
-    - title: EVA-AI Standard
-      price:
-        - "$4.99/month"
+#       title2: Benefits
+#       content2:
+#         - "Access to (EVA) EMS Virtual Assistant."
+#         - "Limited to 10 Requests per 3 hours."
+#       finePrint:
+#       logo: /assets/img/logo_hugo.png
+#       link: "https://signup.intellux.ai/"
+#     - title: EVA-AI Standard
+#       price:
+#         - "$4.99/month"
 
-      title2: Benefits
-      content2:
-        - "Access to (EVA) EMS Virtual Assistant."
-        - "Cancel Anytime"
-        - "Limited to 50 Requests per 3 hours."
-      finePrint:
-      logo: /assets/img/logo_hugo.png
-      link: "https://signup.intellux.ai/"
+#       title2: Benefits
+#       content2:
+#         - "Access to (EVA) EMS Virtual Assistant."
+#         - "Cancel Anytime"
+#         - "Limited to 50 Requests per 3 hours."
+#       finePrint:
+#       logo: /assets/img/logo_hugo.png
+#       link: "https://signup.intellux.ai/"
 
-    - title: EVA-AI Teams
-      strikePrice:
+#     - title: EVA-AI Teams
+#       strikePrice:
 
-      price:
-        - "$14.99 per seat/month"
-        - "Minimum of 5 seats"
+#       price:
+#         - "$14.99 per seat/month"
+#         - "Minimum of 5 seats"
 
-      title2: Benefits
-      content2:
-        - "Access to EVA-AI Unlimited"
-        - "Opt-out of Training Data"
-        - "Min 5 seats"
-        - "Discounted Pricing for 10+ Seats"
-      finePrint: "*Credit Card Required. Payments will be automatically processed each month."
-      logo: /assets/img/logo_hugo.png
-      link: "https://signup.intellux.ai/"
+#       title2: Benefits
+#       content2:
+#         - "Access to EVA-AI Unlimited"
+#         - "Opt-out of Training Data"
+#         - "Min 5 seats"
+#         - "Discounted Pricing for 10+ Seats"
+#       finePrint: "*Credit Card Required. Payments will be automatically processed each month."
+#       logo: /assets/img/logo_hugo.png
+#       link: "https://signup.intellux.ai/"
 
-    - title: EVA-AI Enterprise
-      strikePrice:
+#     - title: EVA-AI Enterprise
+#       strikePrice:
 
-      price:
-        - "Click here to Contact us at"
-        - "enterprise@intellux.ai for"
-        - "companies with more than 100"
-        - "Employees"
-      title2: Benefits
-      content2:
-        - "Same benefits as EVA-AI Teams"
-        - "Run Dedicated infrastructure"
-        - "Add custom knowledge"
-      finePrint: ""
-      logo: /assets/img/logo_hugo.png
-      link: "mailto:enterprise@intellux.ai"
+#       price:
+#         - "Click here to Contact us at"
+#         - "enterprise@intellux.ai for"
+#         - "companies with more than 100"
+#         - "Employees"
+#       title2: Benefits
+#       content2:
+#         - "Same benefits as EVA-AI Teams"
+#         - "Run Dedicated infrastructure"
+#         - "Add custom knowledge"
+#       finePrint: ""
+#       logo: /assets/img/logo_hugo.png
+#       link: "mailto:enterprise@intellux.ai"
 
 # deployed_section:
 #   title: "Deployed in These States"
@@ -82,8 +82,24 @@ services_section:
 about_section:
   title: Who We Are
   sub_title: Revolutionizing Healthcare with AI-Powered Solutions
-  image: /assets/img/ems-star-ai.png
-  content: Intellux AI, Inc. is at the forefront of deploying and developing cutting-edge Artificial Intelligence for the healthcare and Emergency Medical Services (EMS) industry. Introducing EVA-AI - our pioneering EMS Virtual Assistant, designed to be the ultimate virtual medic partner. EVA is engineered to assist EMS providers by offering a comprehensive suite of services including differential diagnoses, medication calculations, general medical knowledge, training, and recommendations, all available 24/7 through a highly accurate speech-to-text interface. Our mission extends beyond innovation; it's about providing EMS professionals with reliable support right at their fingertips. Adhering strictly to HIPAA regulations, we ensure utmost data confidentiality, making our solutions not just revolutionary but also secure.
+  image: /assets/img/ai-ems-brain.png
+  content: >
+    <p>Intellux AI, Ltd. is transforming Healthcare, Pre Hospital Medicine and Mobile Integrated Health with Actual Intelligence (AI). We are proud to introduce Rampart—the ultimate experienced partner and mentor, designed to bridge the gap between emerging professional and seasoned professionals by bringing real-world expertise and guidance directly to the field.</p>
+    
+    <p>Rampart leverages cutting-edge technology to provide 24/7 support across critical areas, including:</p>
+    <ul>
+      <li>Differential diagnoses</li>
+      <li>Accurate medication calculations</li>
+      <li>Comprehensive medical knowledge</li>
+      <li>Training support and actionable recommendations</li>
+    </ul>
+    
+    <p>All insights are verified by seasoned EMS professionals and delivered seamlessly through an advanced speech-to-text interface.</p>
+    
+    <p>Our mission is to empower EMS providers to grow into confident, capable practitioners with the support of an experienced mentor at their side. By offering reliable, real-time guidance during every patient interaction, Rampart helps bridge the gap between novice and seasoned medics, accelerating skill development, refining decision-making, and fostering professional growth.</p>
+    
+    <p>With Rampart, EMS professionals gain more than a tool—they gain a trusted partner and mentor who brings expertise to every call. Together, we are closing the experience gap, elevating confidence, and revolutionizing emergency care with patient safety and professional development at the forefront</p>
+
 
 faq_section:
   title: F.A.Q
