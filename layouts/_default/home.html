@@ -12,21 +12,23 @@
   <div class="container" style="position: relative; z-index: 1;">
     <div class="row justify-content-center">
       <div
-        class="col-lg-9 d-flex flex-column justify-content-center text-center"
+        class="col-lg-9 d-flex flex-column justify-content-center text-center align-items-center"
       >
-        <h1 data-aos="fade-up" style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">{{.title}}</h1>
-        <h2 data-aos="fade-up" data-aos-delay="400" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);">{{.content}}</h2>
-        <div data-aos="fade-up" data-aos-delay="600">
-          {{ with .buttons}}
-          <div class="text-center">
-            {{ range . }}
-            <a href="{{.link}}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center" style="background-color: #007bff; color: white;">
-              <span>{{.label}}</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-            {{ end }}
+        <div class="overlay">
+          <h1 class="title_home" data-aos="fade-up">{{.title}}</h1>
+          <h2 class="subtitle_home" data-aos="fade-up" data-aos-delay="400">{{.content | safeHTML}}</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            {{ with .buttons}}
+            <div class="text-center">
+              {{ range . }}
+              <a href="{{.link}}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center" style="background-color: #007bff; color: white;">
+                <span>{{.label}}</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              {{ end }}
+            </div>
+            {{end}}
           </div>
-          {{end}}
         </div>
       </div>
     </div>

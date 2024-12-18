@@ -3,7 +3,8 @@ title: Actual Intelligence
 
 hero_section:
   title: Introducing Intellux AI
-  content: "Empowering Smarter Decisions with Actual Intelligence."
+  content: >
+    <div>Empowering Smarter Decisions with <strong>Actual Intelligence</strong>.</div>
   buttons:
     - label: Get Started
       link: "#values"
