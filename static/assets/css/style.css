@@ -528,17 +528,17 @@ section {
 # Index Page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# About
+# Products
 --------------------------------------------------------------*/
 
-.about .content {
+.products .content {
   background-image: linear-gradient(to bottom, rgba(45, 176, 232, 0.2), #ffffff);
   padding: 40px;
   border-radius: 10px; /* Rounded corners */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* 3D effect */
   margin:20px;
 }
-.about .img {
+.products .img {
   max-width: 75%; /* Limits the size to half of its container */
   height: auto; /* Maintains aspect ratio */
   display: block; /* Ensures the image does not inline with text */
@@ -547,22 +547,22 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
   border-radius: 5px; /* Optional: rounds the corners */
 }
-.about h3 {
+.products h3 {
   font-size: 14px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
-.about h2 {
+.products h2 {
   font-size: 24px;
   font-weight: 700;
   color: #045de9;
 }
-.about p {
+.products p {
   margin: 15px 0 30px 0;
   line-height: 24px;
 }
-.about .btn-read-more {
+.products .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
@@ -571,22 +571,22 @@ section {
   background: #012970;
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
-.about .btn-read-more span {
+.products .btn-read-more span {
   font-family: var(--main-font);
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
-.about .btn-read-more i {
+.products .btn-read-more i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
-.about .btn-read-more:hover i {
+.products .btn-read-more:hover i {
   transform: translateX(5px);
 }
 @media (max-width:991px){
-  .about .img {
+  .products .img {
     display:none;
   }
 }
