@@ -498,7 +498,7 @@ section {
 }
 @media (max-width: 991px) {
   .hero {
-    height: auto;
+    /* height: auto; */
     padding: 120px 0 60px 0;
   }
   .hero .hero-img {
@@ -1696,4 +1696,13 @@ section {
   width: max-content; 
   color: #ffffff; 
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 991px) {
+  .title_home {
+    width: auto;
+  }
+  .subtitle_home {
+    width: auto; 
+  }
 }
