@@ -106,6 +106,16 @@
     this.classList.toggle('bi-x');
   });
 
+  on('click', '#navbar', function(e) {
+    if (e.target.classList.contains('nav-link')) {
+      if (select('.mobile-nav-toggle').classList.contains('bi-x')) {
+        select('#navbar').classList.toggle('navbar-mobile');
+        select('.mobile-nav-toggle').classList.remove('bi-x');
+        select('.mobile-nav-toggle').classList.add('bi-list');
+      }
+    }
+  });
+
   /**
    * Mobile nav dropdowns activate
    */
@@ -197,8 +207,8 @@
   // Event listeners for cookie buttons
   document.addEventListener('DOMContentLoaded', function () {
     // Attach event listeners directly without checking for DOMContentLoaded
-    document.getElementById('acceptCookiesButton').addEventListener('click', acceptCookies);
-    document.getElementById('declineCookiesButton').addEventListener('click', declineCookies);
+    //document.getElementById('acceptCookiesButton').addEventListener('click', acceptCookies);
+    //document.getElementById('declineCookiesButton').addEventListener('click', declineCookies);
   });
 
   window.addEventListener('scroll', () => {
