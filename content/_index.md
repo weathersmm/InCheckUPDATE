@@ -105,7 +105,7 @@ about_section:
   content_right: >
     <p>Intellux AI is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team’s hands to enable smarter, safer, and more autonomous decisions in the workplace.
 
-    <p>Introducing Yoda—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Pathfinder transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
+    <p>Introducing Yoda—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Yoda transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
     <ul>
       <li>Time and Attendance</li>
       <li>Mandatory Reporting</li>
@@ -114,11 +114,11 @@ about_section:
       <li>Hiring and Firing Policies</li>
     </ul>
 
-    <p>By providing immediate, reliable access to the most up-to-date, company-specific information, Pathfinder empowers your workforce to make informed decisions with greater independence—reducing the need for constant supervision and oversight.</p>
+    <p>By providing immediate, reliable access to the most up-to-date, company-specific information, Yoda empowers your workforce to make informed decisions with greater independence—reducing the need for constant supervision and oversight.</p>
 
-    <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Pathfinder, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
+    <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Yoda, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
 
-    <p>No more delays, confusion, or reliance on managers for answers—Pathfinder gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
+    <p>No more delays, confusion, or reliance on managers for answers—Yoda gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
 
 
 faq_section:
