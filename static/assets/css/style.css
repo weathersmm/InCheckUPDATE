@@ -305,6 +305,8 @@ section {
   .navbar .social-section {
     overflow:auto;
     max-height: none;
+    padding-left: 0px;
+    padding-right: 30px;
   }
 }
 
