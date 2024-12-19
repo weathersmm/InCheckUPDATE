@@ -38,7 +38,7 @@
 <!-- End Hero -->
 
 <!-- ======= Services Section ======= -->
-{{with .Params.services_section}}
+<!-- {{with .Params.services_section}}
 <section id="values" class="values">
   <div class="specificClass" data-aos="fade-up">
     <header class="section-header">
@@ -73,7 +73,7 @@
     </div>
   </div>
 </section>
-{{end}}
+{{end}} -->
 
 
 
@@ -136,10 +136,10 @@
 
 <!-- End coverage area-->
 <!-- ======= About Section ======= -->
-{{with .Params.about_section}}
-<section id="about" class="about">
+{{with .Params.products_section}}
+<section id="products" class="products">
   <div class="container" data-aos="fade-up">
-    <div class="row gx-0" style="display: flex; align-items: stretch;">
+    <div class="row gx-0" style="display: flex; align-items: stretch; justify-content: center;">
       <div
         class="col-lg-6 d-flex flex-column justify-content-center"
         style="height: auto;"
@@ -147,9 +147,9 @@
         data-aos-delay="200"
       >
         <div class="content" style="height: 100%;">
-          <h3>{{.title_left}}</h3>
-          <h2>{{.sub_title_left}}</h2>
-          <p>{{.content_left | safeHTML}}</p>
+          <h3>{{.title_one}}</h3>
+          <h2>{{.sub_title_one}}</h2>
+          <p>{{.content_one | safeHTML}}</p>
           <div class="text-center text-lg-start">
           </div>
         </div>
@@ -162,9 +162,24 @@
         data-aos-delay="200"
       >
         <div class="content" style="height: 100%;">
-          <h3>{{.title_right}}</h3>
-          <h2>{{.sub_title_right}}</h2>
-          <p>{{.content_right | safeHTML}}</p>
+          <h3>{{.title_two}}</h3>
+          <h2>{{.sub_title_two}}</h2>
+          <p>{{.content_two | safeHTML}}</p>
+          <div class="text-center text-lg-start">
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-6 d-flex flex-column justify-content-center align-items-center"
+        style="height: auto; width: 100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="content" style="height: 100%;">
+          <h3>{{.title_three}}</h3>
+          <h2>{{.sub_title_three}}</h2>
+          <p>{{.content_three | safeHTML}}</p>
           <div class="text-center text-lg-start">
           </div>
         </div>
@@ -232,10 +247,10 @@
       <p>Contact Us</p>
     </header>
 
-    <div class="row gy-4" style="justify-content: center; width: 100%;">
+    <div class="row gy-4" style="justify-content: center; width: 100%; align-items: stretch;">
       <div class="col-lg-6">
         <div class="row gy-4" style="justify-content: center;">
-          <div class="col-md-6">
+          <div class="col-md-6" style="height: auto;">
             <a href="mailto:info@intellux.ai" target="_blank" rel="noopener noreferrer">
               <div class="info-box" style="text-align: center;">
                 <i class="bi bi-envelope"></i>
@@ -246,7 +261,7 @@
           </div>
           <div class="col-md-6">
             <a href="mailto:sales@intellux.ai" target="_blank" rel="noopener noreferrer">
-              <div class="info-box" style="text-align: center;">
+              <div class="info-box" style="text-align: center; height: 100%;">
                 <i class="bi bi-envelope"></i>
                 <h3>Sales</h3>
                 <p>sales@intellux.ai</p>

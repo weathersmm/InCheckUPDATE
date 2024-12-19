@@ -80,13 +80,15 @@ hero_section:
 #     - "Vermont"
 #   image: "/assets/img/coverage_area.png"
 
-about_section:
-  title_left: Rampart
-  title_right: Yoda
-  sub_title_left: Revolutionizing Healthcare with AI-Powered Solutions
-  sub_title_right: Leading Change for Safer, Smarter Outcomes at the Work Place
+products_section:
+  title_one: Rampart
+  title_two: Yoda
+  title_three: Nova
+  sub_title_one: Revolutionizing Healthcare with AI-Powered Solutions
+  sub_title_two: Leading Change for Safer, Smarter Outcomes at the Work Place
+  sub_title_three: Breaking Language Barriers, Empowering Connections
   image: /assets/img/ai-ems-brain.png
-  content_left: >
+  content_one: >
     <p>Intellux AI, Ltd. is transforming Healthcare, Pre Hospital Medicine and Mobile Integrated Health with Actual Intelligence (AI). We are proud to introduce Rampart—the ultimate experienced partner and mentor, designed to bridge the gap between emerging professional and seasoned professionals by bringing real-world expertise and guidance directly to the field.</p>
     
     <p>Rampart leverages cutting-edge technology to provide 24/7 support across critical areas, including:</p>
@@ -102,10 +104,10 @@ about_section:
     <p>Our mission is to empower EMS providers to grow into confident, capable practitioners with the support of an experienced mentor at their side. By offering reliable, real-time guidance during every patient interaction, Rampart helps bridge the gap between novice and seasoned medics, accelerating skill development, refining decision-making, and fostering professional growth.</p>
     
     <p>With Rampart, EMS professionals gain more than a tool—they gain a trusted partner and mentor who brings expertise to every call. Together, we are closing the experience gap, elevating confidence, and revolutionizing emergency care with patient safety and professional development at the forefront</p>
-  content_right: >
+  content_two: >
     <p>Intellux AI is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team’s hands to enable smarter, safer, and more autonomous decisions in the workplace.
 
-    <p>Introducing Yoda—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Pathfinder transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
+    <p>Introducing Yoda—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Yoda transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
     <ul>
       <li>Time and Attendance</li>
       <li>Mandatory Reporting</li>
@@ -114,11 +116,31 @@ about_section:
       <li>Hiring and Firing Policies</li>
     </ul>
 
-    <p>By providing immediate, reliable access to the most up-to-date, company-specific information, Pathfinder empowers your workforce to make informed decisions with greater independence—reducing the need for constant supervision and oversight.</p>
+    <p>By providing immediate, reliable access to the most up-to-date, company-specific information, Yoda empowers your workforce to make informed decisions with greater independence—reducing the need for constant supervision and oversight.</p>
 
-    <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Pathfinder, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
+    <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Yoda, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
 
-    <p>No more delays, confusion, or reliance on managers for answers—Pathfinder gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
+    <p>No more delays, confusion, or reliance on managers for answers—Yoda gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
+  content_three: >
+    <p>Introducing Nova, your multilingual mentor designed to translate complex conversations into real-time, interactive, and accurate translations, empowering your team to overcome language challenges effortlessly. Whether in the field, during emergencies, or within daily operations, Nova ensures that our people, patients, and partners understand and are understood.</p>
+
+    <ul>
+      <li>Real-Time Voice Translation: Instantly converts spoken words into text or speech across multiple languages</li>
+      <li>Optimized for healthcare and EMS, Nova accurately translates terminology, protocols, and critical care instructions.</li>
+      <li>Fully integrated with Intellux AI tools like Rampart and Yoda, ensuring SOPs, protocols, and insights are accessible in any language.</li>
+      <li>High-Speed Accuracy: Uses advanced speech recognition to deliver fast, precise translations, even in high-pressure situations.</li>
+      <li>Captures regional nuances to foster trust and understanding between diverse teams and communities.</li>
+    </ul>
+
+    <p>With Nova, teams gain a trusted multilingual mentor who eliminates delays, confusion, and errors caused by language barriers.</p>
+
+    <ul>
+      <li>Improved Patient Care: Ensures accurate communication for safer, faster decisions.</li>
+      <li>Greater Team Autonomy: Professionals work confidently, knowing language challenges are resolved.</li>
+      <li>Enhanced Inclusivity: Seamlessly supports diverse teams and multilingual communities, strengthening relationships with our people, patients, and partners.</li>
+    </ul>
+    
+    <p>Nova gives your team the tools to communicate clearly and confidently, empowering them to perform at their best while reflecting your organization’s commitment to excellence, inclusivity, and care for our people, patients, and partners.</p>
 
 
 faq_section:
