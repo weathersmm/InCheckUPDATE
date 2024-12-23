@@ -147,27 +147,50 @@ faq_section:
   title: F.A.Q
   sub_title: Frequently Asked Questions
   faqs:
-    - q: What is Rampart, and how does it revolutionize EMS support?
-      a: Rampart, our EMS Virtual Assistant, is a groundbreaking AI-driven platform tailored for the Emergency Medical Services industry. Designed as a virtual medic partner, Rampart offers comprehensive support by providing possible differential diagnoses, medication calculations, general medical knowledge, training, and suggestions, all available 24/7 through an accurate speech-to-text interface. Rampart is set to revolutionize EMS support by enhancing decision-making, operational efficiency, and patient care with the power of Artificial Intelligence.
+    - q: Are Nova, Rampart, and Yoda HIPAA-compliant?
+      a: Yes, all Intellux AI products are HIPAA-compliant, ensuring data security and privacy.
 
-    - q: What are some of the benefits of Rampart?
-      a: Real-Time Medical Guidance provides immediate medical advice and guidance in a clinical setting; Speech-to-Text Functionality converts spoken language into text for easier documentation; Critical Next Steps offers step-by-step guidance during emergencies; Medical Question Answering provides clear and accurate information for patient care; Dosage Calculations ensure correct medication dosages based on patient weight; Easy Local Protocol Lookup quickly finds and references local emergency protocols; Portable and User-Friendly design makes it accessible and convenient on mobile devices.
+    - q: Are the recommendations and translations verified?
+      a: Yes, all insights provided by Nova, Rampart, and Yoda are verified by experienced EMS and healthcare providers and powered by Actual Intelligence to ensure accuracy and reliability.
+    
+    - q: Do these tools have mobile apps?
+      a: Yes, all three tools—Nova, Rampart, and Yoda—are accessible via mobile applications compatible with all major platforms, ensuring ease of use and portability.
+    
+    - q: How do these tools help reduce workplace errors?
+      a: By acting as workplace mentors, Nova, Rampart, and Yoda leverage Actual Intelligence to provide real-time guidance, actionable insights, and immediate access to critical information, reducing liability and improving workplace efficiency.
+    
+    - q: Can these tools integrate with existing systems?
+      a: Absolutely! Nova, Rampart, and Yoda integrate seamlessly with your current platforms.
 
-    - q: Do you have a mobile application for Rampart?
-      a: Yes! We now have both Apple and Android mobile applications available. You can visit our mobile_link to download the apps and experience Rampart on your device.
+    - q: How do I subscribe to Rampart?
+      a: You can subscribe to Rampart through our website to access either the free tier or the unlimited plan 
+        - $7.99/month
+        - $87.89 annually
+    - q: How do I request a demo?
+      a: You can request a demo through our website or by contacting our sales team <a href="mailto:support@intellux.ai>support@intellux.ai</a>.
 
-    - q: Is Rampart's handling of data HIPAA-compliant?
-      a: Absolutely. Rampart and all associated services strictly adhere to HIPAA regulations to ensure the highest level of data privacy and security. Our commitment to data confidentiality means sensitive information is protected at all times, providing our users with peace of mind regarding their privacy.
 
-    - q: Can Rampart be customized for specific EMS needs?
-      a: Yes, Rampart offers customization options to meet the specific needs of different EMS providers. From integrating custom medical knowledge bases to adapting our platform for unique operational workflows, our team works closely with you to tailor Rampart, ensuring it perfectly aligns with your service requirements.
+    # - q: What is Rampart, and how does it revolutionize EMS support?
+    #   a: Rampart, our EMS Virtual Assistant, is a groundbreaking AI-driven platform tailored for the Emergency Medical Services industry. Designed as a virtual medic partner, Rampart offers comprehensive support by providing possible differential diagnoses, medication calculations, general medical knowledge, training, and suggestions, all available 24/7 through an accurate speech-to-text interface. Rampart is set to revolutionize EMS support by enhancing decision-making, operational efficiency, and patient care with the power of Artificial Intelligence.
 
-    - q: How does Rampart ensure safety and accuracy in its responses?
-      a: Rampart has been extensively tested in real-world EMS scenarios during its Alpha and Beta phases, demonstrating an accuracy range between 94-97%. Although AI is inherently non-deterministic, we've engineered Rampart to deliver highly reliable support. However, we always recommend double-checking Rampart's advice as a best practice for safety and precision.
+    # - q: What are some of the benefits of Rampart?
+    #   a: Real-Time Medical Guidance provides immediate medical advice and guidance in a clinical setting; Speech-to-Text Functionality converts spoken language into text for easier documentation; Critical Next Steps offers step-by-step guidance during emergencies; Medical Question Answering provides clear and accurate information for patient care; Dosage Calculations ensure correct medication dosages based on patient weight; Easy Local Protocol Lookup quickly finds and references local emergency protocols; Portable and User-Friendly design makes it accessible and convenient on mobile devices.
 
-    - q: Can Rampart integrate with existing EMS systems?
-      a: Yes, Rampart is designed for seamless integration into existing EMS infrastructures. Whether your system uses proprietary software or third-party applications, our team is dedicated to ensuring a smooth integration process, enhancing your existing systems with Rampart's advanced AI capabilities.
+    # - q: Do you have a mobile application for Rampart?
+    #   a: Yes! We now have both Apple and Android mobile applications available. You can visit our mobile_link to download the apps and experience Rampart on your device.
 
-    - q: What subscription plans are available for Rampart?
-      a: We offer three subscription plans for Rampart Basic, Standard, Teams, and Enterprise. Each plan is designed to cater to different needs, from individual users to large organizations. Please see our pricing section for more details.
+    # - q: Is Rampart's handling of data HIPAA-compliant?
+    #   a: Absolutely. Rampart and all associated services strictly adhere to HIPAA regulations to ensure the highest level of data privacy and security. Our commitment to data confidentiality means sensitive information is protected at all times, providing our users with peace of mind regarding their privacy.
+
+    # - q: Can Rampart be customized for specific EMS needs?
+    #   a: Yes, Rampart offers customization options to meet the specific needs of different EMS providers. From integrating custom medical knowledge bases to adapting our platform for unique operational workflows, our team works closely with you to tailor Rampart, ensuring it perfectly aligns with your service requirements.
+
+    # - q: How does Rampart ensure safety and accuracy in its responses?
+    #   a: Rampart has been extensively tested in real-world EMS scenarios during its Alpha and Beta phases, demonstrating an accuracy range between 94-97%. Although AI is inherently non-deterministic, we've engineered Rampart to deliver highly reliable support. However, we always recommend double-checking Rampart's advice as a best practice for safety and precision.
+
+    # - q: Can Rampart integrate with existing EMS systems?
+    #   a: Yes, Rampart is designed for seamless integration into existing EMS infrastructures. Whether your system uses proprietary software or third-party applications, our team is dedicated to ensuring a smooth integration process, enhancing your existing systems with Rampart's advanced AI capabilities.
+
+    # - q: What subscription plans are available for Rampart?
+    #   a: We offer three subscription plans for Rampart Basic, Standard, Teams, and Enterprise. Each plan is designed to cater to different needs, from individual users to large organizations. Please see our pricing section for more details.
 ---

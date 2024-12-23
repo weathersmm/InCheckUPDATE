@@ -221,8 +221,14 @@
             </h2>
             <div id="faq-content-{{$counter}}" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
               <div class="accordion-body">
-                {{ if eq .q "Do you have a mobile application for EVA-AI?" }}
-                  Yes! We now have both Apple and Android mobile applications available. You can visit our <a href="/mobile">Mobile page</a> to download the apps and experience EVA-AI on your device.
+                {{ if eq .q "How do I subscribe to Rampart?" }}
+                  You can subscribe to Rampart through our website to access either the free tier or the unlimited plan:
+                  <ul>
+                    <li>$7.99/month</li>
+                    <li>$87.89 annually</li>
+                  </ul>
+                {{ else if eq .q "How do I request a demo?" }}  
+                  You can request a demo through our website or by contacting our sales team <a href="mailto:sales@intellux.ai">sales@intellux.ai</a>
                 {{ else }}
                   {{ .a }}
                 {{ end }}
