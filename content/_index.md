@@ -145,7 +145,7 @@ products_section:
 
 faq_section:
   title: F.A.Q
-  sub_title: Frequently Asked Questions
+  sub_title: General FAQs for Intellux AI Tools
   faqs:
     - q: Are Nova, Rampart, and Yoda HIPAA-compliant?
       a: Yes, all Intellux AI products are HIPAA-compliant, ensuring data security and privacy.
