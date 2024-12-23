@@ -5,7 +5,7 @@ layout: policy
 
 ## Privacy Policy
 
-Effective: March 24, 2024
+Effective: December 23, 2024
 
 We at Intellux AI, Inc (together with our affiliates, “Intellux AI”, “we”, “our” or “us”) respect your privacy and are strongly committed to keeping secure any information we obtain from you or about you. This Privacy Policy describes our practices with respect to Personal Information we collect from or about you when you use our website, applications, and services (collectively, “Services”).
 

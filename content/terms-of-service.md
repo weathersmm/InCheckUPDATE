@@ -3,7 +3,7 @@ title: Terms Of Service
 layout: policy
 ---
 
-# Effective: March 22, 2024
+# Effective: December 23, 2024
 
 Thank you for using Intellux AI
 
