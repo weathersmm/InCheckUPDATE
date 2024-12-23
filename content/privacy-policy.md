@@ -5,11 +5,11 @@ layout: policy
 
 ## Privacy Policy
 
-Effective: March 24, 2024
+Effective: December 23, 2024
 
 We at Intellux AI, Inc (together with our affiliates, “Intellux AI”, “we”, “our” or “us”) respect your privacy and are strongly committed to keeping secure any information we obtain from you or about you. This Privacy Policy describes our practices with respect to Personal Information we collect from or about you when you use our website, applications, and services (collectively, “Services”).
 
-### 1. Personal Information we Collect
+### 1. Personal Information We Collect
 
 We collect personal information relating to you (“Personal Information”) as follows:
 
@@ -45,7 +45,7 @@ We may use Personal Information for the following purposes:
 
 **Aggregated or De-Identified Information:** We may aggregate or de-identify Personal Information so that it may no longer be used to identify you and use such information to analyze the effectiveness of our Services, to improve and add features to our Services, to conduct research and for other similar purposes. We will maintain and use de-identified information in anonymous or de-identified form and we will not attempt to re-identify the information, unless required by law.
 
-As noted above, we may use Content you provide us to improve our Services; for example, to train the models that power EVA-AI. Read our instructions on how you can opt out of our use of your Content to train our models. Our Team and Enterprise plans offer the option to opt out, otherwise, you may contact us at [support@intellux.ai](mailto:support@intellux.ai) to opt out.
+As noted above, we may use Content you provide us to improve our Services; for example, to train the models that power Rampart, Nova and Yoda. Read our instructions on how you can opt out of our use of your Content to train our models. Our Team and Enterprise plans offer the option to opt out, otherwise, you may contact us at [support@intellux.ai](mailto:support@intellux.ai) to opt out.
 
 ### 3. Disclosure of Personal Information
 
@@ -72,7 +72,7 @@ Depending on location, individuals may have certain statutory rights in relation
 
 You can exercise some of these rights through your Intellux AI account. If you are unable to exercise your rights through your account, please submit your request through [privacy@intellux.ai](mailto:privacy@intellux.ai)
 
-**A note about accuracy:** Services like EVA-AI generate responses by reading a user’s request and, in response, predicting the words most likely to appear next. In some cases, the words most likely to appear next may not be the most factually accurate. For this reason, you should not rely on the factual accuracy of output from our models. If you notice that EVA-AI output contains factually inaccurate information about you and you would like us to correct the inaccuracy, you may submit a correction request through [privacy@intellux.ai](mailto:privacy@intellux.ai) . Given the technical complexity of how our models work, we may not be able to correct the inaccuracy in every instance. In that case, you may request that we remove your Personal Information from EVA-AI’s output by writing to us at [privacy@intellux.ai](mailto:privacy@intellux.ai)
+**A note about accuracy:** Services like Rampart, Nova and Yoda generate responses by reading a user’s request and, in response, predicting the words most likely to appear next. In some cases, the words most likely to appear next may not be the most factually accurate. For this reason, you should not rely on the factual accuracy of output from our models. If you notice that Rampart, Nova or Yoda's output contains factually inaccurate information about you and you would like us to correct the inaccuracy, you may submit a correction request through [privacy@intellux.ai](mailto:privacy@intellux.ai) . Given the technical complexity of how our models work, we may not be able to correct the inaccuracy in every instance. In that case, you may request that we remove your Personal Information from Rampart, Nova or Yoda's’s output by writing to us at [privacy@intellux.ai](mailto:privacy@intellux.ai)
 
 ### 5. Additional U.S. State Disclosures
 
@@ -99,7 +99,7 @@ We don’t “sell” Personal Information or “share” Personal Information f
 
 **Verification:** In order to protect your Personal Information from unauthorized access, change, or deletion, we may require you to verify your credentials before you can submit a request to know, correct, or delete Personal Information. If you do not have an account with us, or if we suspect fraudulent or malicious activity, we may ask you to provide additional Personal Information and proof of residency for verification. If we cannot verify your identity, we will not be able to honor your request.
 
-**Authorized Agents:** You may also submit a rights request through an authorized agent. If you do so, the agent must present signed written permission to act on your behalf and you may also be required to independently verify your identity and submit proof of your residency with us. Authorized agent requests can be submitted to [privacy@intellux.ai](mailto:privacy@intellux.ai)
+**Authorized Agents:** You may also submit a rights request through an authorized agent. If you do so, the agent must present signed written permission to act on your behalf, and you may also be required to independently verify your identity and submit proof of your residency to us. Authorized agent requests can be submitted to [privacy@intellux.ai](mailto:privacy@intellux.ai)
 
 **Appeals:** Depending on where you live, you may have the right to appeal a decision we make relating to requests to exercise your rights under applicable local law. To appeal a decision, please send your request to [privacy@intellux.ai](mailto:privacy@intellux.ai)
 
@@ -109,17 +109,17 @@ Our Service is not directed to children under the age of 18. Intellux AI does no
 
 ### 7. Links to Other Websites
 
-The Service may contain links to other websites not operated or controlled by Intellux AI, including social media services (“Third Party Sites”). The information that you share with Third Party Sites will be governed by the specific privacy policies and terms of service of the Third Party Sites and not by this Privacy Policy. By providing these links, we do not imply that we endorse or have reviewed these sites. Please contact the Third Party Sites directly for information on their privacy practices and policies.
+The Service may contain links to other websites not operated or controlled by Intellux AI, including social media services (“Third Party Sites”). The information that you share with third-party sites will be governed by the specific privacy policies and terms of service of the third-party sites and not by this privacy policy. By providing these links, we do not imply that we endorse or have reviewed these sites. Please contact the Third Party Sites directly for information on their privacy practices and policies.
 
 ### 8. Security and Retention
 
-We implement commercially reasonable technical, administrative, and organizational measures to protect Personal Information both online and offline from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. However, no Internet or email transmission is ever fully secure or error-free. In particular, email sent to or from us may not be secure. Therefore, you should take special care in deciding what information you send to us via the Service or email. In addition, we are not responsible for circumvention of any privacy settings or security measures contained on the Service or third-party websites.
+We implement commercially reasonable technical, administrative, and organizational measures to protect Personal Information both online and offline from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. However, no Internet or email transmission is ever fully secure or error-free. In particular, emails sent to or from us may not be secure. Therefore, you should take special care in deciding what information you send to us via the Service or email. In addition, we are not responsible for circumventing any privacy settings or security measures contained on the Service or third-party websites.
 
-We’ll retain your Personal Information for only as long as we need in order to provide our Service to you, or for other legitimate business purposes such as resolving disputes, safety and security reasons, or complying with our legal obligations. How long we retain Personal Information will depend on a number of factors, such as the amount, nature, and sensitivity of the information, the potential risk of harm from unauthorized use or disclosure, our purpose for processing the information, and any legal requirements.
+We’ll retain your Personal Information for as long as we need it in order to provide our Service to you or for other legitimate business purposes such as resolving disputes, for safety and security reasons, or complying with our legal obligations. How long we retain Personal Information will depend on a number of factors, such as the amount, nature, and sensitivity of the information, the potential risk of harm from unauthorized use or disclosure, our purpose for processing the information, and any legal requirements.
 
 ### 10. Changes to the Privacy Policy
 
-We may update this Privacy Policy from time to time. When we do, we will post an updated version on this page, unless another type of notice is required by applicable law.
+We may update this Privacy Policy from time to time. When we do, we will post an updated version on this page unless another type of notice is required by applicable law.
 
 ### 11. How to Contact Us
 
