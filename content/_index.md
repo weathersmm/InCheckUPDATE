@@ -80,6 +80,37 @@ hero_section:
 #     - "Vermont"
 #   image: "/assets/img/coverage_area.png"
 
+about_us_section:
+  title: >
+    <p>Intellux AI: Empowering Teams, Elevating Care.</p>
+  content: >
+    <div>At Intellux AI, we understand the weight of responsibility carried by EMS teams, healthcare providers, first responders and operational leaders. Split-second decisions can mean the difference between life and death, yet placing a seasoned supervisor on every truck or providing constant oversight is impractical and cost-prohibitive.
+    </div>
+    <div>That’s why we built Intellux AI: a suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it’s needed.
+    </div>
+    <div>Our team of leaders, mentors, operators, and providers brings first-hand experience to every solution we create. We know the challenges because we’ve lived them. That’s why our tools are purpose-built to support those on the frontlines.
+    </div>
+    <div>
+      <ul>
+        <li>Rampart empowers EMS professionals with real-time recommendations, like accurate medication dosing and differential diagnoses, boosting confidence, safety, and performance.</li>
+        <li>Nova breaks down language barriers, enabling seamless communication and ensuring that no patient or team member is misunderstood.</li>
+        <li>Yoda transforms policies and procedures into interactive, accessible guides, helping teams minimize mistakes and maximize autonomy.</li>
+      </ul>
+    </div>
+    <div>
+      Our tools increase safety and confidence, reduce the costs of mistakes and litigation, and enhance efficiency and performance. We believe in empowering teams with the confidence of having a mentor in their pocket—one that’s always accurate, reliable, and built for their challenges.
+    </div>
+    <div>
+      Our Promise
+      To the teams in the field, in the hospitals, and beyond:
+      We see you.
+      We support you.
+      We are here to make sure you are never alone in your decisions.
+      Because when you are empowered, confident, and equipped with the best tools, the impact you make is limitless—and we’re honored to be a part of your journey.
+    </div>
+
+
+
 products_section:
   title_one: Rampart
   title_two: Yoda
