@@ -133,12 +133,44 @@
 {{end}}
 <!-- End Deployed Section -->
 
-
 <!-- End coverage area-->
 <!-- ======= About Section ======= -->
+{{with .Params.about_us_section}}
+<section id="about-us" class="about_us">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h3>About us</h3>
+      {{ .title | safeHTML }}
+    </header>
+
+    <div class="row gx-0" style="display: flex; align-items: stretch; justify-content: center;">
+      <div
+        class="justify-content-center"
+        style="height: auto;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="content" style="height: 100%;">
+          {{ .content | safeHTML }}
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+<!-- End About Section -->
+
+
+<!-- End coverage area-->
+<!-- ======= Products Section ======= -->
 {{with .Params.products_section}}
 <section id="products" class="products">
   <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h3>Products</h3>
+      <p>Our products</p>
+    </header>
     <div class="row gx-0" style="display: flex; align-items: stretch; justify-content: center;">
       <div
         class="col-lg-6 d-flex flex-column justify-content-center"
@@ -196,7 +228,7 @@
   </div>
 </section>
 {{end}}
-<!-- End About Section -->
+<!-- End Products Section -->
 
 <!-- ======= F.A.Q Section ======= -->
 {{ with .Params.faq_section }}
