@@ -86,10 +86,9 @@ about_us_section:
   content: >
     <div>At Intellux AI, we understand the weight of responsibility carried by EMS teams, healthcare providers, first responders and operational leaders. Split-second decisions can mean the difference between life and death, yet placing a seasoned supervisor on every truck or providing constant oversight is impractical and cost-prohibitive.
     </div>
-    <div>That’s why we built Intellux AI: a suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it’s needed.
-    </div>
-    <div>Our team of leaders, mentors, operators, and providers brings first-hand experience to every solution we create. We know the challenges because we’ve lived them. That’s why our tools are purpose-built to support those on the frontlines.
-    </div>
+    <div>That’s why we built Intellux AI: a suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it’s needed.</div>
+    <div>Our team of leaders, mentors, operators, and providers brings first-hand experience to every solution we create. We know the challenges because we’ve lived them. That’s why our tools are purpose-built to support those on the frontlines.</div>
+    <br />
     <div>
       <ul>
         <li>Rampart empowers EMS professionals with real-time recommendations, like accurate medication dosing and differential diagnoses, boosting confidence, safety, and performance.</li>
@@ -97,6 +96,7 @@ about_us_section:
         <li>Yoda transforms policies and procedures into interactive, accessible guides, helping teams minimize mistakes and maximize autonomy.</li>
       </ul>
     </div>
+
     <div>
       Our tools increase safety and confidence, reduce the costs of mistakes and litigation, and enhance efficiency and performance. We believe in empowering teams with the confidence of having a mentor in their pocket—one that’s always accurate, reliable, and built for their challenges.
     </div>

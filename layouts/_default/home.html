@@ -150,7 +150,10 @@
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        {{ .content | safeHTML }}
+        <div class="content" style="height: 100%;">
+          {{ .content | safeHTML }}
+        </div>
+        
       </div>
     </div>
   </div>
@@ -164,6 +167,10 @@
 {{with .Params.products_section}}
 <section id="products" class="products">
   <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h3>Products</h3>
+      <p>Our products</p>
+    </header>
     <div class="row gx-0" style="display: flex; align-items: stretch; justify-content: center;">
       <div
         class="col-lg-6 d-flex flex-column justify-content-center"

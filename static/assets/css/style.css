@@ -533,6 +533,14 @@ section {
 # Products
 --------------------------------------------------------------*/
 
+.about_us .content {
+  background-image: linear-gradient(to bottom, rgba(45, 176, 232, 0.2), #ffffff);
+  padding: 40px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* 3D effect */
+  margin:20px;
+}
+
 .products .content {
   background-image: linear-gradient(to bottom, rgba(45, 176, 232, 0.2), #ffffff);
   padding: 40px;
@@ -914,6 +922,13 @@ section {
   margin: 0;
   font-family: var(--main-font);
   font-size: 14px;
+}
+
+.products h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .about_us h3 {
