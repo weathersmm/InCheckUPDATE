@@ -317,7 +317,7 @@ section {
 */
 .mobile-nav-toggle {
   color: #045de9;
-  font-size: 28px;
+  font-size: 48px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -348,9 +348,14 @@ section {
   .navbar .social-section .social-link a {
     padding: 00px;
   }
+  .navbar .social-section .social-link a img {
+    width: 4rem;
+    height: 4rem !important;
+    max-height: 100%;
+  }
   .social-mobile-section h3{
     display:block;
-    font-size: 14px;
+    font-size: 2rem;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
@@ -388,7 +393,7 @@ section {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
+  top: 75px;
   right: 15px;
   bottom: 15px;
   left: 15px;
@@ -401,7 +406,7 @@ section {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 2rem;
   color: #045de9;
 }
 .navbar-mobile a:hover,
@@ -498,10 +503,28 @@ section {
     background-attachment: fixed;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) { /** adjust font sizes **/
+  #faqlist1, .accordion-header button {
+    font-size: 1.5rem !important;
+  }
+  .content h3 {
+    font-size: 2rem !important;
+  }
+  .content div, .content p, .content ul {
+    font-size: 2rem;
+  }
+  .container {
+    max-width: 95% !important;
+  }
+  .section-header h3 {
+    font-size: 28px !important;
+  }
   .hero {
     /* height: auto; */
     padding: 120px 0 60px 0;
+  }
+  .hero h2 {
+    font-size: 40px;
   }
   .hero .hero-img {
     text-align: center;
@@ -509,6 +532,29 @@ section {
   }
   .hero .hero-img img {
     width: 80%;
+  }
+  .contact-options {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .contact-options div {
+    width: 100%;
+  }
+  .info-box p, .info-box h3 {
+    font-size: 2rem !important;
+  }
+  .footer {
+    font-size: 1.5rem !important;
+  }
+  .back-to-top, .back-to-top i {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+  }
+  .header .logo img {
+    max-height: 100%;
+    width: 4rem;
+    height: 4rem;
   }
 }
 @media (max-width: 768px) {
@@ -549,13 +595,13 @@ section {
   margin:20px;
 }
 .products .img {
-  max-width: 75%; /* Limits the size to half of its container */
-  height: auto; /* Maintains aspect ratio */
-  display: block; /* Ensures the image does not inline with text */
-  margin-left: auto; /* Aligns the image to the right side of the container */
-  padding: 10px; /* Adds space around the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
-  border-radius: 5px; /* Optional: rounds the corners */
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 .products h3 {
   font-size: 14px;
@@ -570,7 +616,7 @@ section {
 }
 .products p {
   margin: 15px 0 30px 0;
-  line-height: 24px;
+  /* line-height: 24px; */
 }
 .products .btn-read-more {
   line-height: 0;
@@ -606,15 +652,15 @@ section {
 --------------------------------------------------------------*/
 
 .values {
-  width: 100%; /* Ensures the container takes the full width of its parent */
-  margin: 0 auto; /* This can help ensure the container is centered if it doesn't already fill the viewport */
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; /* This should center the child boxes horizontally */
-  justify-content: center; /* Aligns children vertically if needed */
-  text-align: center; /* Ensure text inside the boxes is centered */
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
   background-image: linear-gradient(to bottom, rgba(45, 176, 232, 0.2), #ffffff);
-  padding: 70px; /* Adjust padding as needed */
+  padding: 70px; 
 }
 .values .box {
   display: flex;
@@ -1727,4 +1773,22 @@ section {
   .subtitle_home {
     width: auto; 
   }
+}
+
+.images-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  gap: 10px;
+  width: calc(50% - 5px);
+}
+
+.image-product {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 1;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
