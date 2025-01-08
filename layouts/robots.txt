@@ -7,4 +7,4 @@ Disallow: /tags
 Disallow: /categories
 Allow: /
 
-Sitemap: https://intellux.ai/sitemap.xml
+Sitemap: {{ .Site.BaseURL }}sitemap.xml

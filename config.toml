@@ -2,8 +2,14 @@ baseURL = 'https://intellux.ai/'
 languageCode = 'en-us'
 title = 'Intellux AI'
 
+[outputFormats]
+[outputFormats.RobotsTXT]
+  mediaType = "text/plain"
+  baseName = "robots"
+  isPlainText = true
+
 [outputs]
-home = ["HTML", "RSS", "RobotsTXT"]
+  home = ["HTML", "RSS", "RobotsTXT"]
 
 [taxonomies]
   tag = ""
