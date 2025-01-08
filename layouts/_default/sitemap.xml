@@ -1,0 +1,15 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- range .Site.Pages -}}
+  {{- if not (in .RelPermalink "/_mobile") -}}
+  {{- if not (in .RelPermalink "/tags") -}}
+  {{- if not (in .RelPermalink "/categories") -}}
+  <url>
+    <loc>{{ .Permalink | safeURL }}</loc>
+    <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+  </url>
+  {{- end -}}
+  {{- end -}}
+  {{- end -}}
+  {{- end -}}
+</urlset>
