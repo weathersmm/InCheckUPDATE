@@ -60,8 +60,11 @@ section {
   color: #045de9;
 }
 @media (max-width: 768px) {
+  .section-header {
+    padding-bottom: 0px;
+  }
   .section-header p {
-    font-size: 28px;
+    font-size: 1rem;
     line-height: 32px;
   }
 }
@@ -349,13 +352,12 @@ section {
     padding: 00px;
   }
   .navbar .social-section .social-link a img {
-    width: 4rem;
-    height: 4rem !important;
+    width: 2rem;
+    height: 2rem !important;
     max-height: 100%;
   }
   .social-mobile-section h3{
     display:block;
-    font-size: 2rem;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
@@ -406,7 +408,7 @@ section {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: #045de9;
 }
 .navbar-mobile a:hover,
@@ -504,20 +506,17 @@ section {
   }
 }
 @media (max-width: 991px) { /** adjust font sizes **/
-  #faqlist1, .accordion-header button {
-    font-size: 1.5rem !important;
-  }
   .content h3 {
-    font-size: 2rem !important;
+    /* font-size: 2rem !important; */
   }
-  .content div, .content p, .content ul {
+  /* .content div, .content p, .content ul {
     font-size: 2rem;
-  }
+  } */
   .container {
     max-width: 95% !important;
   }
   .section-header h3 {
-    font-size: 28px !important;
+    font-size: 1rem !important;
   }
   .hero {
     /* height: auto; */
@@ -540,21 +539,21 @@ section {
   .contact-options div {
     width: 100%;
   }
-  .info-box p, .info-box h3 {
+  /* .info-box p, .info-box h3 {
     font-size: 2rem !important;
-  }
+  } */
   .footer {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
   }
   .back-to-top, .back-to-top i {
-    width: 4rem;
-    height: 4rem;
-    font-size: 4rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
   }
   .header .logo img {
     max-height: 100%;
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -610,7 +609,7 @@ section {
   text-transform: uppercase;
 }
 .products h2 {
-  font-size: 24px;
+  font-size: 24px !important;
   font-weight: 700;
   color: #045de9;
 }
@@ -644,6 +643,9 @@ section {
 @media (max-width:991px){
   .products .img {
     display:none;
+  }
+  .products h2 {
+    font-size: 14px !important;
   }
 }
 
@@ -1791,4 +1793,9 @@ section {
   border-radius: 5px;
   object-fit: cover;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-product-nova {
+  width: 100% !important;
+  margin: 0 auto;
 }
