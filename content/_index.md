@@ -134,7 +134,7 @@ products_section:
     
     <p>Our mission is to empower EMS providers to grow into confident, capable practitioners with the support of an experienced mentor at their side. By offering reliable, real-time guidance during every patient interaction, Rampart helps bridge the gap between novice and seasoned medics, accelerating skill development, refining decision-making, and fostering professional growth.</p>
     
-    <p>With Rampart, EMS professionals gain more than a tool—they gain a trusted partner and mentor who brings expertise to every call. Together, we are closing the experience gap, elevating confidence, and revolutionizing emergency care with patient safety and professional development at the forefront</p>
+    <p>With Rampart, EMS professionals gain more than a tool—they gain a trusted partner and mentor who brings expertise to every call. Together, we are closing the experience gap, elevating confidence, and revolutionizing emergency care with patient safety and professional development at the forefront. </p>
   content_two: >
     <p>Intellux AI is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team’s hands to enable smarter, safer, and more autonomous decisions in the workplace.
 
