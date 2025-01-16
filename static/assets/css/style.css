@@ -1799,3 +1799,20 @@ section {
   width: 100% !important;
   margin: 0 auto;
 }
+
+.image-product-mobile {
+  display: none;
+}
+
+.image-product-desktop {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .image-product-desktop {
+    display: none;
+  }
+  .image-product-mobile {
+    display: flex;
+  }
+}
