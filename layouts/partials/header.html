@@ -24,6 +24,8 @@
 
         <li><a class="getstarted" href="https://chat.intellux.ai" target="_blank" rel="noopener noreferrer">Login/Chat</a></li>
 
+        <a id="mobile-tab" class="getstarted mobile-tab" href="/mobile/" target="_blank" rel="noopener noreferrer">Install on Mobile</a>
+
         <!-- Social Media Links -->
         <li>
           <ul class="social-section social-mobile-section">
@@ -52,6 +54,22 @@
         // Check if URL contains a special parameter to simulate the Incoming header
         const urlParams = new URLSearchParams(window.location.search);
         const incomingParam = urlParams.get('incoming');  // Check for ?incoming=jhgfsid96432
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // function mobileTab() {
+        //     try {
+        //         if (/android/i.test(userAgent)) {
+        //           document.getElementById('mobile-tab').innerHTML = 'Install on mobile';
+        //           document.getElementById('mobile-tab').href = "https://play.google.com/store/apps/details?id=ai.intellux.app";
+        //         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        //           document.getElementById('mobile-tab').innerHTML = 'App for Apple will be available this year';
+        //           document.getElementById('mobile-tab').className = 'unavailableLinkTab';
+        //           //document.getElementById('mobile-tab').href = "https://play.google.com/store/apps/details?id=ai.intellux.app";
+        //         }
+        //     } catch (error) {
+        //         showError();
+        //     }
+        // }
 
         // If the incoming param is detected, show the Upgrade button
         if (incomingParam === 'jhgfsid96432') {
@@ -71,5 +89,8 @@
                 window.location.href = upgradeUrl;
             });
         }
+
+        //mobileTab();
+
     });
 </script>
