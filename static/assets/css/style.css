@@ -1826,9 +1826,9 @@ section {
   }
 }
 
-.unavailableLinkTab {
+/* .unavailableLinkTab {
   text-overflow: clip;
   text-wrap: wrap;
   text-align: center;
   white-space: wrap !important;
-}
+} */
