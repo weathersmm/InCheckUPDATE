@@ -399,7 +399,6 @@ section {
   right: 15px;
   bottom: 15px;
   left: 15px;
-  padding: 10px 0;
   border-radius: 10px;
   background-color: #fff;
   overflow-y: auto;
@@ -1816,3 +1815,20 @@ section {
     display: flex;
   }
 }
+
+
+.mobile-tab {
+  display: none;
+}
+@media (max-width: 991px) {
+  .mobile-tab {
+    display: block;
+  }
+}
+
+/* .unavailableLinkTab {
+  text-overflow: clip;
+  text-wrap: wrap;
+  text-align: center;
+  white-space: wrap !important;
+} */
