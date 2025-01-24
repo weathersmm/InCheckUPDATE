@@ -112,9 +112,9 @@ about_us_section:
 
 
 products_section:
-  title_one: Rampart
-  title_two: Angel
-  title_three: Nova
+  title_one: Rampart (EMS Mode)
+  title_two: Angel (Company Mode)
+  title_three: Nova (Translate Mode)
   sub_title_one: Revolutionizing Healthcare with AI-Powered Solutions
   sub_title_two: Leading Change for Safer, Smarter Outcomes at the Work Place
   sub_title_three: Breaking Language Barriers, Empowering Connections
