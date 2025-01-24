@@ -93,7 +93,7 @@ about_us_section:
       <ul>
         <li>Rampart empowers EMS professionals with real-time recommendations, like accurate medication dosing and differential diagnoses, boosting confidence, safety, and performance.</li>
         <li>Nova breaks down language barriers, enabling seamless communication and ensuring that no patient or team member is misunderstood.</li>
-        <li>Yoda transforms policies and procedures into interactive, accessible guides, helping teams minimize mistakes and maximize autonomy.</li>
+        <li>Angel transforms policies and procedures into interactive, accessible guides, helping teams minimize mistakes and maximize autonomy.</li>
       </ul>
     </div>
 
@@ -113,7 +113,7 @@ about_us_section:
 
 products_section:
   title_one: Rampart
-  title_two: Yoda
+  title_two: Angel
   title_three: Nova
   sub_title_one: Revolutionizing Healthcare with AI-Powered Solutions
   sub_title_two: Leading Change for Safer, Smarter Outcomes at the Work Place
@@ -138,7 +138,7 @@ products_section:
   content_two: >
     <p>Intellux AI is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team’s hands to enable smarter, safer, and more autonomous decisions in the workplace.
 
-    <p>Introducing Yoda—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Yoda transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
+    <p>Introducing Angel—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Angel transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
     <ul>
       <li>Time and Attendance</li>
       <li>Mandatory Reporting</li>
@@ -147,18 +147,18 @@ products_section:
       <li>Hiring and Firing Policies</li>
     </ul>
 
-    <p>By providing immediate, reliable access to the most up-to-date, company-specific information, Yoda empowers your workforce to make informed decisions with greater independence—reducing the need for constant supervision and oversight.</p>
+    <p>By providing immediate, reliable access to the most up-to-date, company-specific information, Angel empowers your workforce to make informed decisions with greater independence—reducing the need for constant supervision and oversight.</p>
 
-    <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Yoda, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
+    <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Angel, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
 
-    <p>No more delays, confusion, or reliance on managers for answers—Yoda gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
+    <p>No more delays, confusion, or reliance on managers for answers—Angel gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
   content_three: >
     <p>Introducing Nova, your multilingual mentor designed to translate complex conversations into real-time, interactive, and accurate translations, empowering your team to overcome language challenges effortlessly. Whether in the field, during emergencies, or within daily operations, Nova ensures that our people, patients, and partners understand and are understood.</p>
 
     <ul>
       <li>Real-Time Voice Translation: Instantly converts spoken words into text or speech across multiple languages</li>
       <li>Optimized for healthcare and EMS, Nova accurately translates terminology, protocols, and critical care instructions.</li>
-      <li>Fully integrated with Intellux AI tools like Rampart and Yoda, ensuring SOPs, protocols, and insights are accessible in any language.</li>
+      <li>Fully integrated with Intellux AI tools like Rampart and Angel, ensuring SOPs, protocols, and insights are accessible in any language.</li>
       <li>High-Speed Accuracy: Uses advanced speech recognition to deliver fast, precise translations, even in high-pressure situations.</li>
       <li>Captures regional nuances to foster trust and understanding between diverse teams and communities.</li>
     </ul>
@@ -178,20 +178,20 @@ faq_section:
   title: F.A.Q
   sub_title: General FAQs for Intellux AI Tools
   faqs:
-    - q: Are Nova, Rampart, and Yoda HIPAA-compliant?
+    - q: Are Nova, Rampart, and Angel HIPAA-compliant?
       a: Yes, all Intellux AI products are HIPAA-compliant, ensuring data security and privacy.
 
     - q: Are the recommendations and translations verified?
-      a: Yes, all insights provided by Nova, Rampart, and Yoda are verified by experienced EMS and healthcare providers and powered by Actual Intelligence to ensure accuracy and reliability.
+      a: Yes, all insights provided by Nova, Rampart, and Angel are verified by experienced EMS and healthcare providers and powered by Actual Intelligence to ensure accuracy and reliability.
     
     - q: Do these tools have mobile apps?
-      a: Yes, all three tools—Nova, Rampart, and Yoda—are accessible via mobile applications compatible with all major platforms, ensuring ease of use and portability.
+      a: Yes, all three tools—Nova, Rampart, and Angel—are accessible via mobile applications compatible with all major platforms, ensuring ease of use and portability.
     
     - q: How do these tools help reduce workplace errors?
-      a: By acting as workplace mentors, Nova, Rampart, and Yoda leverage Actual Intelligence to provide real-time guidance, actionable insights, and immediate access to critical information, reducing liability and improving workplace efficiency.
+      a: By acting as workplace mentors, Nova, Rampart, and Angel leverage Actual Intelligence to provide real-time guidance, actionable insights, and immediate access to critical information, reducing liability and improving workplace efficiency.
     
     - q: Can these tools integrate with existing systems?
-      a: Absolutely! Nova, Rampart, and Yoda integrate seamlessly with your current platforms.
+      a: Absolutely! Nova, Rampart, and Angel integrate seamlessly with your current platforms.
 
     - q: How do I subscribe to Rampart?
       a: You can subscribe to Rampart through our website to access either the free tier or the unlimited plan 
