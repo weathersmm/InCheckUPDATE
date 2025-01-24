@@ -45,7 +45,7 @@ We may use Personal Information for the following purposes:
 
 **Aggregated or De-Identified Information:** We may aggregate or de-identify Personal Information so that it may no longer be used to identify you and use such information to analyze the effectiveness of our Services, to improve and add features to our Services, to conduct research and for other similar purposes. We will maintain and use de-identified information in anonymous or de-identified form and we will not attempt to re-identify the information, unless required by law.
 
-As noted above, we may use Content you provide us to improve our Services; for example, to train the models that power Rampart, Nova and Yoda. Read our instructions on how you can opt out of our use of your Content to train our models. Our Team and Enterprise plans offer the option to opt out, otherwise, you may contact us at [support@intellux.ai](mailto:support@intellux.ai) to opt out.
+As noted above, we may use Content you provide us to improve our Services; for example, to train the models that power Rampart, Nova and Angel. Read our instructions on how you can opt out of our use of your Content to train our models. Our Team and Enterprise plans offer the option to opt out, otherwise, you may contact us at [support@intellux.ai](mailto:support@intellux.ai) to opt out.
 
 ### 3. Disclosure of Personal Information
 
@@ -72,7 +72,7 @@ Depending on location, individuals may have certain statutory rights in relation
 
 You can exercise some of these rights through your Intellux AI account. If you are unable to exercise your rights through your account, please submit your request through [privacy@intellux.ai](mailto:privacy@intellux.ai)
 
-**A note about accuracy:** Services like Rampart, Nova and Yoda generate responses by reading a user’s request and, in response, predicting the words most likely to appear next. In some cases, the words most likely to appear next may not be the most factually accurate. For this reason, you should not rely on the factual accuracy of output from our models. If you notice that Rampart, Nova or Yoda's output contains factually inaccurate information about you and you would like us to correct the inaccuracy, you may submit a correction request through [privacy@intellux.ai](mailto:privacy@intellux.ai) . Given the technical complexity of how our models work, we may not be able to correct the inaccuracy in every instance. In that case, you may request that we remove your Personal Information from Rampart, Nova or Yoda's’s output by writing to us at [privacy@intellux.ai](mailto:privacy@intellux.ai)
+**A note about accuracy:** Services like Rampart, Nova and Angel generate responses by reading a user’s request and, in response, predicting the words most likely to appear next. In some cases, the words most likely to appear next may not be the most factually accurate. For this reason, you should not rely on the factual accuracy of output from our models. If you notice that Rampart, Nova or Angel's output contains factually inaccurate information about you and you would like us to correct the inaccuracy, you may submit a correction request through [privacy@intellux.ai](mailto:privacy@intellux.ai) . Given the technical complexity of how our models work, we may not be able to correct the inaccuracy in every instance. In that case, you may request that we remove your Personal Information from Rampart, Nova or Angel's’s output by writing to us at [privacy@intellux.ai](mailto:privacy@intellux.ai)
 
 ### 5. Additional U.S. State Disclosures
 
