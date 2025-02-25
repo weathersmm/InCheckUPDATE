@@ -461,11 +461,20 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .hero {
     background-image: url('/assets/img/ai-ems-brain-mobile.png') !important;
-    background-size: cover !important;
-    background-position: center !important;
+    background-size: 100% !important;
+    background-position: bottom !important;
+    background-repeat: no-repeat !important;
+    background-color: #f6f7ff !important;
+  }
+}
+@media (max-width: 1025px) {
+  .hero {
+    background-image: url('/assets/img/ai-ems-brain-mobile.png') !important;
+    background-size: 100% !important;
+    background-position: bottom !important;
     background-repeat: no-repeat !important;
     background-color: #f6f7ff !important;
   }
@@ -473,14 +482,13 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background-size: cover;
   background-color: #f6f7ff !important;
   background-image: 
     linear-gradient(to bottom, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%), /* Blend at top */
     linear-gradient(to top, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%), /* Blend at bottom */
     url('/assets/img/ai-ems-brain.png');
   background-size: auto 80%;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat; 
   position: relative;
 }
@@ -1783,7 +1791,7 @@ section {
 .content_hero {
   text-align: left;
 }
-@media (max-width: 992px) {
+@media (max-width: 1025px) {
   .content_hero {
     text-align: center !important;
   }
@@ -1792,14 +1800,23 @@ section {
     max-width: 100% !important;
   }
   .hero h2 {
-    line-height: 30px !important;
+    line-height: 50px !important;
     text-align: center !important;
   }
   .overlay {
-    margin-top: -25dvh;
+    margin-top: -50dvh;
   }
   #buttons-hero {
     justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .overlay {
+    margin-top: -25dvh;
+  }
+  .hero h2 {
+    line-height: 30px !important;
+    text-align: center !important;
   }
 }
 .content_hero {
