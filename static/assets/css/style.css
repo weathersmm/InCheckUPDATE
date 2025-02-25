@@ -3,17 +3,20 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
-  --main-font: "Poppins", sans-serif;
+  --main-font: "Roboto", sans-serif;
   --main-color: #734ae8;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  font-family: "Roboto", sans-serif;
+  color: #404040;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 a {
-  color: #045de9;
+  color: #070E36;
   text-decoration: none;
 }
 
@@ -28,8 +31,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
 }
+
+#hero {
+  background-image: url('/assets/img/ai-ems-brain.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  position: relative;
+}
+@media (max-width: 992px) {
+  #hero {
+    background-image: url('/assets/img/ai-ems-brain-mobile.png');
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Sections
@@ -158,6 +176,11 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  font-weight: 700;
+  line-height: 50px;
+  color: #070E36 !important;
+  size: 42px;
+  font-family: "Kanit", sans-serif !important;
 }
 .header.header-scrolled {
   background: #fff;
@@ -213,13 +236,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: var(--main-font);
+  padding: 0px 10px 0px 10px;
   font-size: 16px;
-  font-weight: 700;
-  color: #013289;
   white-space: nowrap;
   transition: 0.3s;
+  color: #070E36;
 }
 .navbar a i,
 .navbar a:focus i {
@@ -231,12 +252,11 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #045de9;
+  color: #070E36;
 }
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #045de9;
-  padding: 8px 20px;
+  background: #045de9; /* 070E36 */
   margin-left: 30px;
   border-radius: 4px;
   color: #fff;
@@ -384,7 +404,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(1, 22, 61, 0.9);
+  background: #070E36e6;
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -406,14 +426,13 @@ section {
 }
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
   /* font-size: 2rem; */
-  color: #045de9;
+  color: #070E36;
 }
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #045de9;
+  color: #070E36;
 }
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
@@ -519,7 +538,7 @@ section {
   }
   .hero {
     /* height: auto; */
-    padding: 120px 0 60px 0;
+    padding: 60px 0 60px 0;
   }
   .hero h2 {
     font-size: 40px;
@@ -603,7 +622,6 @@ section {
 }
 .products h3 {
   font-size: 14px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
@@ -784,7 +802,6 @@ section {
 /* Smaller headings under .values but not inside .box */
 .values h3{
   font-size: 14px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
@@ -892,7 +909,6 @@ section {
 }
 .deployed h3{
   font-size: 14px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
@@ -973,21 +989,18 @@ section {
 
 .products h3 {
   font-size: 14px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
 
 .about_us h3 {
   font-size: 14px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
 
 .faq h3 {
   font-size: 14px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1007,7 +1020,6 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   margin: 20px 0 10px 0;
@@ -1090,7 +1102,6 @@ section {
 }
 .contact h3 {
   font-size: 14px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1753,11 +1764,15 @@ section {
 
 
 /*** HOME - Title and Subtitle ***/
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .title_home {
   padding:10px 0px;
   color: #ffffff; 
   text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.882); 
-  width: max-content;
 }
 .subtitle_home {
   background: #007bffc2;
