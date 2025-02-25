@@ -25,14 +25,14 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: "Kanit", sans-serif !important;
-}
+} */
 
 #hero {
   background-image: url('/assets/img/ai-ems-brain.png');
@@ -60,7 +60,6 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 40px;
-  font-family: "Kanit", sans-serif !important;
 }
 .section-header h2 {
   font-size: 13px;
@@ -76,7 +75,7 @@ section {
   font-size: 42px;
   line-height: 50px;
   font-weight: 700;
-  color: #070E36;
+  color: #045de9;
 }
 @media (max-width: 768px) {
   .section-header {
@@ -180,6 +179,8 @@ section {
   font-weight: 700;
   line-height: 50px;
   color: #070E36 !important;
+  font-family: "Poppins", sans-serif;
+  
 }
 .header.header-scrolled {
   background: #fff;
@@ -486,9 +487,15 @@ section {
   color: #fff;
 }
 .hero h2 {
-  color: #fff;
-  margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #070E36;
+  text-align: left;
+  font-family: 'Kanit', sans-serif;
+}
+.hero h2 .title-marked {
+  color: #5371fe;
 }
 .hero .btn-get-started {
   margin-top: 30px;
@@ -622,12 +629,14 @@ section {
 .products h3 {
   font-size: 14px;
   color: #000000;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .products h2 {
   font-size: 24px !important;
   font-weight: 700;
-  color: #070E36;
+  color: #045de9;
+  font-family: 'Poppins', sans-serif;
 }
 .products p {
   margin: 15px 0 30px 0;
@@ -988,18 +997,21 @@ section {
 
 .products h3 {
   font-size: 14px;
+  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
 
 .about_us h3 {
   font-size: 14px;
+  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
 
 .faq h3 {
   font-size: 14px;
+  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1762,8 +1774,46 @@ section {
 }
 
 
-/*** HOME - Title and Subtitle ***/
-.overlay {
+/*** HOME - Hero ***/
+.content_hero {
+  text-align: left;
+}
+.text-hero {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #404040;
+  margin: 30px 0px;
+  max-width: 50%;
+}
+#buttons-hero {
+  display: flex;
+  gap: 10px;
+  font-family: 'Kanit', sans-serif;
+  margin-top: 15px;
+}
+#button-1 {
+  background-color: #5371fe;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#button-2 {
+  color: #5371fe;
+  border: 1px solid #5371fe;
+  padding: 10px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 100ms linear;
+}
+#button-2:hover {
+  background-color: #5371fe;
+  color: #fff;
+  transition: all 100ms linear;
+}
+/* .overlay {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1779,7 +1829,7 @@ section {
   width: max-content; 
   color: #ffffff; 
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
+} */
 
 @media (max-width: 991px) {
   .title_home {

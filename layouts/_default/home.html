@@ -6,16 +6,16 @@
   class="hero d-flex align-items-center justify-content-center"
 >
   <!-- Dark Overlay for Contrast -->
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.2);"></div>
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
 
   <div class="container" style="position: relative; z-index: 1;">
     <div class="row justify-content-center">
       <div
-        class="col-lg-9 d-flex flex-column justify-content-center text-center align-items-center"
+        class="d-flex flex-column justify-content-center text-center align-items-center"
       >
         <div class="overlay">
-          <h1 class="title_home" data-aos="fade-up">{{.title}}</h1>
-          <h2 class="subtitle_home" data-aos="fade-up" data-aos-delay="400">{{.content | safeHTML}}</h2>
+          <div class="content_hero">{{.content | safeHTML}}</div>
+          <!-- <h2 class="subtitle_home" data-aos="fade-up" data-aos-delay="400">{{.content | safeHTML}}</h2> -->
           <!-- <div data-aos="fade-up" data-aos-delay="600">
             {{ with .buttons}}
             <div class="text-center">
