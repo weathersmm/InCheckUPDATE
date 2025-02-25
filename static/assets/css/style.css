@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: var(--main-font); */
+  font-family: "Kanit", sans-serif !important;
 }
 
 #hero {
@@ -60,6 +60,7 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 40px;
+  font-family: "Kanit", sans-serif !important;
 }
 .section-header h2 {
   font-size: 13px;
@@ -72,10 +73,10 @@ section {
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 38px;
-  line-height: 42px;
+  font-size: 42px;
+  line-height: 50px;
   font-weight: 700;
-  color: #045de9;
+  color: #070E36;
 }
 @media (max-width: 768px) {
   .section-header {
@@ -179,8 +180,6 @@ section {
   font-weight: 700;
   line-height: 50px;
   color: #070E36 !important;
-  size: 42px;
-  font-family: "Kanit", sans-serif !important;
 }
 .header.header-scrolled {
   background: #fff;
@@ -240,7 +239,7 @@ section {
   font-size: 16px;
   white-space: nowrap;
   transition: 0.3s;
-  color: #070E36;
+  color: #045de9;
 }
 .navbar a i,
 .navbar a:focus i {
@@ -252,7 +251,7 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #070E36;
+  color: #5969f3;
 }
 .navbar .getstarted,
 .navbar .getstarted:focus {
@@ -427,7 +426,7 @@ section {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   /* font-size: 2rem; */
-  color: #070E36;
+  color: #045de9;
 }
 .navbar-mobile a:hover,
 .navbar-mobile .active,
@@ -628,7 +627,7 @@ section {
 .products h2 {
   font-size: 24px !important;
   font-weight: 700;
-  color: #045de9;
+  color: #070E36;
 }
 .products p {
   margin: 15px 0 30px 0;
