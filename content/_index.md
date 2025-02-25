@@ -2,9 +2,15 @@
 title: Actual Intelligence
 
 hero_section:
-  title: Introducing Intellux AI
   content: >
-    <div>Empowering Smarter Decisions with <strong>Actual Intelligence</strong>.</div>
+    <h2>Introducing Intellux <span class="title-marked">AI</span></h2>
+    <h2>Empowering Smarter Decisions</h2>
+    <h2>with <span class="title-marked">Actual Intelligence</span></h2>
+    <div class="text-hero">A suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it's needed. </div>
+    <div id="buttons-hero">
+      <a href="/#products"><div id="button-1">Our Products</div></a>
+      <a href="/#contact"><div id="button-2">Book a Demo</div></a>
+    </div>
   # buttons:
   #   - label: Get Started
   #     link: "#values"
