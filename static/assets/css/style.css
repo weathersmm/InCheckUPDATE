@@ -63,7 +63,7 @@ section {
   font-size: 42px;
   line-height: 50px;
   font-weight: 700;
-  color: #045de9;
+  color: #5371fe;
 }
 @media (max-width: 768px) {
   .section-header {
@@ -129,7 +129,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #045de9;
+  background: #5371fe;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -141,7 +141,7 @@ section {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #6776f4;
+  background: #045de9;
   color: #fff;
 }
 .back-to-top.active {
@@ -228,7 +228,7 @@ section {
   font-size: 16px;
   white-space: nowrap;
   transition: 0.3s;
-  color: #045de9;
+  color: #5371fe;
 }
 .navbar a i,
 .navbar a:focus i {
@@ -240,11 +240,11 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #5969f3;
+  color: #045de9;
 }
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #045de9; /* 070E36 */
+  background: #5371fe;
   margin-left: 30px;
   border-radius: 4px;
   color: #fff;
@@ -252,7 +252,7 @@ section {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #5969f3;
+  background: #045de9;
 }
 .navbar .dropdown ul {
   display: block;
@@ -648,7 +648,7 @@ section {
 .products h2 {
   font-size: 24px !important;
   font-weight: 700;
-  color: #045de9;
+  color: #5371fe;
   font-family: 'Poppins', sans-serif;
 }
 .products p {
@@ -1039,7 +1039,7 @@ section {
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #045de9;
+  color: #5371fe;
 }
 
 .contact .info-box h3 {
@@ -1843,7 +1843,13 @@ section {
   padding: 10px 35px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 100ms linear;
 }
+#button-1:hover {
+  background-color: #045de9;
+  transition: all 100ms linear;
+}
+
 #button-2 {
   color: #5371fe;
   border: 1px solid #5371fe;
