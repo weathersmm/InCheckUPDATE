@@ -7,7 +7,7 @@ layout: policy
 
 Effective: December 23, 2024
 
-We at Intellux AI, Inc (together with our affiliates, “Intellux AI”, “we”, “our” or “us”) respect your privacy and are strongly committed to keeping secure any information we obtain from you or about you. This Privacy Policy describes our practices with respect to Personal Information we collect from or about you when you use our website, applications, and services (collectively, “Services”).
+We at InCheck, Inc (together with our affiliates, “InCheck”, “we”, “our” or “us”) respect your privacy and are strongly committed to keeping secure any information we obtain from you or about you. This Privacy Policy describes our practices with respect to Personal Information we collect from or about you when you use our website, applications, and services (collectively, “Services”).
 
 ### 1. Personal Information We Collect
 
@@ -54,8 +54,8 @@ In certain circumstances we may provide your Personal Information to third parti
 - **Vendors and Service Providers:** To assist us in meeting business operations needs and to perform certain services and functions, we may provide Personal Information to vendors and service providers, including providers of hosting services, customer service vendors, cloud services, email communication software, web analytics services, and other information technology providers, among others. Pursuant to our instructions, these parties will access, process, or store Personal Information only in the course of performing their duties to us.
 - **Business Transfers:** If we are involved in strategic transactions, reorganization, bankruptcy, receivership, or transition of service to another provider (collectively, a “Transaction”), your Personal Information and other information may be disclosed in the diligence process with counterparties and others assisting with the Transaction and transferred to a successor as part of that Transaction along with other assets.
 - **Legal Requirements:** We may share your Personal Information, including information about your interaction with our Services, with government authorities, industry peers, or other third parties (i) if required to do so by law or in the good faith belief that such action is necessary to comply with a legal obligation, (ii) to protect and defend our rights or property, (iii) if we determine, in our sole discretion, that there is a violation of our terms, policies, or the law; (iv) to detect or prevent fraud or other illegal activity; (v) to protect the safety, security, and integrity of our products, employees, or users, or the public, or (vi) to protect against legal liability.
-- **Business Account Administrators:** When you join a Intellux AI Enterprise or business account, the administrators of that account may access and control your Intellux AI account. In addition, if you create an account using an email address belonging to your employer or another organization, we may share the fact that you have an Intellux AI account and certain account information, such as your email address, with your employer or organization to, for example, enable you to be added to their business account.
-- **Other Users and Third Parties You Share Information With:** Certain features allow you to display or share information with other users or third parties. For example, you may share Intellux AI conversations with other users via shared links. Be sure you trust any user or third party with whom you share information.
+- **Business Account Administrators:** When you join a InCheck Enterprise or business account, the administrators of that account may access and control your InCheck account. In addition, if you create an account using an email address belonging to your employer or another organization, we may share the fact that you have an InCheck account and certain account information, such as your email address, with your employer or organization to, for example, enable you to be added to their business account.
+- **Other Users and Third Parties You Share Information With:** Certain features allow you to display or share information with other users or third parties. For example, you may share InCheck conversations with other users via shared links. Be sure you trust any user or third party with whom you share information.
 
 ### 4. Your Rights
 
@@ -70,7 +70,7 @@ Depending on location, individuals may have certain statutory rights in relation
 - **Object** to how we process your Personal Information.
 - **Lodge** a complaint with your local data protection authority.
 
-You can exercise some of these rights through your Intellux AI account. If you are unable to exercise your rights through your account, please submit your request through [privacy@intellux.ai](mailto:privacy@intellux.ai)
+You can exercise some of these rights through your InCheck account. If you are unable to exercise your rights through your account, please submit your request through [privacy@intellux.ai](mailto:privacy@intellux.ai)
 
 **A note about accuracy:** Services like Rampart, Nova and Angel generate responses by reading a user’s request and, in response, predicting the words most likely to appear next. In some cases, the words most likely to appear next may not be the most factually accurate. For this reason, you should not rely on the factual accuracy of output from our models. If you notice that Rampart, Nova or Angel's output contains factually inaccurate information about you and you would like us to correct the inaccuracy, you may submit a correction request through [privacy@intellux.ai](mailto:privacy@intellux.ai) . Given the technical complexity of how our models work, we may not be able to correct the inaccuracy in every instance. In that case, you may request that we remove your Personal Information from Rampart, Nova or Angel's’s output by writing to us at [privacy@intellux.ai](mailto:privacy@intellux.ai)
 
@@ -105,11 +105,11 @@ We don’t “sell” Personal Information or “share” Personal Information f
 
 ### 6. Children
 
-Our Service is not directed to children under the age of 18. Intellux AI does not knowingly collect Personal Information from children under the age of 18. If you have reason to believe that a child under the age of 18 has provided Personal Information to Intellux AI through the Service, please email us at [legal@intellux.ai](mailto:legal@intellux.ai) . We will investigate any notification, and if appropriate, delete the Personal Information from our systems.
+Our Service is not directed to children under the age of 18. InCheck does not knowingly collect Personal Information from children under the age of 18. If you have reason to believe that a child under the age of 18 has provided Personal Information to InCheck through the Service, please email us at [legal@intellux.ai](mailto:legal@intellux.ai) . We will investigate any notification, and if appropriate, delete the Personal Information from our systems.
 
 ### 7. Links to Other Websites
 
-The Service may contain links to other websites not operated or controlled by Intellux AI, including social media services (“Third Party Sites”). The information that you share with third-party sites will be governed by the specific privacy policies and terms of service of the third-party sites and not by this privacy policy. By providing these links, we do not imply that we endorse or have reviewed these sites. Please contact the Third Party Sites directly for information on their privacy practices and policies.
+The Service may contain links to other websites not operated or controlled by InCheck, including social media services (“Third Party Sites”). The information that you share with third-party sites will be governed by the specific privacy policies and terms of service of the third-party sites and not by this privacy policy. By providing these links, we do not imply that we endorse or have reviewed these sites. Please contact the Third Party Sites directly for information on their privacy practices and policies.
 
 ### 8. Security and Retention
 

@@ -5,16 +5,16 @@ layout: policy
 
 # Effective: December 23, 2024
 
-Thank you for using Intellux AI
+Thank you for using InCheck
 
-These Terms of Use apply to your use of Intellux AI and Intellux’s other services for individuals, along with any associated software applications and websites (all together, “Services”). These Terms form an agreement between you and Intellux AI, Inc, a Delaware company, and they include important provisions for resolving disputes through arbitration. By using our Services, you agree to these Terms.
+These Terms of Use apply to your use of InCheck and Intellux’s other services for individuals, along with any associated software applications and websites (all together, “Services”). These Terms form an agreement between you and InCheck, Inc, a Delaware company, and they include important provisions for resolving disputes through arbitration. By using our Services, you agree to these Terms.
 
 Our privacy policy explains how we collect and use personal information. Although it does not form part of these Terms, it is an important document that you should read.
 
 
 ## Who we are
 
-Intellux AI is an AI development and deployment company focused on healthcare and the Emergency Medical Services sector. For more information about Intellux AI, please visit [https://intellux.ai](https://intellux.ai).
+InCheck is an AI development and deployment company focused on healthcare and the Emergency Medical Services sector. For more information about InCheck, please visit [https://intellux.ai](https://intellux.ai).
 
 ## Registration and Access
 
@@ -34,7 +34,7 @@ Intellux AI is an AI development and deployment company focused on healthcare an
 - Automatically or programmatically extract data or Output (defined below).
 - Represent that Output was human-generated when it was not.
 - Interfere with or disrupt our Services, including circumventing any rate limits or restrictions or bypassing any protective measures or safety mitigations we put on our Services.
-- Use Output to develop models that compete with Intellux AI.
+- Use Output to develop models that compete with InCheck.
 
 **Software.** Our Services may allow you to download software, such as mobile applications, which may update automatically to ensure you’re using the latest version. Our software may include open-source software that is governed by its own licenses that we’ve made available to you.
 
@@ -48,7 +48,7 @@ Intellux AI is an AI development and deployment company focused on healthcare an
 
 **Your Content.** You may provide input to the Services (“Input”), and receive output from the Services based on the Input (“Output”). Input and Output are collectively “Content.” You are responsible for Content, including ensuring that it does not violate any applicable law or these Terms. You represent and warrant that you have all rights, licenses, and permissions needed to provide input to our Services.
 
-**Ownership of Content.** As between you and Intellux AI, and to the extent permitted by applicable law, you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our rights, title, and interest, if any, in and to Output.
+**Ownership of Content.** As between you and InCheck, and to the extent permitted by applicable law, you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our rights, title, and interest, if any, in and to Output.
 
 **Similarity of Content.** Due to the nature of our Services and artificial intelligence generally, output may not be unique, and other users may receive similar output from our Services. Our assignment above does not extend to other users’ output or any Third Party Output.
 
@@ -63,7 +63,7 @@ When you use our Services, you understand and agree:
 - Output may not always be accurate. You should not rely on Output from our Services as a sole source of truth or factual information or as a substitute for professional advice.
 - You must evaluate Output for accuracy and appropriateness for your use case, including using human review as appropriate, before using or sharing Output from the Services.
 - You must not use any Output relating to a person for any purpose that could have a legal or material impact on that person, such as making credit, educational, employment, housing, insurance, legal, medical, or other important decisions about them.
-- Our Services may provide incomplete, incorrect, or offensive Output that does not represent Intellux AI’s views. If Output references any third-party products or services, it doesn’t mean the third party endorses or is affiliated with Intellux AI.
+- Our Services may provide incomplete, incorrect, or offensive Output that does not represent InCheck’s views. If Output references any third-party products or services, it doesn’t mean the third party endorses or is affiliated with InCheck.
 
 ## Our Intellectual Property Rights
 
@@ -85,7 +85,7 @@ You can cancel your paid subscription at any time. Payments are non-refundable, 
 
 - You breached these Terms.
 - We must do so to comply with the law.
-- Your use of our Services could cause risk or harm to Intellux AI, our users, or anyone else.
+- Your use of our Services could cause risk or harm to InCheck, our users, or anyone else.
 
 **Appeals.** If you believe we have suspended or terminated your account in error, you can file an appeal with us by writing to [support@intellux.ai](mailto:support@intellux.ai).
 
@@ -113,23 +113,23 @@ If you are a business or organization, to the extent permitted by law, you will 
 
 ## Dispute Resolution
 
-YOU AND INTELLUX AI AGREE TO THE FOLLOWING MANDATORY ARBITRATION AND CLASS ACTION WAIVER PROVISIONS:
+YOU AND INCHECK AGREE TO THE FOLLOWING MANDATORY ARBITRATION AND CLASS ACTION WAIVER PROVISIONS:
 
-**MANDATORY ARBITRATION.** You and Intellux AI agree to resolve any claims arising out of or relating to these Terms or our Services, regardless of when the claim arose, even if it was before these Terms existed (a “Dispute”), through final and binding arbitration. You may opt out of arbitration within 30 days of account creation or of any updates to these arbitration terms within 30 days after the update has taken effect when we request it. If you opt out of an update, the last set of agreed-upon arbitration terms will apply.
+**MANDATORY ARBITRATION.** You and InCheck agree to resolve any claims arising out of or relating to these Terms or our Services, regardless of when the claim arose, even if it was before these Terms existed (a “Dispute”), through final and binding arbitration. You may opt out of arbitration within 30 days of account creation or of any updates to these arbitration terms within 30 days after the update has taken effect when we request it. If you opt out of an update, the last set of agreed-upon arbitration terms will apply.
 
 **Informal Dispute Resolution.** We would like to understand and try to address your concerns prior to formal legal action. Before either of us files a claim against the other, we both agree to try to resolve the Dispute informally. You agree to do so by sending us notice at [legal@intellux.ai](mailto:legal@intellux.ai). We will do so by sending you notice to the email address associated with your account. If we are unable to resolve a Dispute within 60 days, either of us has the right to initiate arbitration. We also both agree to attend an individual settlement conference if either party requests one during this time. Any statute of limitations will be tolled during this informal resolution process.
 
-**Arbitration Forum.** If we are unable to resolve the Dispute, either of us may commence arbitration with National Arbitration and Mediation (“NAM”) under its Comprehensive Dispute Resolution Rules and Procedures and/or Supplemental Rules for Mass Arbitration Filings, as applicable. Intellux AI will not seek attorneys’ fees and costs in arbitration unless the arbitrator determines that your claim is frivolous. The activities described in these Terms involve interstate commerce, and the Federal Arbitration Act will govern the interpretation and enforcement of these arbitration terms and any arbitration.
+**Arbitration Forum.** If we are unable to resolve the Dispute, either of us may commence arbitration with National Arbitration and Mediation (“NAM”) under its Comprehensive Dispute Resolution Rules and Procedures and/or Supplemental Rules for Mass Arbitration Filings, as applicable. InCheck will not seek attorneys’ fees and costs in arbitration unless the arbitrator determines that your claim is frivolous. The activities described in these Terms involve interstate commerce, and the Federal Arbitration Act will govern the interpretation and enforcement of these arbitration terms and any arbitration.
 
 **Arbitration Procedures.** The arbitration will be conducted by videoconference if possible. Still, if the arbitrator determines a hearing should be conducted in person, the location will be mutually agreed upon, in the county where you reside or as determined by the arbitrator, unless the batch arbitration process applies. The arbitration will be conducted by a sole arbitrator. The arbitrator will have exclusive authority to resolve any dispute, except where it is not applicable by law. Any settlement offer amounts will not be disclosed to the arbitrator by either party until after the arbitrator determines the final award, if any. The arbitrator has the authority to grant motions dispositive of all or part of any Dispute.
 
 **Exceptions.** This section does not require informal dispute resolution or arbitration of the following claims: (i) individual claims brought in small claims court; and (ii) injunctive or other equitable relief to stop unauthorized use or abuse of the Services or intellectual property infringement or misappropriation.
 
-**CLASS AND JURY TRIAL WAIVERS.** You and Intellux AI agree that Disputes must be brought on an individual basis only, and may not be brought as a plaintiff or class member in any purported class, consolidated, or representative proceeding. Class arbitrations, class actions, and representative actions are prohibited. Only individual relief is available. The parties agree to sever and litigate in court any request for public injunctive relief after completing arbitration for the underlying claim and all other claims. This does not prevent either party from participating in a class-wide settlement. You and Intellux AI knowingly and irrevocably waive any right to trial by jury in any action, proceeding, or counterclaim.
+**CLASS AND JURY TRIAL WAIVERS.** You and InCheck agree that Disputes must be brought on an individual basis only, and may not be brought as a plaintiff or class member in any purported class, consolidated, or representative proceeding. Class arbitrations, class actions, and representative actions are prohibited. Only individual relief is available. The parties agree to sever and litigate in court any request for public injunctive relief after completing arbitration for the underlying claim and all other claims. This does not prevent either party from participating in a class-wide settlement. You and InCheck knowingly and irrevocably waive any right to trial by jury in any action, proceeding, or counterclaim.
 
 ## Batch Arbitration
 
-If 25 or more claimants represented by the same or similar counsel file demands for arbitration raising substantially similar Disputes within 90 days of each other, then you and Intellux AI agree that NAM will administer them in batches of up to 50 claimants each (“Batch”), unless there are less than 50 claimants in total or after batching, which will comprise a single Batch. NAM will administer each Batch as a single consolidated arbitration with one arbitrator, one set of arbitration fees, and one hearing held by videoconference or in a location decided by the arbitrator for each Batch. If any part of this section is found to be invalid or unenforceable as to a particular claimant or Batch, it will be severed and arbitrated in individual proceedings.
+If 25 or more claimants represented by the same or similar counsel file demands for arbitration raising substantially similar Disputes within 90 days of each other, then you and InCheck agree that NAM will administer them in batches of up to 50 claimants each (“Batch”), unless there are less than 50 claimants in total or after batching, which will comprise a single Batch. NAM will administer each Batch as a single consolidated arbitration with one arbitrator, one set of arbitration fees, and one hearing held by videoconference or in a location decided by the arbitrator for each Batch. If any part of this section is found to be invalid or unenforceable as to a particular claimant or Batch, it will be severed and arbitrated in individual proceedings.
 
 ## Severability
 
@@ -174,4 +174,4 @@ You must comply with all applicable trade laws, including sanctions and export c
 
 ### Entire Agreement
 
-These Terms contain the entire agreement between you and Intellux AI regarding the Services and, other than any Service-specific terms, supersedes any prior or contemporaneous agreements between you and Intellux AI.
+These Terms contain the entire agreement between you and InCheck regarding the Services and, other than any Service-specific terms, supersedes any prior or contemporaneous agreements between you and InCheck.

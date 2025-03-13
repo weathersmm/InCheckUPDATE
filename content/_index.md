@@ -88,11 +88,11 @@ hero_section:
 
 about_us_section:
   title: >
-    <p>Intellux AI: Empowering Teams, Elevating Care.</p>
+    <p>InCheck: Empowering Teams, Elevating Care.</p>
   content: >
-    <div>At Intellux AI, we understand the weight of responsibility carried by EMS teams, healthcare providers, first responders and operational leaders. Split-second decisions can mean the difference between life and death, yet placing a seasoned supervisor on every truck or providing constant oversight is impractical and cost-prohibitive.
+    <div>At InCheck, we understand the weight of responsibility carried by EMS teams, healthcare providers, first responders and operational leaders. Split-second decisions can mean the difference between life and death, yet placing a seasoned supervisor on every truck or providing constant oversight is impractical and cost-prohibitive.
     </div>
-    <div>That’s why we built Intellux AI: a suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it’s needed.</div>
+    <div>That’s why we built InCheck: a suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it’s needed.</div>
     <div>Our team of leaders, mentors, operators, and providers brings first-hand experience to every solution we create. We know the challenges because we’ve lived them. That’s why our tools are purpose-built to support those on the frontlines.</div>
     <br />
     <div>
@@ -126,7 +126,7 @@ products_section:
   sub_title_three: Breaking Language Barriers, Empowering Connections
   image: /assets/img/ai-ems-brain.png
   content_one: >
-    <p>Intellux AI, Ltd. is transforming Healthcare, Pre Hospital Medicine and Mobile Integrated Health with Actual Intelligence (AI). We are proud to introduce Rampart—the ultimate experienced partner and mentor, designed to bridge the gap between emerging professional and seasoned professionals by bringing real-world expertise and guidance directly to the field.</p>
+    <p>InCheck, Ltd. is transforming Healthcare, Pre Hospital Medicine and Mobile Integrated Health with Actual Intelligence (AI). We are proud to introduce Rampart—the ultimate experienced partner and mentor, designed to bridge the gap between emerging professional and seasoned professionals by bringing real-world expertise and guidance directly to the field.</p>
     
     <p>Rampart leverages cutting-edge technology to provide 24/7 support across critical areas, including:</p>
     <ul>
@@ -142,7 +142,7 @@ products_section:
     
     <p>With Rampart, EMS professionals gain more than a tool—they gain a trusted partner and mentor who brings expertise to every call. Together, we are closing the experience gap, elevating confidence, and revolutionizing emergency care with patient safety and professional development at the forefront. </p>
   content_two: >
-    <p>Intellux AI is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team’s hands to enable smarter, safer, and more autonomous decisions in the workplace.
+    <p>InCheck is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team’s hands to enable smarter, safer, and more autonomous decisions in the workplace.
 
     <p>Introducing Angel—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Angel transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
     <ul>
@@ -164,7 +164,7 @@ products_section:
     <ul>
       <li>Real-Time Voice Translation: Instantly converts spoken words into text or speech across multiple languages</li>
       <li>Optimized for healthcare and EMS, Nova accurately translates terminology, protocols, and critical care instructions.</li>
-      <li>Fully integrated with Intellux AI tools like Rampart and Angel, ensuring SOPs, protocols, and insights are accessible in any language.</li>
+      <li>Fully integrated with InCheck tools like Rampart and Angel, ensuring SOPs, protocols, and insights are accessible in any language.</li>
       <li>High-Speed Accuracy: Uses advanced speech recognition to deliver fast, precise translations, even in high-pressure situations.</li>
       <li>Captures regional nuances to foster trust and understanding between diverse teams and communities.</li>
     </ul>
@@ -182,10 +182,10 @@ products_section:
 
 faq_section:
   title: F.A.Q
-  sub_title: General FAQs for Intellux AI Tools
+  sub_title: General FAQs for InCheck Tools
   faqs:
     - q: Are Nova, Rampart, and Angel HIPAA-compliant?
-      a: Yes, all Intellux AI products are HIPAA-compliant, ensuring data security and privacy.
+      a: Yes, all InCheck products are HIPAA-compliant, ensuring data security and privacy.
 
     - q: Are the recommendations and translations verified?
       a: Yes, all insights provided by Nova, Rampart, and Angel are verified by experienced EMS and healthcare providers and powered by Actual Intelligence to ensure accuracy and reliability.
