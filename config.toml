@@ -1,6 +1,6 @@
 baseURL = 'https://intellux.ai/'
 languageCode = 'en-us'
-title = 'Intellux AI'
+title = 'InCheck'
 
 [outputFormats]
 [outputFormats.RobotsTXT]

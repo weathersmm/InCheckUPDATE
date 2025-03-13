@@ -537,6 +537,13 @@ section {
 .hero .hero-img {
   text-align: right;
 }
+
+@media (min-width: 505px) and (max-width: 1023px) {
+  .hero {
+    background-size: 100% 160% !important;
+  }
+}
+
 @media (min-width: 1024px) {
   .hero {
     background-attachment: fixed;
@@ -1808,6 +1815,11 @@ section {
   }
   #buttons-hero {
     justify-content: center;
+  }
+}
+@media (min-width: 525px) and (max-width: 766px) {
+  .overlay {
+    margin-top: -50dvh !important;
   }
 }
 @media (max-width: 767px) {
