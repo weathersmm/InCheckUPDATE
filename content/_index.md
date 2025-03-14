@@ -200,9 +200,12 @@ faq_section:
       a: Absolutely! Nova, Rampart, and Angel integrate seamlessly with your current platforms.
 
     - q: How do I subscribe to Rampart?
-      a: You can subscribe to Rampart through our website to access either the free tier or the unlimited plan 
-        - $7.99/month
-        - $87.89 annually
+      a: You can subscribe to Rampart through our website to access either the free tier, standard tier or premium tier. 
+        - Basic EMS - $7.99/month
+        - Complete EMS - $9.99/month
+        - Standard - $12.99/month
+        - Premium - $19.99/month
+        - Professional - $24.99/month
     - q: How do I request a demo?
       a: You can request a demo through our website or by contacting our sales team <a href="mailto:support@intellux.ai>support@intellux.ai</a>.
 
