@@ -630,7 +630,7 @@ section {
   margin:20px;
 }
 
-.products .content {
+.products .content, #planslist .content {
   background-image: linear-gradient(to bottom, rgba(45, 176, 232, 0.2), #ffffff);
   padding: 40px;
   border-radius: 10px; /* Rounded corners */
@@ -1015,21 +1015,7 @@ section {
   font-size: 14px;
 }
 
-.products h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.about_us h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.faq h3 {
+.section-titles h3 {
   font-size: 14px;
   font-weight: 700;
   color: #000000;
@@ -1958,3 +1944,38 @@ section {
   text-align: center;
   white-space: wrap !important;
 } */
+
+.plan-name {
+  font-weight: 700;
+  color: #5371fe;
+  font-family: 'Poppins', sans-serif;
+}
+
+.features-list {
+  padding: 0.5rem;
+}
+
+.feature-item {
+  margin: 0.25rem 0;
+  padding-left: 1rem;
+  position: relative;
+  font-size: 16px;
+}
+
+.feature-item:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.btn-purchase,
+.btn-purchase:focus {
+  background: #5371fe;
+  border-radius: 4px;
+  color: #fff;
+}
+.btn-purchase:hover,
+.btn-purchase:focus:hover {
+  color: #fff;
+  background: #045de9;
+}
