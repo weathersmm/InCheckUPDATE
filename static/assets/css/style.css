@@ -1979,3 +1979,18 @@ section {
   color: #fff;
   background: #045de9;
 }
+
+.mobile-width {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .mobile-width {
+    width: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-padding {
+    padding-right: 30px !important;
+  }
+}

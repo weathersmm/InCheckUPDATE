@@ -255,17 +255,17 @@
         <div id="planslist">
           {{ $counter := 1 }}
           {{ range .plans }}
-          <div class="content d-flex justify-content-between" style="height:100%;">
+          <div class="content d-md-flex justify-content-between" style="height:100%;">
             <div class="flex-column">
-              <div class="fw-bold plan-name">{{ .name }}</div>
+              <div class="fw-bold plan-name text-md-start text-center">{{ .name }}</div>
               <div class="features-list">
                 {{ range .features }}
                   <div class="feature-item">{{ . }}</div>
                 {{ end }}
               </div>
             </div>
-            <div class="text-center d-flex flex-column" style="margin: 10px 0px; padding-right: 30px;">
-              <div style="margin-bottom: 15px; width:100px;">
+            <div class="text-center d-flex flex-column custom-padding" style="margin: 10px 0px;">
+              <div class="text-center mobile-width" style="margin-bottom: 15px;">
                 {{ .price }}
               </div>
               <div>
