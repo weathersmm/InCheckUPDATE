@@ -134,7 +134,7 @@
 <!-- End coverage area-->
 <!-- ======= About Section ======= -->
 {{with .Params.about_us_section}}
-<section id="about-us" class="about_us">
+<section id="about-us" class="about_us section-titles">
   <div class="container" data-aos="fade-up">
     <header class="section-header">
       <h3>About us</h3>
@@ -163,7 +163,7 @@
 <!-- End coverage area-->
 <!-- ======= Products Section ======= -->
 {{with .Params.products_section}}
-<section id="products" class="products">
+<section id="products" class="products section-titles">
   <div class="container" data-aos="fade-up">
     <header class="section-header">
       <h3>Products</h3>
@@ -240,9 +240,58 @@
 {{end}}
 <!-- End Products Section -->
 
+<!-- ======= Pricing Section ======= -->
+{{ with .Params.pricing_section }}
+<section id="pricing" class="pricing section-titles">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h3>{{ .title }}</h3>
+      <p>{{ .sub_title }}</p>
+    </header>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <!-- Plans -->
+        <div id="planslist">
+          {{ $counter := 1 }}
+          {{ range .plans }}
+          <div class="content d-md-flex justify-content-between" style="height:100%;">
+            <div class="flex-column">
+              <div class="fw-bold plan-name text-md-start text-center">{{ .name }}</div>
+              <div class="features-list">
+                {{ range .features }}
+                  <div class="feature-item">{{ . }}</div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="text-center d-flex flex-column custom-padding" style="margin: 10px 0px;">
+              <div class="text-center mobile-width" style="margin-bottom: 15px;">
+                {{ .price }}
+              </div>
+              <div>
+                <a href="{{ .link }}" 
+                  {{if and (findRE "://" .link) (not (hasPrefix .link (print (or .Site.BaseURL "") "/")))}}
+                      target="_blank"
+                  {{end}}
+                  class="btn btn-purchase">
+                  {{ .button }}
+                </a>
+              </div>
+            </div>
+          </div>
+          {{ $counter = add $counter 1 }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End Pricing Section -->
+
 <!-- ======= F.A.Q Section ======= -->
 {{ with .Params.faq_section }}
-<section id="faq" class="faq">
+<section id="faq" class="faq section-titles">
   <div class="container" data-aos="fade-up">
     <header class="section-header">
       <h3>{{ .title }}</h3>

@@ -92,8 +92,8 @@ about_us_section:
   content: >
     <div>At InCheck, we understand the weight of responsibility carried by EMS teams, healthcare providers, first responders and operational leaders. Split-second decisions can mean the difference between life and death, yet placing a seasoned supervisor on every truck or providing constant oversight is impractical and cost-prohibitive.
     </div>
-    <div>That’s why we built InCheck: a suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it’s needed.</div>
-    <div>Our team of leaders, mentors, operators, and providers brings first-hand experience to every solution we create. We know the challenges because we’ve lived them. That’s why our tools are purpose-built to support those on the frontlines.</div>
+    <div>That's why we built InCheck: a suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it's needed.</div>
+    <div>Our team of leaders, mentors, operators, and providers brings first-hand experience to every solution we create. We know the challenges because we've lived them. That's why our tools are purpose-built to support those on the frontlines.</div>
     <br />
     <div>
       <ul>
@@ -104,7 +104,7 @@ about_us_section:
     </div>
 
     <div>
-      Our tools increase safety and confidence, reduce the costs of mistakes and litigation, and enhance efficiency and performance. We believe in empowering teams with the confidence of having a mentor in their pocket—one that’s always accurate, reliable, and built for their challenges.
+      Our tools increase safety and confidence, reduce the costs of mistakes and litigation, and enhance efficiency and performance. We believe in empowering teams with the confidence of having a mentor in their pocket—one that's always accurate, reliable, and built for their challenges.
     </div>
     <div>
       Our Promise
@@ -112,7 +112,7 @@ about_us_section:
       We see you.
       We support you.
       We are here to make sure you are never alone in your decisions.
-      Because when you are empowered, confident, and equipped with the best tools, the impact you make is limitless—and we’re honored to be a part of your journey.
+      Because when you are empowered, confident, and equipped with the best tools, the impact you make is limitless—and we're honored to be a part of your journey.
     </div>
 
 
@@ -142,9 +142,9 @@ products_section:
     
     <p>With Rampart, EMS professionals gain more than a tool—they gain a trusted partner and mentor who brings expertise to every call. Together, we are closing the experience gap, elevating confidence, and revolutionizing emergency care with patient safety and professional development at the forefront. </p>
   content_two: >
-    <p>InCheck is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team’s hands to enable smarter, safer, and more autonomous decisions in the workplace.
+    <p>InCheck is transforming how organizations manage their Standard Operating Procedures (SOPs), Standard Operating Guidelines (SOGs), and company handbooks—putting critical, company-specific information directly into your team's hands to enable smarter, safer, and more autonomous decisions in the workplace.
 
-    <p>Introducing Angel—a closed-source, fully customizable AI platform tailored exclusively to your organization’s policies and guidelines. Angel transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company’s policies, including:</p>
+    <p>Introducing Angel—a closed-source, fully customizable AI platform tailored exclusively to your organization's policies and guidelines. Angel transforms static, buried documents into an interactive and searchable experience, empowering your team to quickly find answers to your company's policies, including:</p>
     <ul>
       <li>Time and Attendance</li>
       <li>Mandatory Reporting</li>
@@ -157,7 +157,7 @@ products_section:
 
     <p>This AI-driven solution serves as an experienced mentor and guide, delivering real-time support that improves compliance, increases efficiency, and enhances decision-making. With Angel, your policies become a living, accessible resource, enabling employees to work autonomously while staying aligned with your unique operational standards.</p>
 
-    <p>No more delays, confusion, or reliance on managers for answers—Angel gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization’s values and expectations.</p>
+    <p>No more delays, confusion, or reliance on managers for answers—Angel gives your team the tools to perform confidently and independently, ensuring they make decisions that reflect your organization's values and expectations.</p>
   content_three: >
     <p>Introducing Nova, your multilingual mentor designed to translate complex conversations into real-time, interactive, and accurate translations, empowering your team to overcome language challenges effortlessly. Whether in the field, during emergencies, or within daily operations, Nova ensures that our people, patients, and partners understand and are understood.</p>
 
@@ -177,7 +177,7 @@ products_section:
       <li>Enhanced Inclusivity: Seamlessly supports diverse teams and multilingual communities, strengthening relationships with our people, patients, and partners.</li>
     </ul>
     
-    <p>Nova gives your team the tools to communicate clearly and confidently, empowering them to perform at their best while reflecting your organization’s commitment to excellence, inclusivity, and care for our people, patients, and partners.</p>
+    <p>Nova gives your team the tools to communicate clearly and confidently, empowering them to perform at their best while reflecting your organization's commitment to excellence, inclusivity, and care for our people, patients, and partners.</p>
 
 
 faq_section:
@@ -209,6 +209,90 @@ faq_section:
     - q: How do I request a demo?
       a: You can request a demo through our website or by contacting our sales team <a href="mailto:support@intellux.ai>support@intellux.ai</a>.
 
+
+pricing_section:
+  title: Pricing plans
+  sub_title: Our pricing plans
+  plans:
+    - name: Free
+      features:
+        - Access to Rampart (EMS Mode) and "El Chat".
+        - Limited to 3 requests per 3 hours.
+        - Basic assistance for both medical and general use.
+      price: Free
+      button: Register
+      link: https://signup.intellux.ai/
+
+    - name: Basic EMS
+      features:
+        - Unlimited Rampart access.
+        - Optimized for medical professionals.
+      price: $7.99/month
+      button: Purchase
+      link: https://signup.intellux.ai/#basic
+
+    - name: Complete EMS
+      features:
+        - Unlimited access to both Rampart and Nova.
+        - Comprehensive medical AI suite.
+      price: $9.99/month
+      button: Purchase
+      link: https://signup.intellux.ai/#complete
+
+    - name: Standard
+      features:
+        - Limited "El Chat" access.
+        - Basic Rampart access.
+        - General purpose use.
+      price: $12.99/month
+      button: Purchase
+      link: https://signup.intellux.ai/#standard
+
+    - name: Premium
+      features:
+        - Unlimited Rampart and Nova access.
+        - Limited "El Chat" access.
+        - Balanced for both medical and general use.
+      price: $19.99/month
+      button: Purchase
+      link: https://signup.intellux.ai/#premium
+
+    - name: Professional
+      features:
+        - Unlimited Rampart and Nova access.
+        - Enhanced "El Chat" with increased access limits.
+        - Full access to all capabilities.
+      price: $24.99/month
+      button: Purchase
+      link: https://signup.intellux.ai/#professional
+
+    - name: Teams
+      features:
+        - All Professional features.
+        - Team management capabilities.
+        - Min 5 seats.
+        - Basic integrations.
+      price: $29.99 per seat/month
+      button: Purchase
+      link: https://signup.intellux.ai/#teams
+
+    - name: Enterprise
+      features:
+        - Unlimited access across all models.
+        - Advanced customization options.
+        - Dedicated support.
+      price: Custom pricing
+      button: Contact us
+      link: /#contact
+
+    - name: API Integration
+      features:
+        - Programmatic access to all AI models.
+        - Custom implementation support.
+        - Scalable solutions.
+      price: Custom pricing
+      button: Contact us
+      link: /#contact
 
     # - q: What is Rampart, and how does it revolutionize EMS support?
     #   a: Rampart, our EMS Virtual Assistant, is a groundbreaking AI-driven platform tailored for the Emergency Medical Services industry. Designed as a virtual medic partner, Rampart offers comprehensive support by providing possible differential diagnoses, medication calculations, general medical knowledge, training, and suggestions, all available 24/7 through an accurate speech-to-text interface. Rampart is set to revolutionize EMS support by enhancing decision-making, operational efficiency, and patient care with the power of Artificial Intelligence.
