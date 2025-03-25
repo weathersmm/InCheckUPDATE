@@ -381,7 +381,7 @@ section {
   color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -522,6 +522,33 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.hero.resizing {
+  background-image: none !important; /* Hide background image */
+  background-color: #f6f7ff !important; /* Show solid color instead */
+}
+
+/* Add loading spinner */
+.hero:not(.loaded)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #5371fe;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .hero {
   width: 100%;
   height: 100vh;
@@ -529,6 +556,69 @@ section {
   /* Background image removed - will be loaded via JS */
   position: relative;
   will-change: background-image;
+
+}
+
+/* Enhanced background image sizing for desktop variations */
+@media (min-width: 1601px) {
+  .hero.loaded:not(.resizing) {
+    background-size: auto 85%;
+    background-position: 90% center;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+  .hero.loaded:not(.resizing) {
+    background-size: auto 80%;
+    background-position: 95% center;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .hero.loaded:not(.resizing) {
+    background-size: auto 75%;
+    background-position: right center;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1280px) {
+  .hero.loaded:not(.resizing) {
+    background-size: auto 70%;
+    background-position: right center;
+  }
+}
+
+/* Tablet sizes */
+/* Medium tablet (iPad Pro, etc.) specific background adjustments */
+@media (min-width: 901px) and (max-width: 1025px) {
+  .hero.loaded:not(.resizing) {
+    background-size: 45% auto !important; /* Override the JS-set 100% */
+    background-position: bottom center !important;
+  }
+}
+
+/* Small tablet (iPad, etc.) specific background adjustments */
+@media (min-width: 768px) and (max-width: 900px) {
+  .hero.loaded:not(.resizing) {
+    background-size: 55% auto !important;
+    background-position: bottom center !important;
+  }
+}
+
+/* Large phone (Galaxy fold open, etc.) specific background adjustments */
+@media (min-width: 600px) and (max-width: 767px) {
+  .hero.loaded:not(.resizing) {
+    background-size: 65% auto !important;
+    background-position: bottom center !important;
+  }
+}
+
+/* Small phone/mobile specific background adjustments */
+@media (max-width: 599px) {
+  .hero.loaded:not(.resizing) {
+    background-size: 75% auto !important;
+    background-position: bottom center !important;
+  }
 }
 
 .hero h1 {
@@ -700,6 +790,7 @@ section {
     margin-top: -50dvh !important;
   }
 }
+
 
 /*** HOME - Hero Content ***/
 .content_hero {

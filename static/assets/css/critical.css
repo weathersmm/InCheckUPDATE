@@ -248,8 +248,9 @@ a {
   text-align: center;
 }
 
-/* AOS animation placeholders - to prevent layout shifts */
-[data-aos] {
+/* Show AOS elements initially, but allow animations once ready */
+.js-loading [data-aos] {
   opacity: 1 !important;
   transform: none !important;
+  transition: none !important;
 }

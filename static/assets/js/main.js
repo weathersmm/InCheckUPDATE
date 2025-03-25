@@ -24,6 +24,16 @@
    * Early initialization - critical functionality that shouldn't wait
    */
   const earlyInit = () => {
+
+    // Setup mobile navigation functionality
+    initMobileNav();
+
+    // Load hero background separately
+    loadHeroBackground();
+
+    // Add lazy loading to all images
+    initLazyLoading();
+
     // Initialize AOS immediately - don't wait for images
     if (typeof AOS !== 'undefined') {
       AOS.init({
@@ -35,14 +45,8 @@
       });
     }
 
-    // Setup mobile navigation functionality
-    initMobileNav();
-
-    // Load hero background separately
-    loadHeroBackground();
-
-    // Add lazy loading to all images
-    initLazyLoading();
+    // Remove loading class to enable animations
+    document.documentElement.classList.remove('js-loading');
   };
 
   /**
@@ -74,52 +78,74 @@
   };
 
   /**
-   * Load hero background image asynchronously
-   */
-  // Load hero background with fallback
+ * Load hero background image based on screen size
+ */
   const loadHeroBackground = () => {
     const heroElement = document.querySelector('.hero');
     if (!heroElement) return;
 
-    const isMobile = window.innerWidth <= 1025;
-    const bgImageUrl = isMobile ?
-      '/assets/img/ai-ems-brain-mobile.png' :
-      '/assets/img/ai-ems-brain.png';
+  // Function to determine and load the appropriate image
+    const loadAppropriateImage = () => {
+      const isMobile = window.innerWidth <= 1025;
+      const bgImageUrl = isMobile ?
+        '/assets/img/ai-ems-brain-mobile.png' :
+        '/assets/img/ai-ems-brain.png';
 
-    const bgImage = new Image();
+    // Load new image
+      const bgImage = new Image();
 
-    // Add error handling
-    bgImage.onerror = function() {
-      console.warn("Failed to load hero background image");
-      heroElement.classList.add('loaded'); // Still hide spinner
-      // Apply fallback styling
-      heroElement.style.backgroundColor = "#f6f7ff";
+      bgImage.onerror = function() {
+        console.warn("Failed to load hero background image");
+        heroElement.classList.add('loaded');
+        heroElement.style.backgroundColor = "#f6f7ff";
+      };
+
+      bgImage.onload = function() {
+        if (isMobile) {
+          heroElement.style.backgroundImage = `url('${bgImageUrl}')`;
+          heroElement.style.backgroundSize = '100%';
+          heroElement.style.backgroundPosition = 'bottom';
+          heroElement.style.backgroundRepeat = 'no-repeat';
+        } else {
+          heroElement.style.backgroundImage = `
+            linear-gradient(to bottom, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%),
+            linear-gradient(to top, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%),
+            url('${bgImageUrl}')
+          `;
+          heroElement.style.backgroundSize = 'auto 80%';
+          heroElement.style.backgroundPosition = 'right';
+          heroElement.style.backgroundRepeat = 'no-repeat';
+        }
+        heroElement.classList.add('loaded');
+        heroElement.classList.remove('resizing');
+      };
+
+    // Start loading image
+      bgImage.src = bgImageUrl;
     };
 
-    bgImage.onload = function() {
-      // Apply the background image once loaded
-      if (isMobile) {
-        heroElement.style.backgroundImage = `url('${bgImageUrl}')`;
-        heroElement.style.backgroundSize = '100%';
-        heroElement.style.backgroundPosition = 'bottom';
-        heroElement.style.backgroundRepeat = 'no-repeat';
-      } else {
-        heroElement.style.backgroundImage = `
-          linear-gradient(to bottom, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%),
-          linear-gradient(to top, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%),
-          url('${bgImageUrl}')
-        `;
-        heroElement.style.backgroundSize = 'auto 80%';
-        heroElement.style.backgroundPosition = 'right';
-        heroElement.style.backgroundRepeat = 'no-repeat';
-      }
+  // Initial load
+    loadAppropriateImage();
 
-      heroElement.classList.add('loaded');
-    };
+  // Add resize listener with debounce
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+    // Hide background image during resize
+      heroElement.classList.add('resizing');
+      heroElement.classList.remove('loaded');
 
-  // Set source after event handlers
-  bgImage.src = bgImageUrl;
-}
+    // Debounce the resize event
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        loadAppropriateImage();
+      }, 250);
+    });
+  };
+
+
+
+
+
 
 
   /**
