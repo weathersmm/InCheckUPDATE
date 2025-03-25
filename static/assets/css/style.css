@@ -338,7 +338,7 @@ section {
   color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
   .mobile-nav-toggle {
     display: block;
   }
