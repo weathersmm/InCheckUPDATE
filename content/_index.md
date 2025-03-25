@@ -121,9 +121,11 @@ products_section:
   title_one: Rampart (EMS Mode)
   title_two: Angel (Company Mode)
   title_three: Nova (Translate Mode)
+  title_four: "El Chat"
   sub_title_one: Revolutionizing Healthcare with AI-Powered Solutions
   sub_title_two: Leading Change for Safer, Smarter Outcomes at the Work Place
   sub_title_three: Breaking Language Barriers, Empowering Connections
+  sub_title_four: Your AI-Powered Mission Assistant
   image: /assets/img/ai-ems-brain.png
   content_one: >
     <p>InCheck, Ltd. is transforming Healthcare, Pre Hospital Medicine and Mobile Integrated Health with Actual Intelligence (AI). We are proud to introduce Rampart—the ultimate experienced partner and mentor, designed to bridge the gap between emerging professional and seasoned professionals by bringing real-world expertise and guidance directly to the field.</p>
@@ -178,6 +180,20 @@ products_section:
     </ul>
     
     <p>Nova gives your team the tools to communicate clearly and confidently, empowering them to perform at their best while reflecting your organization's commitment to excellence, inclusivity, and care for our people, patients, and partners.</p>
+  content_four: >
+    <p><strong>Because life’s too short for bad decisions, botched plans, and bland takeout. </strong></p>
+    <p>Some days, you need a genius strategist. Other days, you just need to know where to get the best tacos. El Chat is your always-on, AI-powered assistant, here to help you navigate life with clarity, confidence, and a little extra flair. Unlike other AI tools, El Chat doesn’t learn from your prompts, store your data, or remember past conversations—your privacy stays yours.</p>
+    <p>What can El Chat do for you?</p>
+    <ul>
+      <li><strong>Ace that homework assignment</strong> – Because "the dog ate it" won’t fly forever.</li>
+      <li><strong>Find the best restaurant in town</strong> – No more settling for meh when you could have <span style="font-style: italic;">mind-blowing</span>.</li>
+      <li><strong>Turn your ideas into action</strong> – Got big plans? We’ll help you organize, optimize, and execute.</li>
+      <li><strong>Master multitasking</strong> – From work to errands to remembering your best friend’s birthday (you’re welcome).</li>
+      <li><strong>Solve tactical, logistical, and strategic dilemmas</strong> – Whether it’s planning a trip, optimizing your schedule, or figuring out how to respond to that awkward email.</li>
+      <li><strong>Cut through the noise</strong> – No fluff, no nonsense—just smart, fast, and reliable help when you need it.</li>
+    </ul>
+
+    <p>No tracking. No memory. Just instant, AI-powered answers when you need them. Less overthinking. More doing.</p>
 
 
 faq_section:

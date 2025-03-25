@@ -1,27 +1,17 @@
 /**
-* Template Name: FlexStart - v1.9.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* InCheck - Optimized website loading and animations
 */
 (function() {
   "use strict";
 
   /**
-   * Easy selector helper function
+   * Utility functions
    */
   const select = (el, all = false) => {
     el = el.trim();
-    if (all) {
-      return [...document.querySelectorAll(el)];
-    } else {
-      return document.querySelector(el);
-    }
+    return all ? [...document.querySelectorAll(el)] : document.querySelector(el);
   };
 
-  /**
-   * Easy event listener function
-   */
   const on = (type, el, listener, all = false) => {
     if (all) {
       select(el, all).forEach(e => e.addEventListener(type, listener));
@@ -31,10 +21,143 @@
   };
 
   /**
-   * Easy on scroll event listener 
+   * Early initialization - critical functionality that shouldn't wait
    */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener);
+  const earlyInit = () => {
+
+    // Setup mobile navigation functionality
+    initMobileNav();
+
+    // Load hero background separately
+    loadHeroBackground();
+
+    // Add lazy loading to all images
+    initLazyLoading();
+
+    // Initialize AOS immediately - don't wait for images
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+        startEvent: 'DOMContentLoaded' // Start animations as soon as DOM is ready
+      });
+    }
+
+    // Remove loading class to enable animations
+    document.documentElement.classList.remove('js-loading');
+  };
+
+  /**
+   * Mobile navigation initialization
+   */
+  const initMobileNav = () => {
+    on('click', '.mobile-nav-toggle', function(e) {
+      select('#navbar').classList.toggle('navbar-mobile');
+      this.classList.toggle('bi-list');
+      this.classList.toggle('bi-x');
+    });
+
+    on('click', '#navbar', function(e) {
+      if (e.target.classList.contains('nav-link')) {
+        if (select('.mobile-nav-toggle').classList.contains('bi-x')) {
+          select('#navbar').classList.toggle('navbar-mobile');
+          select('.mobile-nav-toggle').classList.remove('bi-x');
+          select('.mobile-nav-toggle').classList.add('bi-list');
+        }
+      }
+    });
+
+    on('click', '.navbar .dropdown > a', function(e) {
+      if (select('#navbar').classList.contains('navbar-mobile')) {
+        e.preventDefault();
+        this.nextElementSibling.classList.toggle('dropdown-active');
+      }
+    }, true);
+  };
+
+  /**
+ * Load hero background image based on screen size
+ */
+  const loadHeroBackground = () => {
+    const heroElement = document.querySelector('.hero');
+    if (!heroElement) return;
+
+  // Function to determine and load the appropriate image
+    const loadAppropriateImage = () => {
+      const isMobile = window.innerWidth <= 1025;
+      const bgImageUrl = isMobile ?
+        '/assets/img/ai-ems-brain-mobile.png' :
+        '/assets/img/ai-ems-brain.png';
+
+    // Load new image
+      const bgImage = new Image();
+
+      bgImage.onerror = function() {
+        console.warn("Failed to load hero background image");
+        heroElement.classList.add('loaded');
+        heroElement.style.backgroundColor = "#f6f7ff";
+      };
+
+      bgImage.onload = function() {
+        if (isMobile) {
+          heroElement.style.backgroundImage = `url('${bgImageUrl}')`;
+          heroElement.style.backgroundSize = '100%';
+          heroElement.style.backgroundPosition = 'bottom';
+          heroElement.style.backgroundRepeat = 'no-repeat';
+        } else {
+          heroElement.style.backgroundImage = `
+            linear-gradient(to bottom, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%),
+            linear-gradient(to top, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%),
+            url('${bgImageUrl}')
+          `;
+          heroElement.style.backgroundSize = 'auto 80%';
+          heroElement.style.backgroundPosition = 'right';
+          heroElement.style.backgroundRepeat = 'no-repeat';
+        }
+        heroElement.classList.add('loaded');
+        heroElement.classList.remove('resizing');
+      };
+
+    // Start loading image
+      bgImage.src = bgImageUrl;
+    };
+
+  // Initial load
+    loadAppropriateImage();
+
+  // Add resize listener with debounce
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+    // Hide background image during resize
+      heroElement.classList.add('resizing');
+      heroElement.classList.remove('loaded');
+
+    // Debounce the resize event
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        loadAppropriateImage();
+      }, 250);
+    });
+  };
+
+
+
+
+
+
+
+  /**
+   * Add lazy loading to images
+   */
+  const initLazyLoading = () => {
+    const productImages = document.querySelectorAll('.image-product');
+    productImages.forEach(img => {
+      if (!img.hasAttribute('loading')) {
+        img.setAttribute('loading', 'lazy');
+      }
+    });
   };
 
   /**
@@ -74,159 +197,131 @@
   };
 
   /**
-   * Toggle .header-scrolled class to #header when page is scrolled
+   * Header scroll and back-to-top functionality
    */
-  let selectHeader = select('#header');
-  const headerScrolled = () => {
-    if (window.scrollY > 100) {
-      selectHeader.classList.add('header-scrolled');
-    } else {
-      selectHeader.classList.remove('header-scrolled');
-    }
-  };
+  const initScrollFunctions = () => {
+    let selectHeader = select('#header');
+    let backtotop = select('.back-to-top');
 
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top');
-  const toggleBacktotop = () => {
-    if (window.scrollY > 100) {
-      backtotop.classList.add('active');
-    } else {
-      backtotop.classList.remove('active');
-    }
-  };
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile');
-    this.classList.toggle('bi-list');
-    this.classList.toggle('bi-x');
-  });
-
-  on('click', '#navbar', function(e) {
-    if (e.target.classList.contains('nav-link')) {
-      if (select('.mobile-nav-toggle').classList.contains('bi-x')) {
-        select('#navbar').classList.toggle('navbar-mobile');
-        select('.mobile-nav-toggle').classList.remove('bi-x');
-        select('.mobile-nav-toggle').classList.add('bi-list');
+    // Header scrolled class toggle
+    const headerScrolled = () => {
+      if (window.scrollY > 100) {
+        selectHeader.classList.add('header-scrolled');
+      } else {
+        selectHeader.classList.remove('header-scrolled');
       }
-    }
-  });
+    };
 
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault();
-      this.nextElementSibling.classList.toggle('dropdown-active');
-    }
-  }, true);
+    // Back to top button toggle
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active');
+      } else {
+        backtotop.classList.remove('active');
+      }
+    };
 
-  /**
-   * Cookie Consent Functions
-   */
-  function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-  }
-
-  function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-    }
-    return null;
-  }
-
-  function areCookiesEnabled() {
-    if (!navigator.cookieEnabled) {
-        // Cookies are not enabled
-        alert("Cookies are disabled in your browser. Please enable cookies to improve your experience.");
-        return false;
-    }
-    return true;
-  }
-
-  function initializeCookieConsent() {
-    if (!areCookiesEnabled()) return; // Stop if cookies are disabled
-    if (!getCookie("cookieConsent")) {
-      var consentContainer = document.getElementById("cookieConsentContainer");
-        consentContainer.classList.add("active"); // Add the active class to slide in
-    }
-  }
-
-  function acceptCookies() {
-    if (!areCookiesEnabled()) return; // Stop if cookies are disabled
-    setCookie("cookieConsent", "accepted", 365);
-    hideConsentBanner();
-  }
-
-  function declineCookies() {
-    if (!areCookiesEnabled()) return; // Stop if cookies are disabled
-    setCookie("cookieConsent", "declined", 365);
-    hideConsentBanner();
-  }
-
-  function hideConsentBanner() {
-    var consentContainer = document.getElementById("cookieConsentContainer");
-    consentContainer.classList.remove("active"); // Remove the active class to slide out
-    // Optionally delay the actual display none to allow the animation to finish
-    setTimeout(() => {
-        consentContainer.style.display = 'none';
-    }, 500); // Match the duration of the transition
-  }
-
-  /**
-   * Initialization on page load
-   */
-  window.addEventListener('load', () => {
-    if (!areCookiesEnabled()) {
-      // Possibly disable other functionality or continue with limited functionality
-      console.log("Cookies are not enabled. Some features may not work as expected.");
-    }
-
-    navbarlinksActive();
+    // Apply initially and on scroll
     headerScrolled();
     toggleBacktotop();
-    //initializeCookieConsent();
-    aos_init();
-  });
-
-  // Event listeners for cookie buttons
-  document.addEventListener('DOMContentLoaded', function () {
-    // Attach event listeners directly without checking for DOMContentLoaded
-    //document.getElementById('acceptCookiesButton').addEventListener('click', acceptCookies);
-    //document.getElementById('declineCookiesButton').addEventListener('click', declineCookies);
-  });
-
-  window.addEventListener('scroll', () => {
-    headerScrolled();
-    toggleBacktotop();
-  });
-
-  /**
-   * Animation on scroll initialization
-   */
-
-  function aos_init() {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
+    window.addEventListener('scroll', () => {
+      headerScrolled();
+      toggleBacktotop();
+      navbarlinksActive();
     });
-  }
+  };
+
+  /**
+   * Cookie Consent Functions - consolidated
+   */
+  const cookieManager = {
+    areCookiesEnabled: () => {
+      if (!navigator.cookieEnabled) {
+        console.log("Cookies are disabled in your browser. Some features may not work as expected.");
+        return false;
+      }
+      return true;
+    },
+
+    setCookie: (name, value, days) => {
+      if (!cookieManager.areCookiesEnabled()) return;
+      let expires = "";
+      if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    },
+
+    getCookie: (name) => {
+      const nameEQ = name + "=";
+      const ca = document.cookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
+      }
+      return null;
+    },
+
+    initConsent: () => {
+      if (!cookieManager.areCookiesEnabled()) return;
+      if (!cookieManager.getCookie("cookieConsent")) {
+        const container = document.getElementById("cookieConsentContainer");
+        if (container) container.classList.add("active");
+      }
+    },
+
+    acceptCookies: () => {
+      cookieManager.setCookie("cookieConsent", "accepted", 365);
+      cookieManager.hideConsentBanner();
+    },
+
+    declineCookies: () => {
+      cookieManager.setCookie("cookieConsent", "declined", 365);
+      cookieManager.hideConsentBanner();
+    },
+
+    hideConsentBanner: () => {
+      const container = document.getElementById("cookieConsentContainer");
+      if (!container) return;
+
+      container.classList.remove("active");
+      setTimeout(() => {
+        container.style.display = 'none';
+      }, 500);
+    },
+
+    setupListeners: () => {
+      const acceptBtn = document.getElementById('acceptCookiesButton');
+      const declineBtn = document.getElementById('declineCookiesButton');
+
+      if (acceptBtn) acceptBtn.addEventListener('click', cookieManager.acceptCookies);
+      if (declineBtn) declineBtn.addEventListener('click', cookieManager.declineCookies);
+    }
+  };
+
+  /**
+   * Event Listeners
+   */
+
+  // Execute critical functions as soon as DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    // Critical functions that should run immediately
+    earlyInit();
+
+    // Cookie consent setup
+    cookieManager.setupListeners();
+
+    // Scroll functions
+    initScrollFunctions();
+  });
+
+  // Non-critical functions can wait for load event
+  window.addEventListener('load', () => {
+    // Initialize cookie consent if needed
+    // cookieManager.initConsent(); // Uncomment when ready
+  });
 
 })();

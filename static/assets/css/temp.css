@@ -338,7 +338,7 @@ section {
   color: #fff;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -461,6 +461,7 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* Loading state */
 .hero.resizing {
   background-image: none !important;
   background-color: #f6f7ff !important;

@@ -1,0 +1,256 @@
+/* Base styles necessary for all pages */
+:root {
+  scroll-behavior: smooth;
+  --main-font: "Roboto", sans-serif;
+  --main-color: #734ae8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #404040;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+a {
+  color: #070E36;
+  text-decoration: none;
+}
+
+/* Loading indicator for hero */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #5371fe;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide spinner once background loads */
+.hero.loaded::before {
+  display: none;
+}
+
+
+/* Header and Navigation - critical for first paint */
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  font-weight: 700;
+  line-height: 50px;
+  color: #070E36 !important;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.header.header-scrolled {
+
+  padding: 15px 0;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.header .logo {
+  line-height: 0;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.header .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #045de9;
+  font-family: var(--main-font);
+  margin-top: 3px;
+}
+
+/* Navigation essentials */
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: 0.3s;
+  color: #5371fe;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  background: #5371fe;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* Mobile menu toggle button */
+.mobile-nav-toggle {
+  color: #045de9;
+  font-size: 48px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .header .logo img {
+    max-height: 100%;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* Hero section basics - for initial display */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f7ff !important;
+  position: relative;
+  /* No background image - will be loaded via JS */
+}
+
+.hero h2 {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #070E36;
+  text-align: left;
+  font-family: 'Kanit', sans-serif;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.content_hero {
+  text-align: left;
+}
+
+/* Mobile responsiveness for the most essential elements */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+    text-align: center !important;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+
+  .content_hero {
+    text-align: center !important;
+  }
+}
+
+/* Container for layout */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Basic layout utilities */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Show AOS elements initially, but allow animations once ready */
+.js-loading [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
