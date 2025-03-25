@@ -461,6 +461,7 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* Loading state */
 .hero.resizing {
   background-image: none !important;
   background-color: #f6f7ff !important;

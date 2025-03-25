@@ -47,40 +47,38 @@ a {
 }
 
 
-/* Header and Navigation - critical for first paint */
+/* Keep the initial transparent/default state */
 .header {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
   font-weight: 700;
   line-height: 50px;
-  color: #070E36 !important;
+  color: #070E36;
   font-family: "Poppins", sans-serif;
-  background: #fff;
+  /* Remove the !important flag from the color */
+  /* And either remove the background or make it transparent */
+  background: transparent;
 }
 
+/* Keep the scrolled state with white background */
 .header.header-scrolled {
   background: #fff;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
-.header .logo {
-  line-height: 0;
+/* Add styles for the header text and links when not scrolled */
+.header:not(.header-scrolled) .navbar a,
+.header:not(.header-scrolled) .navbar a:focus {
+  color: #fff; /* Or whatever color contrasts with your initial background */
 }
 
-.header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.header .logo span {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #045de9;
-  font-family: var(--main-font);
-  margin-top: 3px;
+/* Adjust the "Get Started" button for visibility on both backgrounds */
+.header:not(.header-scrolled) .navbar .getstarted,
+.header:not(.header-scrolled) .navbar .getstarted:focus {
+  background: #fff;
+  color: #5371fe;
 }
 
 /* Navigation essentials */
@@ -109,12 +107,10 @@ a {
   font-size: 16px;
   white-space: nowrap;
   transition: 0.3s;
-  color: #5371fe;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #5371fe;
   margin-left: 30px;
   border-radius: 4px;
   color: #fff;
