@@ -56,11 +56,11 @@ a {
   line-height: 50px;
   color: #070E36 !important;
   font-family: "Poppins", sans-serif;
-  background: #fff;
+
 }
 
 .header.header-scrolled {
-  background: #fff;
+
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
