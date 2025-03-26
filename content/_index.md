@@ -288,9 +288,9 @@ pricing_section:
         - Team management capabilities.
         - Min 5 seats.
         - Basic integrations.
-      price: $29.99 per seat/month
-      button: Purchase
-      link: https://signup.intellux.ai/#teams
+      price: Custom pricing
+      button: Contact us
+      link: /#contact
 
     - name: Enterprise
       features:
