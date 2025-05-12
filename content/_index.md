@@ -6,7 +6,7 @@ hero_section:
     <h2><strong>Introducing <span class="title-marked">InCheck</span></strong></h2>
     <h2><strong><span class="enterprise-grade">Enterprise Grade</span> <span class="title-marked">Actual Intelligence</span></strong></h2>
     <h2><strong>for <span class="title-marked">Real-World Decisions</span></strong></h2>
-    <div class="text-hero"><strong>Tools that serve as trusted mentors in the field, delivering expert-verified guidance with the reliability and security your enterprise expects, when and where you need it most.</strong></div>
+    <div class="text-hero"><strong>Tools that serve as trusted mentors in the field, delivering expert-verified guidance with the accuracy, security, and reliability your enterprise expects, when and where you need it most.</strong></div>
     <div id="buttons-hero">
       <a href="/#products"><div id="button-1">Our Products</div></a>
       <a href="/#contact"><div id="button-2">Book a Demo</div></a>
@@ -130,7 +130,7 @@ faq_section:
       a: Yes, all InCheck products are HIPAA-compliant, ensuring data security and privacy.
 
     - q: What makes InCheck tools Enterprise Grade?
-      a: Our tools are built to be Enterprise Grade, focusing on security, reliability, and accuracy. We implement best security practices and utilize robust infrastructure to ensure your data and tool usage are secure and reliable, backed by service level agreements (SLAs) typically offering 99% uptime. We also invest heavily in validating our data and systems, leveraging our industry-leading expertise in Cybersecurity, Infrastructure, Software Development, and AI/ML to achieve a high level of accuracy, targeting 99% accuracy in our tools' actions and responses.
+      a: Our tools are built to be Enterprise Grade, focusing on accuracy, security, and reliability. We implement best security practices and utilize robust infrastructure to ensure your data and tool usage are secure and reliable, backed by service level agreements (SLAs) typically offering 99% uptime. We also invest heavily in validating our data and systems, leveraging our industry-leading expertise in Cybersecurity, Infrastructure, Software Development, and AI/ML to achieve a high level of accuracy, targeting 99% accuracy in our tools' actions and responses.
 
     - q: Are the recommendations and translations verified?
       a: Yes, all insights provided by Nova, Rampart, and Angel are verified by experienced EMS and healthcare providers and powered by Actual Intelligence to ensure accuracy and reliability.
@@ -238,28 +238,4 @@ pricing_section:
       price: Custom pricing
       button: Contact us
       link: /#contact
-
-    # - q: What is Rampart, and how does it revolutionize EMS support?
-    #   a: Rampart, our EMS Virtual Assistant, is a groundbreaking AI-driven platform tailored for the Emergency Medical Services industry. Designed as a virtual medic partner, Rampart offers comprehensive support by providing possible differential diagnoses, medication calculations, general medical knowledge, training, and suggestions, all available 24/7 through an accurate speech-to-text interface. Rampart is set to revolutionize EMS support by enhancing decision-making, operational efficiency, and patient care with the power of Artificial Intelligence.
-
-    # - q: What are some of the benefits of Rampart?
-    #   a: Real-Time Medical Guidance provides immediate medical advice and guidance in a clinical setting; Speech-to-Text Functionality converts spoken language into text for easier documentation; Critical Next Steps offers step-by-step guidance during emergencies; Medical Question Answering provides clear and accurate information for patient care; Dosage Calculations ensure correct medication dosages based on patient weight; Easy Local Protocol Lookup quickly finds and references local emergency protocols; Portable and User-Friendly design makes it accessible and convenient on mobile devices.
-
-    # - q: Do you have a mobile application for Rampart?
-    #   a: Yes! We now have both Apple and Android mobile applications available. You can visit our mobile_link to download the apps and experience Rampart on your device.
-
-    # - q: Is Rampart's handling of data HIPAA-compliant?
-    #   a: Absolutely. Rampart and all associated services strictly adhere to HIPAA regulations to ensure the highest level of data privacy and security. Our commitment to data confidentiality means sensitive information is protected at all times, providing our users with peace of mind regarding their privacy.
-
-    # - q: Can Rampart be customized for specific EMS needs?
-    #   a: Yes, Rampart offers customization options to meet the specific needs of different EMS providers. From integrating custom medical knowledge bases to adapting our platform for unique operational workflows, our team works closely with you to tailor Rampart, ensuring it perfectly aligns with your service requirements.
-
-    # - q: How does Rampart ensure safety and accuracy in its responses?
-    #   a: Rampart has been extensively tested in real-world EMS scenarios during its Alpha and Beta phases, demonstrating an accuracy range between 94-97%. Although AI is inherently non-deterministic, we've engineered Rampart to deliver highly reliable support. However, we always recommend double-checking Rampart's advice as a best practice for safety and precision.
-
-    # - q: Can Rampart integrate with existing EMS systems?
-    #   a: Yes, Rampart is designed for seamless integration into existing EMS infrastructures. Whether your system uses proprietary software or third-party applications, our team is dedicated to ensuring a smooth integration process, enhancing your existing systems with Rampart's advanced AI capabilities.
-
-    # - q: What subscription plans are available for Rampart?
-    #   a: We offer three subscription plans for Rampart Basic, Standard, Teams, and Enterprise. Each plan is designed to cater to different needs, from individual users to large organizations. Please see our pricing section for more details.
 ---
