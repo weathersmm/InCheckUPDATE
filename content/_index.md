@@ -3,88 +3,14 @@ title: Actual Intelligence
 
 hero_section:
   content: >
-    <h2>Introducing <span class="title-marked">InCheck</span></h2>
-    <h2>Empowering Smarter Decisions</h2>
-    <h2>with <span class="title-marked">Actual Intelligence</span></h2>
-    <div class="text-hero">A suite of tools designed to act as trusted mentors in the field, providing expert-verified, real-world guidance whenever and wherever it's needed. </div>
+    <h2><strong>Introducing <span class="title-marked">InCheck</span></strong></h2>
+    <h2><strong><span class="enterprise-grade">Enterprise Grade</span> <span class="title-marked">Actual Intelligence</span></strong></h2>
+    <h2><strong>for <span class="title-marked">Real-World Decisions</span></strong></h2>
+    <div class="text-hero"><strong>Tools that serve as trusted mentors in the field, delivering expert-verified guidance when and where your enterprise needs it most.</strong></div>
     <div id="buttons-hero">
       <a href="/#products"><div id="button-1">Our Products</div></a>
       <a href="/#contact"><div id="button-2">Book a Demo</div></a>
     </div>
-  # buttons:
-  #   - label: Get Started
-  #     link: "#values"
-
-# services_section:
-#   title: Affordably priced packages
-#   sub_title: Rampart
-#   services:
-#     - title: Rampart Basic
-#       price:
-#         - "FREE"
-
-#       title2: Benefits
-#       content2:
-#         - "Access to (EVA) EMS Virtual Assistant."
-#         - "Limited to 10 Requests per 3 hours."
-#       finePrint:
-#       logo: /assets/img/logo_hugo.png
-#       link: "https://signup.intellux.ai/"
-#     - title: Rampart Standard
-#       price:
-#         - "$4.99/month"
-
-#       title2: Benefits
-#       content2:
-#         - "Access to (EVA) EMS Virtual Assistant."
-#         - "Cancel Anytime"
-#         - "Limited to 50 Requests per 3 hours."
-#       finePrint:
-#       logo: /assets/img/logo_hugo.png
-#       link: "https://signup.intellux.ai/"
-
-#     - title: Rampart Teams
-#       strikePrice:
-
-#       price:
-#         - "$14.99 per seat/month"
-#         - "Minimum of 5 seats"
-
-#       title2: Benefits
-#       content2:
-#         - "Access to Rampart Unlimited"
-#         - "Opt-out of Training Data"
-#         - "Min 5 seats"
-#         - "Discounted Pricing for 10+ Seats"
-#       finePrint: "*Credit Card Required. Payments will be automatically processed each month."
-#       logo: /assets/img/logo_hugo.png
-#       link: "https://signup.intellux.ai/"
-
-#     - title: Rampart Enterprise
-#       strikePrice:
-
-#       price:
-#         - "Click here to Contact us at"
-#         - "enterprise@intellux.ai for"
-#         - "companies with more than 100"
-#         - "Employees"
-#       title2: Benefits
-#       content2:
-#         - "Same benefits as Rampart Teams"
-#         - "Run Dedicated infrastructure"
-#         - "Add custom knowledge"
-#       finePrint: ""
-#       logo: /assets/img/logo_hugo.png
-#       link: "mailto:enterprise@intellux.ai"
-
-# deployed_section:
-#   title: "Deployed in These States"
-#   description: "We have successfully deployed Rampart in the following states:"
-#   states:
-#     - "New Hampshire"
-#     - "Massachusetts"
-#     - "Vermont"
-#   image: "/assets/img/coverage_area.png"
 
 about_us_section:
   title: >
