@@ -6,7 +6,7 @@ hero_section:
     <h2><strong>Introducing <span class="title-marked">InCheck</span></strong></h2>
     <h2><strong><span class="enterprise-grade">Enterprise Grade</span> <span class="title-marked">Actual Intelligence</span></strong></h2>
     <h2><strong>for <span class="title-marked">Real-World Decisions</span></strong></h2>
-    <div class="text-hero"><strong>Tools that serve as trusted mentors in the field, delivering expert-verified guidance when and where your enterprise needs it most.</strong></div>
+    <div class="text-hero"><strong>Tools that serve as trusted mentors in the field, delivering expert-verified guidance with the reliability and security your enterprise expects, when and where you need it most.</strong></div>
     <div id="buttons-hero">
       <a href="/#products"><div id="button-1">Our Products</div></a>
       <a href="/#contact"><div id="button-2">Book a Demo</div></a>
@@ -129,20 +129,23 @@ faq_section:
     - q: Are Nova, Rampart, and Angel HIPAA-compliant?
       a: Yes, all InCheck products are HIPAA-compliant, ensuring data security and privacy.
 
+    - q: What makes InCheck tools Enterprise Grade?
+      a: Our tools are built to be Enterprise Grade, focusing on security, reliability, and accuracy. We implement best security practices and utilize robust infrastructure to ensure your data and tool usage are secure and reliable, backed by service level agreements (SLAs) typically offering 99% uptime. We also invest heavily in validating our data and systems, leveraging our industry-leading expertise in Cybersecurity, Infrastructure, Software Development, and AI/ML to achieve a high level of accuracy, targeting 99% accuracy in our tools' actions and responses.
+
     - q: Are the recommendations and translations verified?
       a: Yes, all insights provided by Nova, Rampart, and Angel are verified by experienced EMS and healthcare providers and powered by Actual Intelligence to ensure accuracy and reliability.
-    
+
     - q: Do these tools have mobile apps?
       a: Yes, all three tools—Nova, Rampart, and Angel—are accessible via mobile applications compatible with all major platforms, ensuring ease of use and portability.
-    
+
     - q: How do these tools help reduce workplace errors?
       a: By acting as workplace mentors, Nova, Rampart, and Angel leverage Actual Intelligence to provide real-time guidance, actionable insights, and immediate access to critical information, reducing liability and improving workplace efficiency.
-    
+
     - q: Can these tools integrate with existing systems?
       a: Absolutely! Nova, Rampart, and Angel integrate seamlessly with your current platforms.
 
     - q: How do I subscribe to Rampart?
-      a: You can subscribe to Rampart through our website to access either the free tier, standard tier or premium tier. 
+      a: You can subscribe to Rampart through our website to access either the free tier, standard tier or premium tier.
         - Basic EMS - $7.99/month
         - Complete EMS - $9.99/month
         - Standard - $12.99/month
