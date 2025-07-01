@@ -168,21 +168,21 @@ pricing_section:
       button: Register
       link: https://signup.intellux.ai/
 
-    - name: Basic EMS
-      features:
-        - Unlimited Rampart access.
-        - Optimized for medical professionals.
-      price: $7.99/month
-      button: Purchase
-      link: https://signup.intellux.ai/#basic
+    # - name: Basic EMS
+    #   features:
+    #     - Unlimited Rampart access.
+    #     - Optimized for medical professionals.
+    #   price: $7.99/month
+    #   button: Purchase
+    #   link: https://signup.intellux.ai/#basic
 
-    - name: Complete EMS
-      features:
-        - Unlimited access to both Rampart and Nova.
-        - Comprehensive medical AI suite.
-      price: $9.99/month
-      button: Purchase
-      link: https://signup.intellux.ai/#complete
+    # - name: Complete EMS
+    #   features:
+    #     - Unlimited access to both Rampart and Nova.
+    #     - Comprehensive medical AI suite.
+    #   price: $9.99/month
+    #   button: Purchase
+    #   link: https://signup.intellux.ai/#complete
 
     - name: Standard
       features:
@@ -193,42 +193,42 @@ pricing_section:
       button: Purchase
       link: https://signup.intellux.ai/#standard
 
-    - name: Premium
-      features:
-        - Unlimited Rampart and Nova access.
-        - Limited "El Chat" access.
-        - Balanced for both medical and general use.
-      price: $19.99/month
-      button: Purchase
-      link: https://signup.intellux.ai/#premium
+    # - name: Premium
+    #   features:
+    #     - Unlimited Rampart and Nova access.
+    #     - Limited "El Chat" access.
+    #     - Balanced for both medical and general use.
+    #   price: $19.99/month
+    #   button: Purchase
+    #   link: https://signup.intellux.ai/#premium
 
-    - name: Professional
-      features:
-        - Unlimited Rampart and Nova access.
-        - Enhanced "El Chat" with increased access limits.
-        - Full access to all capabilities.
-      price: $24.99/month
-      button: Purchase
-      link: https://signup.intellux.ai/#professional
+    # - name: Professional
+    #   features:
+    #     - Unlimited Rampart and Nova access.
+    #     - Enhanced "El Chat" with increased access limits.
+    #     - Full access to all capabilities.
+    #   price: $24.99/month
+    #   button: Purchase
+    #   link: https://signup.intellux.ai/#professional
 
-    - name: Teams
-      features:
-        - All Professional features.
-        - Team management capabilities.
-        - Min 5 seats.
-        - Basic integrations.
-      price: Custom pricing
-      button: Contact us
-      link: /#contact
+    # - name: Teams
+    #   features:
+    #     - All Professional features.
+    #     - Team management capabilities.
+    #     - Min 5 seats.
+    #     - Basic integrations.
+    #   price: Custom pricing
+    #   button: Contact us
+    #   link: /#contact
 
-    - name: Enterprise
-      features:
-        - Unlimited access across all models.
-        - Advanced customization options.
-        - Dedicated support.
-      price: Custom pricing
-      button: Contact us
-      link: /#contact
+    # - name: Enterprise
+    #   features:
+    #     - Unlimited access across all models.
+    #     - Advanced customization options.
+    #     - Dedicated support.
+    #   price: Custom pricing
+    #   button: Contact us
+    #   link: /#contact
 
     - name: API Integration
       features:
