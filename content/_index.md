@@ -211,24 +211,24 @@ pricing_section:
     #   button: Purchase
     #   link: https://signup.intellux.ai/#professional
 
-    # - name: Teams
-    #   features:
-    #     - All Professional features.
-    #     - Team management capabilities.
-    #     - Min 5 seats.
-    #     - Basic integrations.
-    #   price: Custom pricing
-    #   button: Contact us
-    #   link: /#contact
+    - name: Teams
+      features:
+        - All Professional features.
+        - Team management capabilities.
+        - Min 5 seats.
+        - Basic integrations.
+      price: Custom pricing
+      button: Contact us
+      link: /#contact
 
-    # - name: Enterprise
-    #   features:
-    #     - Unlimited access across all models.
-    #     - Advanced customization options.
-    #     - Dedicated support.
-    #   price: Custom pricing
-    #   button: Contact us
-    #   link: /#contact
+    - name: Enterprise
+      features:
+        - Unlimited access across all models.
+        - Advanced customization options.
+        - Dedicated support.
+      price: Custom pricing
+      button: Contact us
+      link: /#contact
 
     - name: API Integration
       features:
