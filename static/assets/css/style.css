@@ -626,7 +626,7 @@ section {
 # Products
 --------------------------------------------------------------*/
 
-.about_us .content {
+.about_us .content, .consulting .content {
   background-image: linear-gradient(to bottom, rgba(45, 176, 232, 0.2), #ffffff);
   padding: 40px;
   border-radius: 10px; /* Rounded corners */
@@ -1997,4 +1997,8 @@ section {
   .custom-padding {
     padding-right: 30px !important;
   }
+}
+
+.consulting_list {
+  margin-left: 55px;
 }

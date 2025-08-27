@@ -1,16 +1,10 @@
 baseURL = 'https://intellux.ai/'
 languageCode = 'en-us'
 title = 'InCheck'
-
-[outputFormats]
-[outputFormats.RobotsTXT]
-  mediaType = "text/plain"
-  baseName = "robots"
-  isPlainText = true
-
-[outputs]
-  home = ["HTML", "RSS", "RobotsTXT"]
+enableRobotsTXT = true
 
 [taxonomies]
   tag = ""
   category = ""
+
+ignoreFiles = ["\\.DS_Store$", "public/.*", "hugo_build.lock"]
