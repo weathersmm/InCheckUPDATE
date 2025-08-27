@@ -375,6 +375,40 @@
 {{ end }}
 <!-- End F.A.Q Section -->
 
+
+<!-- ======= Consulting Section ======= -->
+{{ with .Params.consulting_section }}
+<section id="consulting" class="consulting section-titles">
+  <div class="container" data-aos="fade-up" style="display: flex; flex-direction: column; align-items: center;">
+    <header class="section-header" style="text-align: center;">
+      <h3>{{ .title }}</h3>
+      <p>{{ .subtitle }}</p>
+    </header>
+
+    <div class="row gy-4 content" style="justify-content: center; width: 100%; align-items: stretch;">
+
+      <div>
+        {{ .content_1 | markdownify }}
+      </div>
+      <div>
+        {{ .content_2 | markdownify }}
+      </div>
+
+      <ul class="consulting_list">
+        {{ $counter := 1 }}
+        {{ range .list }}
+        <li>
+          {{ .feature | markdownify }}
+        </li>
+        {{ $counter = add $counter 1 }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
   <div class="container" data-aos="fade-up" style="display: flex; flex-direction: column; align-items: center;">

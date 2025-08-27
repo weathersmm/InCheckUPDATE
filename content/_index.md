@@ -238,4 +238,19 @@ pricing_section:
       price: Custom pricing
       button: Contact us
       link: /#contact
+
+
+
+consulting_section:
+  title: Consulting
+  subtitle: Expert Consulting Through Our Partner
+
+  content_1: InCheck AI provides comprehensive AI consulting and development services through our official partner organization, [**Fast Medical AI**](https://fastmedical.ai).
+  content_2: "Leveraging deep industry expertise, Fast Medical AI empowers EMS and healthcare billing companies to integrate artificial intelligence strategically and effectively. Their services include:"
+  list:
+    - feature: "**AI Deployment & Development:** Specializing in solutions for the Emergency Medical Services (EMS) and healthcare billing industries."
+    - feature: "**Strategic Advising:** Assessing your business operations to recommend and build custom AI systems that augment your workflow where it matters most."
+    - feature: "**Compliance & Policy Expertise:** Navigating the complexities of **HIPAA**, **SOC2**, and the emerging field of **AI compliance** to ensure your solutions are powerful, secure, and fully compliant."
+    - feature: "**Custom System Management:** Offering end-to-end services, from initial development and deployment to long-term maintenance of any custom AI system."
+
 ---
