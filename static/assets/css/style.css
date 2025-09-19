@@ -2002,3 +2002,8 @@ section {
 .consulting_list {
   margin-left: 55px;
 }
+
+.customer_img {
+  width: 140px;
+  max-width: 140px !important;
+}
