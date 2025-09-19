@@ -42,6 +42,14 @@ about_us_section:
     </div>
 
 
+customers_section:
+  customers:
+    - img: "/assets/img/logos/lifeline-ems.webp"
+      title: "Lifeline EMS"
+      link: "https://lifeline-ems.com/"
+    - img: "/assets/img/logos/apex.png"
+      title: "Apex Education"
+
 
 products_section:
   title_one: Rampart (EMS Mode)
