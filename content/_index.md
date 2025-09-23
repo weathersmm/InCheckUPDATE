@@ -160,7 +160,7 @@ faq_section:
         - Premium - $19.99/month
         - Professional - $24.99/month
     - q: How do I request a demo?
-      a: You can request a demo through our website or by contacting our sales team <a href="mailto:support@intellux.ai>support@intellux.ai</a>.
+      a: You can request a demo through our website or by contacting our sales team <a href="mailto:support@incheck.ai>support@incheck.ai</a>.
 
 
 pricing_section:
@@ -174,7 +174,7 @@ pricing_section:
         - Basic assistance for both medical and general use.
       price: Free
       button: Register
-      link: https://signup.intellux.ai/
+      link: https://signup.incheck.ai/
 
     # - name: Basic EMS
     #   features:
@@ -182,7 +182,7 @@ pricing_section:
     #     - Optimized for medical professionals.
     #   price: $7.99/month
     #   button: Purchase
-    #   link: https://signup.intellux.ai/#basic
+    #   link: https://signup.incheck.ai/#basic
 
     # - name: Complete EMS
     #   features:
@@ -190,7 +190,7 @@ pricing_section:
     #     - Comprehensive medical AI suite.
     #   price: $9.99/month
     #   button: Purchase
-    #   link: https://signup.intellux.ai/#complete
+    #   link: https://signup.incheck.ai/#complete
 
     - name: Standard
       features:
@@ -199,7 +199,7 @@ pricing_section:
         - General purpose use.
       price: $12.99/month
       button: Purchase
-      link: https://signup.intellux.ai/#standard
+      link: https://signup.incheck.ai/#standard
 
     # - name: Premium
     #   features:
@@ -208,7 +208,7 @@ pricing_section:
     #     - Balanced for both medical and general use.
     #   price: $19.99/month
     #   button: Purchase
-    #   link: https://signup.intellux.ai/#premium
+    #   link: https://signup.incheck.ai/#premium
 
     # - name: Professional
     #   features:
@@ -217,7 +217,7 @@ pricing_section:
     #     - Full access to all capabilities.
     #   price: $24.99/month
     #   button: Purchase
-    #   link: https://signup.intellux.ai/#professional
+    #   link: https://signup.incheck.ai/#professional
 
     - name: Teams
       features:
