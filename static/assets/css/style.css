@@ -2007,3 +2007,8 @@ section {
   width: 140px;
   max-width: 140px !important;
 }
+
+
+.documentation pre {
+  padding: 15px 20px !important;
+}
