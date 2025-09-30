@@ -168,18 +168,20 @@
       <h3>Trusted by</h3>
     </header>
 
-    <div class="row gx-0 d-flex align-items-stretch justify-content-center">
-      {{ range .customers }}
-        <div class="col-12 col-md-2 d-flex justify-content-center align-items-center my-3" data-aos="fade-up" data-aos-delay="200">
-          {{ if .link }}
-            <a href="{{ .link }}" target="_blank" rel="noopener">
+    <div class="swiper-customers">
+      <div class="swiper-wrapper align-items-center">
+        {{ range .customers }}
+          <div class="swiper-slide">
+            {{ if .link }}
+              <a href="{{ .link }}" target="_blank" rel="noopener">
+                <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" />
+              </a>
+            {{ else }}
               <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" />
-            </a>
-          {{ else }}
-            <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" />
-          {{ end }}
-        </div>
-      {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
     </div>
     
   </div>

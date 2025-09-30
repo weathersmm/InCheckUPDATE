@@ -49,8 +49,10 @@ customers_section:
       link: "https://lifeline-ems.com/"
     - img: "/assets/img/logos/apex.png"
       title: "Apex Education"
+      link: https://apexemsacademy.com
     - img: "/assets/img/logos/NMETC.png"
       title: "National Medical Education & Training Center"
+      link: https://nmetc.com/
 
 
 products_section:
