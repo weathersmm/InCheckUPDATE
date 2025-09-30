@@ -316,6 +316,27 @@
 
     // Scroll functions
     initScrollFunctions();
+
+    //customers trusted
+    new Swiper('.swiper-customers', {
+      slidesPerView: 'auto',
+      spaceBetween: 50, 
+      loop: true,
+      speed: 6000,
+      allowTouchMove: true,
+      freeMode: true,
+      freeModeMomentum: false,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+      },
+      breakpoints: {
+        768: {
+          spaceBetween: 200
+        },
+      }
+    });
+
   });
 
   // Non-critical functions can wait for load event
