@@ -2014,8 +2014,8 @@ section {
 }
 
 .swiper-slide {
-  width: auto !important;     /* 👈 hace que cada logo mida lo que necesita */
-  flex-shrink: 0;             /* no se encoja */
+  width: auto !important;
+  flex-shrink: 0;
 }
 
 .customer_img {
