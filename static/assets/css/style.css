@@ -2007,6 +2007,11 @@ section {
 .swiper-customers {
   padding: 20px 5px;
 }
+@media (min-width: 768px) {
+  .swiper-customers {
+    display: none;
+  }
+}
 
 .swiper-slide {
   width: auto !important;     /* 👈 hace que cada logo mida lo que necesita */
@@ -2017,6 +2022,7 @@ section {
   max-height: 140px;
   height: auto;
   width: auto;
+  max-width: 140px !important;
   object-fit: contain;
   display: block;
 }
