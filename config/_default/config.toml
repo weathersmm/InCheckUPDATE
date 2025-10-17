@@ -1,0 +1,12 @@
+baseURL = "/"
+title = "InCheck"
+languageCode = "en-us"
+enableRobotsTXT = true
+relativeURLs = true
+canonifyURLs = false
+
+[minify]
+  minifyOutput = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

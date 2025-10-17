@@ -1,0 +1,3 @@
+baseURL = "https://incheck.ai/"
+relativeURLs = false
+canonifyURLs = true
