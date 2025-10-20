@@ -1,10 +1,10 @@
 name = "incheckupdate"
 
+# For Cloudflare Pages: where the static site ends up
+pages_build_output_dir = "InCheckSite/public"
+
 [build]
 command = "hugo --minify"
-cwd = "InCheckSite"
 
 [vars]
 HUGO_VERSION = "0.134.3"
-
-pages_build_output_dir = "InCheckSite/public"
