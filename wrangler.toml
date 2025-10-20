@@ -1,6 +1,6 @@
 name = "incheckupdate"
 
-# For Cloudflare Pages: where the static site ends up
+# Tell Pages where the final static assets are emitted
 pages_build_output_dir = "InCheckSite/public"
 
 [build]
