@@ -1,0 +1,12 @@
+baseURL = "/"
+title = "InCheck"
+# If you're not using a theme, leave this out.
+# theme = "your-theme-name"
+sectionPagesMenu = "main"
+
+[outputs]
+home = ["HTML"]
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
