@@ -1,0 +1,10 @@
+name = "incheckupdate"
+
+[build]
+command = "hugo --minify"
+cwd = "InCheckSite"
+
+[vars]
+HUGO_VERSION = "0.134.3"
+
+pages_build_output_dir = "InCheckSite/public"
