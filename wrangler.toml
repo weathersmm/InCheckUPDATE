@@ -1,10 +1,7 @@
 name = "incheckupdate"
 
-# Tell Pages where the final static assets are emitted
+# Tell Pages where the final static site is emitted
 pages_build_output_dir = "InCheckSite/public"
-
-[build]
-command = "hugo --minify"
 
 [vars]
 HUGO_VERSION = "0.134.3"
