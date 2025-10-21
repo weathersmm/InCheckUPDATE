@@ -1,0 +1,27 @@
+{{/* Reads from /data/capabilities.yaml -> list of { icon, title, description, benefit } */}}
+{{ $items := .Site.Data.capabilities }}
+{{ if $items }}
+<section class="section capabilities">
+  <div class="container">
+    {{ with .Site.Data.home.capabilitiesHeading }}
+      <h2 class="section__title">{{ . }}</h2>
+    {{ else }}
+      <h2 class="section__title">Core Capabilities</h2>
+    {{ end }}
+
+    <div class="cards cards--grid">
+      {{ range $items }}
+      <article class="card">
+        {{ with .icon }}
+          {{/* If you add layouts/partials/icons/filled.html, it can render SVGs by name */}}
+          <div class="card__icon">{{ partial "icons/filled.html" (dict "name" .) }}</div>
+        {{ end }}
+        <h3 class="card__title">{{ .title }}</h3>
+        {{ with .description }}<p class="card__body">{{ . }}</p>{{ end }}
+        {{ with .benefit }}<p class="card__meta">{{ . }}</p>{{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
