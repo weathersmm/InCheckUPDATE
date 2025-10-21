@@ -1,81 +1,11 @@
 {{define "main"}}
-<!-- ======= Hero Section ======= -->
-{{with .Params.hero_section}}
-<section
-  class="hero d-flex align-items-center justify-content-center"
->
-  <!-- Dark Overlay for Contrast -->
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+{{/* modernised homepage */}}
+{{ partial "hero.html" . }}
+{{ partial "capabilities.html" . }}
+{{ partial "why.html" . }}
+{{ partial "cta-demo.html" . }}
 
-  <div class="container" style="position: relative; z-index: 1;">
-    <div class="row justify-content-center">
-      <div
-        class="d-flex flex-column justify-content-center text-center align-items-center"
-      >
-        <div class="overlay">
-          <div class="content_hero">{{.content | safeHTML}}</div>
-          <!-- <h2 class="subtitle_home" data-aos="fade-up" data-aos-delay="400">{{.content | safeHTML}}</h2> -->
-          <!-- <div data-aos="fade-up" data-aos-delay="600">
-            {{ with .buttons}}
-            <div class="text-center">
-              {{ range . }}
-              <a href="{{.link}}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center" style="background-color: #007bff; color: white;">
-                <span>{{.label}}</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-              {{ end }}
-            </div>
-            {{end}}
-          </div> -->
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{end}}
-<!-- End Hero -->
-
-<!-- ======= Services Section ======= -->
-<!-- {{with .Params.services_section}}
-<section id="values" class="values">
-  <div class="specificClass" data-aos="fade-up">
-    <header class="section-header">
-      <h3>{{.title}}</h3>
-      <h2>{{.sub_title}}</h2>
-    </header>
-    <div class="row">
-      {{range .services}}
-      <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-        <a href="{{.link}}" class="service-link">
-          <div class="box">              
-            <img src="{{.logo}}" class="logo" alt="" /> 
-            <h3>{{.title}}</h3>
-            {{range .strikePrice}}
-              <h1>{{.}}</h1>
-            {{end}}
-            {{range .price}}
-              <h2>{{.}}</h2>
-            {{end}}
-              <div class="title2"><h2>{{.title2}}</h2></div>
-              {{range .content2}}
-                <div class="content2"><p><i class="fas fa-check"></i> {{.}}</p></div>
-              {{end}}
-            
-            <div class="finePrint">
-              <p>{{.finePrint}}</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      {{end}}
-    </div>
-  </div>
-</section>
-{{end}} -->
-
-
-
-<!-- End Values Section -->
+{{/* (optional) keep deployed/about/customers sections below if you still want them) */}}
 <!-- Begin Coverage Area-->
 <!-- ======= Deployed Section ======= -->
 {{with .Params.deployed_section}}
