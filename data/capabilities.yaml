@@ -1,0 +1,13 @@
+- icon: shield
+  title: Advanced Clinical Decision Support
+  description: Protocol-driven guidance tailored to certification and local meds.
+  benefit: Deliver the right care at the right time.
+- icon: doc
+  title: Intelligent Narrative Generation
+  description: Converts spoken encounters into chart-ready PCR narratives.
+  benefit: Save minutes on every call and improve documentation quality.
+- icon: globe
+  title: Translation & Accessibility
+  description: Real-time translation and plain-language prompts for patients and crews.
+  benefit: Reduce friction and improve patient understanding.
+# add more…
