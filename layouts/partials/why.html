@@ -1,0 +1,22 @@
+{{/* Reads from /data/why.yaml -> list of { advantage, detail } */}}
+{{ $reasons := .Site.Data.why }}
+{{ if $reasons }}
+<section class="section why">
+  <div class="container">
+    {{ with .Site.Data.home.whyHeading }}
+      <h2 class="section__title">{{ . }}</h2>
+    {{ else }}
+      <h2 class="section__title">Why InCheck</h2>
+    {{ end }}
+
+    <div class="grid grid--three">
+      {{ range $reasons }}
+      <div class="feature">
+        <h3 class="feature__title">{{ .advantage }}</h3>
+        {{ with .detail }}<p class="feature__body">{{ . }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
