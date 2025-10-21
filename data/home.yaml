@@ -1,0 +1,11 @@
+hero:
+  title: AI that fits your clinical reality
+  subtitle: Protocol-aware guidance, narrative automation, and QA/QI—tuned to your state, county, and scope.
+  primary: { label: "Book a live demo", url: "/demo/" }
+  secondary: { label: "See capabilities", url: "#capabilities" }
+  media:
+    image: "/images/hero-art.png"
+    alt: "InCheck platform preview"
+
+capabilitiesHeading: "Core Capabilities"
+whyHeading: "Why InCheck"
