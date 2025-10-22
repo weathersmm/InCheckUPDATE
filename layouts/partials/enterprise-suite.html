@@ -1,0 +1,18 @@
+{{ $heading := .Site.Data.enterprise.suiteHeading }}
+{{ $items := .Site.Data.enterprise.suite }}
+{{ if $items }}
+<section id="suite" class="section suite">
+  <div class="container">
+    {{ with $heading }}<h2 class="section__title">{{ . }}</h2>{{ end }}
+    <div class="cards cards--grid">
+      {{ range $items }}
+      <article class="card">
+        <h3 class="card__title">{{ .mode }}</h3>
+        {{ with .description }}<p class="card__body">{{ . }}</p>{{ end }}
+        {{ with .benefit }}<p class="card__meta">{{ . }}</p>{{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
