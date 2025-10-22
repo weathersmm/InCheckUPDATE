@@ -1,105 +1,23 @@
-/* ===== Modern home partials ===== */
-.section.hero,
-.section.capabilities,
-.section.why,
-.section.cta { padding: 60px 0; }
+/* --- Header/hero layout fixes --- */
+:root {
+  /* Tune to your actual header height; 80–96px works for your current nav */
+  --header-height: 88px;
+}
 
-/* Hero */
-.hero__container {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
-  align-items: center;
+/* Ensure first hero section clears the fixed header */
+.section.hero {
+  /* Adds breathing room beneath the fixed header */
+  padding-top: var(--header-height);
 }
-.hero__title {
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 700;
-  color: #070E36;
-  margin: 0 0 12px;
-}
-.hero__subtitle {
-  font-size: 20px;
-  color: #404040;
-  margin: 0 0 20px;
-}
-.hero__actions .btn { margin-right: 12px; }
-.hero__media { text-align: right; }
-.hero__img { max-width: 100%; height: auto; }
 
-/* Buttons */
-.btn.btn--primary {
-  background: #045de9;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-weight: 600;
+/* Replace any hard-coded full-viewport height on .hero */
+.hero {
+  /* Let content define height; still keep a generous fold height */
+  height: auto !important;
+  min-height: calc(100svh - var(--header-height));
 }
-.btn.btn--primary:hover { background: #5371fe; color: #fff; }
-.btn.btn--ghost {
-  background: transparent;
-  border: 2px solid #045de9;
-  color: #045de9;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-weight: 600;
-}
-.btn.btn--ghost:hover { background: #045de9; color: #fff; }
 
-/* Capabilities */
-.cards { display: grid; gap: 20px; }
-.cards--grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  padding: 20px;
-}
-.card__icon {
-  font-size: 28px;
-  color: #045de9;
-  margin-bottom: 10px;
-}
-.card__title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #070E36;
-  margin: 0 0 6px;
-}
-.card__body { margin: 0 0 8px; color: #404040; }
-.card__meta { margin: 0; color: #5371fe; font-weight: 600; }
-
-/* Why InCheck */
-.grid.grid--three {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-}
-.feature {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  padding: 20px;
-}
-.feature__title { font-size: 18px; font-weight: 700; margin: 0 0 8px; color: #070E36; }
-.feature__body { margin: 0; color: #404040; }
-
-/* CTA Bar */
-.section.cta { background: #f6f7ff; }
-.cta__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-.cta__title { margin: 0; font-size: 28px; color: #070E36; }
-.cta__body { margin: 6px 0 0; color: #404040; }
-
-/* Responsive */
-@media (max-width: 991px) {
-  .hero__container { grid-template-columns: 1fr; }
-  .cards--grid, .grid.grid--three { grid-template-columns: 1fr; }
-  .cta__container { flex-direction: column; align-items: flex-start; }
+/* Optional: if the header is fixed via a class, ensure stacking is correct */
+.header {
+  z-index: 997; /* already present; keep it high so it sits above page content */
 }
