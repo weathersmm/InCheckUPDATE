@@ -1,22 +1,29 @@
+/* --- Fixes added for header/hero and early nav rendering --- */
 :root {
-  scroll-behavior: smooth;
-  --main-font: "Roboto", sans-serif;
-  --main-color: #734ae8;
-  /* Add header height so we can offset hero below a fixed header */
+  /* Ensure consistent header offset sitewide */
   --header-height: 88px;
 }
 
-/* ... keep existing rules ... */
-
-/* Overlap fix: ensure hero clears the fixed header */
-.section.hero { padding-top: var(--header-height); }
-
-.hero {
-  width: 100%;
-  height: auto !important;                      /* override 100vh */
-  min-height: calc(100svh - var(--header-height));
-  background-color: #f6f7ff !important;
-  position: relative;
+/* Make sure the nav list never shows bullets at first paint and is laid out inline on desktop */
+#navbar ul, #navbar li { list-style: none !important; }
+#navbar ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.25rem;
 }
 
-/* ... keep the rest as-is ... */
+/* Desktop: always show inline nav; Mobile toggle only <= 991px */
+@media (min-width: 992px) {
+  .mobile-nav-toggle { display: none !important; }
+  #navbar ul { display: flex !important; }
+}
+
+/* Ensure hero clears the fixed header and doesn’t force 100vh */
+.section.hero { padding-top: var(--header-height); }
+.hero {
+  height: auto !important;
+  min-height: calc(100svh - var(--header-height));
+  position: relative;
+}
