@@ -1,7 +1,7 @@
 {{/* Reads from /data/why.yaml -> list of { advantage, detail } */}}
 {{ $reasons := .Site.Data.why }}
 {{ if $reasons }}
-<section class="section why">
+<section id="why" class="section why">
   <div class="container">
     {{ with .Site.Data.home.whyHeading }}
       <h2 class="section__title">{{ . }}</h2>
