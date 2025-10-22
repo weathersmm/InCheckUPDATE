@@ -1,10 +1,16 @@
 hero:
-  title: AI that fits your clinical reality
-  subtitle: Protocol-aware guidance, narrative automation, and QA/QI—tuned to your state, county, and scope.
-  primary: { label: "Book a live demo", url: "/demo/" }
-  secondary: { label: "See capabilities", url: "#capabilities" }
+  # Updated hero copy and call‑to‑actions for a more compelling, modern landing experience
+  title: "Your AI partner on every call"
+  subtitle: "InCheck transforms emergency decision‑making with real‑time insights, clarity, and confidence."
+  primary:
+    label: "Book a demo"
+    url: "/demo/"
+  secondary:
+    label: "See capabilities"
+    url: "#capabilities"
   media:
-    image: "/assets/img/ai-ems-brain.png"   # <- set to an existing image under static/assets/img
+    # Retain the existing hero illustration for familiarity while improving text
+    image: "/assets/img/ai-ems-brain.png"
     alt: "InCheck platform preview"
 
 capabilitiesHeading: "Core Capabilities"
