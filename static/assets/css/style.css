@@ -129,3 +129,16 @@ body {
   overflow-x: hidden;
 }
 
+
+/* Improved mobile navigation: hide nav items by default and show when toggled */
+@media (max-width: 991px) {
+  #navbar ul {
+    display: none !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin-top: 1rem;
+  }
+  .navbar-mobile ul {
+    display: flex !important;
+  }
+}
