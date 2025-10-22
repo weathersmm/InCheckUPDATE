@@ -4,7 +4,7 @@ hero:
   primary: { label: "Book a live demo", url: "/demo/" }
   secondary: { label: "See capabilities", url: "#capabilities" }
   media:
-    image: "/images/hero-art.png"
+    image: "/assets/img/hero-art.png"
     alt: "InCheck platform preview"
 
 capabilitiesHeading: "Core Capabilities"
