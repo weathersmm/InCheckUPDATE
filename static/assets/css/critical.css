@@ -1,10 +1,20 @@
-/* --- Fixes added for header/hero and early nav rendering --- */
+/* --- APPEND to the end: force correct header/nav at first paint and fix hero offset --- */
+
+/* Ensure a consistent header offset across the site */
 :root {
-  /* Ensure consistent header offset sitewide */
   --header-height: 88px;
 }
 
-/* Make sure the nav list never shows bullets at first paint and is laid out inline on desktop */
+/* Make fixed-top actually fixed (and visible above hero) */
+.header.fixed-top {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: #fff; /* keeps nav readable over hero art */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Never show bullets; layout inline on desktop at first paint */
 #navbar ul, #navbar li { list-style: none !important; }
 #navbar ul {
   margin: 0 !important;
@@ -14,13 +24,26 @@
   gap: 0.25rem;
 }
 
-/* Desktop: always show inline nav; Mobile toggle only <= 991px */
+/* Desktop guards: do not allow the mobile overlay to appear >= 992px */
 @media (min-width: 992px) {
   .mobile-nav-toggle { display: none !important; }
-  #navbar ul { display: flex !important; }
+
+  /* Neutralize any mobile overlay state on desktop */
+  .navbar-mobile {
+    position: static !important;
+    overflow: visible !important;
+    background: transparent !important;
+  }
+  .navbar-mobile ul {
+    position: static !important;
+    top: auto !important; right: auto !important; bottom: auto !important; left: auto !important;
+    display: flex !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
 }
 
-/* Ensure hero clears the fixed header and doesn’t force 100vh */
+/* Hero should clear the fixed header and not force a full viewport height */
 .section.hero { padding-top: var(--header-height); }
 .hero {
   height: auto !important;
