@@ -139,6 +139,61 @@ body {
     margin-top: 1rem;
   }
   .navbar-mobile ul {
-    display: flex !important;
+ 
+/* ---------------------------------------------------------------------------
+ * Card styling enhancements
+ * ---------------------------------------------------------------------------
+ * Refine the visual presentation of the capability cards to look more modern
+ * and engaging.  Adds a soft border, rounded corners, subtle shadow, and
+ * improved typography.  Also uses an auto-fitting grid layout so cards wrap
+ * naturally on smaller screens without looking cramped.
+ */
+.cards--grid {
+  /* Use auto-fit to fill available space and wrap cards responsively */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card__icon {
+  font-size: 2rem;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.card__body {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.card__meta {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+   display: flex !important;
   }
 }
