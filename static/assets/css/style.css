@@ -45,3 +45,64 @@
 @media (max-width: 991px) {
   .cards--grid, .grid.grid--three { grid-template-columns: 1fr; }
 }
+
+/* === Custom UI/UX fixes ===
+   These additions address several styling issues observed on the development
+   deployment (https://incheckupdate.pages.dev/) such as the navigation wrapping
+   onto multiple lines, overly narrow spacing, and inconsistent hero styling.
+   By consolidating the nav items onto a single row and refining the hero
+   typography and button styles, the page better aligns with modern design
+   expectations and improves readability across devices. */
+
+/* Prevent the primary navigation from wrapping to multiple lines and add
+   consistent spacing between items. */
+#navbar ul {
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+/* Ensure individual list items never wrap text and remain on a single line. */
+#navbar ul li {
+  white-space: nowrap;
+}
+
+/* Reduce the gap between the logo and the navigation for a tighter header. */
+.header .logo {
+  margin-right: 1rem;
+}
+
+/* Improve hero section spacing and alignment for a cleaner, more focused
+   introduction. */
+.hero {
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+/* Update hero title font size and line‑height for better hierarchy. */
+.hero__title {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+/* Soften hero subtitle color and adjust spacing for readability. */
+.hero__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #374151;
+}
+
+/* Define a warm accent color for primary call‑to‑action buttons and improve
+   padding and border‑radius. */
+.btn.btn--primary {
+  background-color: #f59e0b;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.btn--primary:hover {
+  background-color: #d97706;
+}
+
