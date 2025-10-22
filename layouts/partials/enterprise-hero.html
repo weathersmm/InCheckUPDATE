@@ -1,0 +1,20 @@
+{{ $hero := .Site.Data.enterprise.hero }}
+{{ if $hero }}
+<section id="hero" class="section hero">
+  <div class="container hero__container">
+    <div class="hero__copy">
+      <h1 class="hero__title">{{ $hero.title }}</h1>
+      {{ with $hero.subtitle }}<p class="hero__subtitle">{{ . }}</p>{{ end }}
+      <div class="hero__actions">
+        {{ with $hero.primary }}<a href="{{ .url }}" class="btn btn--primary">{{ .label }}</a>{{ end }}
+        {{ with $hero.secondary }}<a href="{{ .url }}" class="btn btn--ghost">{{ .label }}</a>{{ end }}
+      </div>
+    </div>
+    {{ with $hero.media }}
+      <div class="hero__media">
+        {{ if .image }}<img src="{{ .image }}" alt="{{ .alt | default `Hero` }}" class="hero__img">{{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
