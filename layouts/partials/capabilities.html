@@ -1,7 +1,7 @@
 {{/* Reads from /data/capabilities.yaml -> list of { icon, title, description, benefit } */}}
 {{ $items := .Site.Data.capabilities }}
 {{ if $items }}
-<section class="section capabilities">
+<section id="capabilities" class="section capabilities">
   <div class="container">
     {{ with .Site.Data.home.capabilitiesHeading }}
       <h2 class="section__title">{{ . }}</h2>
@@ -13,8 +13,11 @@
       {{ range $items }}
       <article class="card">
         {{ with .icon }}
-          {{/* If you add layouts/partials/icons/filled.html, it can render SVGs by name */}}
-          <div class="card__icon">{{ partial "icons/filled.html" (dict "name" .) }}</div>
+          {{ if templates.Exists "partials/icons/filled.html" }}
+            <div class="card__icon">{{ partial "icons/filled.html" (dict "name" .) }}</div>
+          {{ else }}
+            <div class="card__icon" aria-hidden="true"></div>
+          {{ end }}
         {{ end }}
         <h3 class="card__title">{{ .title }}</h3>
         {{ with .description }}<p class="card__body">{{ . }}</p>{{ end }}
