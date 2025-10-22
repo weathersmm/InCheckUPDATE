@@ -110,3 +110,22 @@
   background-color: #d97706;
 }
 
+
+/* Hide nav items by default on mobile and display only when toggled */
+@media (max-width: 991px) {
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  #navbar.navbar-mobile ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Prevent horizontal scrolling on the site */
+body {
+  overflow-x: hidden;
+}
+
