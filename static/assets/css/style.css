@@ -1,59 +1,33 @@
-/* ===== Modern home + enterprise partials ===== */
+/* --- Overrides for robust desktop vs mobile nav and hero spacing --- */
 :root { --header-height: 88px; }
+
+/* Always clear the fixed header */
 .section.hero { padding-top: var(--header-height); }
 .hero { height: auto !important; min-height: calc(100svh - var(--header-height)); }
 
-/* Hero layout */
-.hero__container {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
-  align-items: center;
+/* Nav: remove bullets and keep inline layout on desktop */
+#navbar ul, #navbar li { list-style: none !important; }
+#navbar ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  align-items: center !important;
 }
-.hero__title { font-size: clamp(36px, 5vw, 64px); line-height: 1.1; font-weight: 700; color: #070E36; margin: 0 0 12px; }
-.hero__subtitle { font-size: 20px; color: #404040; margin: 0 0 20px; }
-.hero__actions .btn { margin-right: 12px; }
-.hero__media { text-align: right; }
-.hero__img { max-width: 100%; height: auto; }
+@media (min-width: 992px) {
+  .mobile-nav-toggle { display: none !important; }
+  #navbar ul { display: flex !important; }
+}
 
-/* Buttons */
-.btn.btn--primary { background: #045de9; color: #fff; padding: 12px 20px; border-radius: 6px; font-weight: 600; }
-.btn.btn--primary:hover { background: #5371fe; color: #fff; }
-.btn.btn--ghost { background: transparent; border: 2px solid #045de9; color: #045de9; padding: 10px 18px; border-radius: 6px; font-weight: 600; }
-.btn.btn--ghost:hover { background: #045de9; color: #fff; }
-
-/* Cards and grids used by capabilities + enterprise suite */
+/* Capabilities / Advantage grids: ensure consistent columns & stretch cards evenly */
 .cards { display: grid; gap: 20px; align-items: stretch; }
 .cards--grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.card {
-  background: #fff; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  padding: 20px; height: 100%;
+.card { height: 100%; }
+
+.grid.grid--three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 }
-.card__icon { font-size: 28px; color: #045de9; margin-bottom: 10px; display: inline-block; }
-.card__title { font-size: 20px; font-weight: 700; color: #070E36; margin: 0 0 6px; }
-.card__body { margin: 0 0 8px; color: #404040; }
-.card__meta { margin: 0; color: #5371fe; font-weight: 600; }
 
-/* Why / Advantage grid */
-.grid.grid--three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.feature { background: #fff; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); padding: 20px; }
-.feature__title { font-size: 18px; font-weight: 700; margin: 0 0 8px; color: #070E36; }
-.feature__body { margin: 0; color: #404040; }
-
-/* Enterprise: Angel section */
-.section.angel .lead { font-size: 20px; color: #404040; }
-.section.angel ul { margin: 12px 0 0; padding-left: 1.2rem; }
-.section.angel li { margin-bottom: 6px; }
-
-/* CTA bar */
-.section.cta { background: #f6f7ff; }
-.cta__container { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.cta__title { margin: 0; font-size: 28px; color: #070E36; }
-.cta__body { margin: 6px 0 0; color: #404040; }
-
-/* Responsive */
 @media (max-width: 991px) {
-  .hero__container { grid-template-columns: 1fr; }
   .cards--grid, .grid.grid--three { grid-template-columns: 1fr; }
-  .cta__container { flex-direction: column; align-items: flex-start; }
 }
