@@ -1,7 +1,7 @@
 {{/* Reads from /data/home.yaml -> hero: { title, subtitle, primary, secondary } */}}
 {{ $hero := (index .Site.Data "home").hero }}
 {{ if $hero }}
-<section class="section hero">
+<section id="hero" class="section hero">
   <div class="container hero__container">
     <div class="hero__copy">
       <h1 class="hero__title">{{ $hero.title }}</h1>
@@ -17,7 +17,6 @@
     </div>
     {{ with $hero.media }}
       <div class="hero__media">
-        {{/* Use an image, video, or Lottie container as needed. Fallback is a decorative box. */}}
         {{ if .image }}
           <img src="{{ .image }}" alt="{{ .alt | default `Hero illustration` }}" class="hero__img">
         {{ else }}
