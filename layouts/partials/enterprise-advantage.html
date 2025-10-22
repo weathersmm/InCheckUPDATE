@@ -1,0 +1,17 @@
+{{ $heading := .Site.Data.enterprise.advantageHeading }}
+{{ $list := .Site.Data.enterprise.advantages }}
+{{ if $list }}
+<section class="section advantage">
+  <div class="container">
+    {{ with $heading }}<h2 class="section__title">{{ . }}</h2>{{ end }}
+    <div class="grid grid--three">
+      {{ range $list }}
+      <div class="feature">
+        <h3 class="feature__title">{{ .advantage }}</h3>
+        {{ with .detail }}<p class="feature__body">{{ . }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
