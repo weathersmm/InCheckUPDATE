@@ -1,0 +1,46 @@
+hero:
+  title: "InCheck.AI"
+  subtitle: "Your Company’s Intelligence Engine."
+  primary: { label: "Book a live demo", url: "/demo/" }
+  secondary: { label: "See the suite", url: "#suite" }
+  media:
+    image: "/assets/img/ai-ems-brain.png"
+    alt: "Enterprise AI"
+
+angel:
+  title: "Meet Angel: Your Supervisor in Your Pocket."
+  intro: "Tired of flipping through 800+ page manuals, waiting for HR, or sending “quick” questions up the chain? Angel Mode puts your company’s policies, SOPs, and handbooks at your fingertips — 24/7."
+  bullets:
+    - "Ask anything in plain language — Angel delivers instant, precise answers."
+    - "Always accurate, always patient — no waiting, no guessing."
+    - "From onboarding to compliance — Angel makes sure every employee feels supported and empowered."
+  closer: "Angel isn’t just AI. It’s the supervisor everyone wishes they had — available anytime, anywhere."
+
+suiteHeading: "Your Complete Enterprise AI Suite"
+suite:
+  - mode: "Angel Mode"
+    description: "Your instant supervisor in your pocket. Provides 24/7 access to company policies, SOPs, and handbooks. Employees can ask questions in plain language and receive accurate, context-driven answers."
+    benefit: "Empower every employee with immediate, reliable support for onboarding, compliance, and daily operations."
+  - mode: "El Chat Mode"
+    description: "Your creative, problem-solving partner. Brainstorm ideas, draft content, analyze data, or collaborate on projects with files and images."
+    benefit: "Accelerate innovation and problem-solving with an all-around digital teammate."
+  - mode: "Translate Mode"
+    description: "Professional-grade translations that preserve nuance and tone, ensuring clarity in global communication."
+    benefit: "Connect without barriers across international teams, clients, and partners."
+
+advantageHeading: "The InCheck AI Advantage"
+advantages:
+  - advantage: "Built for Accuracy"
+    detail: "Engineered for emergency services, where mistakes aren’t an option."
+  - advantage: "Understands Context"
+    detail: "Reads entire documents, not just keywords."
+  - advantage: "Boosts Productivity"
+    detail: "Frees your team from time-consuming searches, allowing focus on real work."
+  - advantage: "Secure & Scalable"
+    detail: "Enterprise-grade protection and performance for growing organizations."
+
+cta:
+  title: "Turn Company Knowledge Into Your Competitive Edge"
+  blurb: "Your policies and procedures shouldn’t collect dust — they should work for you. With InCheck, they finally do."
+  label: "Book a live demo"
+  url: "/demo/"
