@@ -57,9 +57,9 @@
 /* Prevent the primary navigation from wrapping to multiple lines and add
    consistent spacing between items. */
 #navbar ul {
-  flex-wrap: nowrap;
-  gap: 1rem;
-}
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
 
 /* Ensure individual list items never wrap text and remain on a single line. */
 #navbar ul li {
@@ -75,7 +75,7 @@
    introduction. */
 .hero {
   text-align: center;
-  padding: 6rem 1.5rem;
+  padding: 4rem 1.5rem;
 }
 
 /* Update hero title font size and line‑height for better hierarchy. */
