@@ -1,11 +1,12 @@
-/* --- Overrides for robust desktop vs mobile nav and hero spacing --- */
+/* --- APPEND to the end: reinforce desktop nav, hero spacing, and grids --- */
+
 :root { --header-height: 88px; }
 
 /* Always clear the fixed header */
 .section.hero { padding-top: var(--header-height); }
 .hero { height: auto !important; min-height: calc(100svh - var(--header-height)); }
 
-/* Nav: remove bullets and keep inline layout on desktop */
+/* Remove bullets and keep inline layout on desktop */
 #navbar ul, #navbar li { list-style: none !important; }
 #navbar ul {
   margin: 0 !important;
@@ -15,9 +16,22 @@
 @media (min-width: 992px) {
   .mobile-nav-toggle { display: none !important; }
   #navbar ul { display: flex !important; }
+
+  /* Neutralize mobile overlay styles on desktop in case JS toggled it */
+  .navbar-mobile {
+    position: static !important;
+    overflow: visible !important;
+    background: transparent !important;
+  }
+  .navbar-mobile ul {
+    position: static !important;
+    display: flex !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
 }
 
-/* Capabilities / Advantage grids: ensure consistent columns & stretch cards evenly */
+/* Capabilities / Advantage grids: consistent columns and card heights */
 .cards { display: grid; gap: 20px; align-items: stretch; }
 .cards--grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .card { height: 100%; }
