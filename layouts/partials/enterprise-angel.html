@@ -1,0 +1,15 @@
+{{ $angel := .Site.Data.enterprise.angel }}
+{{ if $angel }}
+<section class="section angel">
+  <div class="container">
+    <h2 class="section__title">{{ $angel.title }}</h2>
+    {{ with $angel.intro }}<p class="lead">{{ . }}</p>{{ end }}
+    {{ with $angel.bullets }}
+      <ul>
+        {{ range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    {{ end }}
+    {{ with $angel.closer }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
