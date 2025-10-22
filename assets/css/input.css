@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient-start: #0b0b0f;
+    --gradient-end: #12121a;
+  }
+
+  html, body { height: 100%; }
+
+  body {
+    @apply font-body min-h-screen overflow-x-hidden text-light bg-gradient-to-b from-[var(--gradient-start)] to-[var(--gradient-end)];
+  }
+
+  /* A11y base */
+  a:focus { outline: 2px dashed theme('colors.accent'); outline-offset: 2px; }
+}
+
+@layer utilities {
+  @keyframes gradientShift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .animate-gradient-shift { background-size: 400% 400%; animation: gradientShift 12s ease infinite; }
+
+  /* Particle canvas fade-in + reduced motion */
+  #particles-js { opacity: 0; animation: fadeIn 1s ease-in forwards; }
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    #particles-js { display: none; }
+    .animate-gradient-shift { animation: none; }
+  }
+}
