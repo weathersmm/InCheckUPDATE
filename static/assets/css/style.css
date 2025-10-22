@@ -55,10 +55,14 @@
    expectations and improves readability across devices. */
 
 /* Prevent the primary navigation from wrapping to multiple lines and add
+
+
    consistent spacing between items. */
 #navbar ul {
   flex-wrap: wrap;
   gap: 0.75rem;
+  }
+
 
 
 /* Ensure individual list items never wrap text and remain on a single line. */
