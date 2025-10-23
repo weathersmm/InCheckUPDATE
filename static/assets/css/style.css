@@ -138,15 +138,12 @@ body {
     align-items: flex-start !important;
     margin-top: 1rem;
   }
-  .navbar-mobile ul {
- 
-/* ---------------------------------------------------------------------------
- * Card styling enhancements
- * ---------------------------------------------------------------------------
- * Refine the visual presentation of the capability cards to look more modern
- * and engaging.  Adds a soft border, rounded corners, subtle shadow, and
- * improved typography.  Also uses an auto-fitting grid layout so cards wrap
- * naturally on smaller screens without looking cramped.
+ .navbar-mobile ul {
+}
+}
+/* Card styling enhancements
+ *
+ * Refine the visual presentation of the capability cards to look more modern and engaging. Adds a soft border, rounded corners, subtle shadow, and improved typography. Also uses an auto-fitting grid layout so cards wrap naturally on smaller screens without looking cramped.
  */
 .cards--grid {
   /* Use auto-fit to fill available space and wrap cards responsively */
