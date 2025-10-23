@@ -1,49 +1,43 @@
+{{/*
+  Dynamic hero partial.
+  This component reads hero content from the site’s data files based on the
+  current section: `home`/`ems` pages use data/home.yaml while
+  `enterprise` pages use data/enterprise.yaml.  It falls back to the
+  home hero if no section match is found.
+*/}}
+{{ $hero := .Site.Data.home.hero }}
+{{/* Choose the appropriate hero definition based on the section */}}
+{{ if eq .Section "enterprise" }}
+  {{ $hero = .Site.Data.enterprise.hero }}
+{{ else if or (eq .Section "ems") (eq .Section "") }}
+  {{ $hero = .Site.Data.home.hero }}
+{{ end }}
+
+{{ if $hero }}
 <section id="hero" class="hero">
   <div class="container">
     <div class="row align-items-center min-vh-100">
       <div class="col-lg-6">
         <div class="hero-content">
-          <h1 class="hero-title">
-            <span class="hero-title-main">Introducing</span>
-            <span class="hero-title-brand">InCheck</span>
-          </h1>
-          <h2 class="hero-subtitle">
-            <span class="hero-subtitle-highlight">Enterprise Grade</span>
-            <span class="hero-subtitle-main">Actual Intelligence</span>
-          </h2>
-          <h3 class="hero-tagline">for Real-World Decisions</h3>
-          <p class="hero-description">
-            Tools that serve as trusted mentors in the field, delivering expert-verified guidance with the accuracy, security, and reliability your enterprise expects, when and where you need it most.
-          </p>
+          {{ with $hero.title }}<h1 class="hero-title">{{ . }}</h1>{{ end }}
+          {{ with $hero.subtitle }}<p class="hero-description lead">{{ . }}</p>{{ end }}
+          {{ with $hero.primary }}
           <div class="hero-actions">
-            <a href="/#products" class="btn btn-primary btn-lg">Our Products</a>
-            <a href="/#contact" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+            <a href="{{ .url }}" class="btn btn-primary btn-lg">{{ .label }}</a>
+            {{ with $hero.secondary }}<a href="{{ .url }}" class="btn btn-outline-primary btn-lg">{{ .label }}</a>{{ end }}
           </div>
-          <div class="hero-stats">
-            <div class="stat-item">
-              <span class="stat-number">99%</span>
-              <span class="stat-label">Accuracy</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">24/7</span>
-              <span class="stat-label">Support</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">HIPAA</span>
-              <span class="stat-label">Compliant</span>
-            </div>
-          </div>
+          {{ end }}
         </div>
       </div>
       <div class="col-lg-6">
+        {{ with $hero.media }}
         <div class="hero-visual">
           <div class="hero-image-container">
-            <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform" class="hero-image">
-            <div class="hero-badge">
-              <span class="badge-text">AI-Powered</span>
-            </div>
+            {{ if .image }}<img src="{{ .image }}" alt="{{ .alt | default `Hero Illustration` }}" class="hero-image">{{ end }}
+            {{/* Badge can be extended via data if desired */}}
           </div>
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -51,3 +45,4 @@
     <div class="hero-pattern"></div>
   </div>
 </section>
+{{ end }}
