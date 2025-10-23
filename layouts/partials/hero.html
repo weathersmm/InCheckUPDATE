@@ -1,3 +1,19 @@
+{{/*
+  Dynamic hero partial.
+  This component reads hero content from the site's data files based on the
+  current section: `home`/`ems` pages use data/home.yaml while
+  `enterprise` pages use data/enterprise.yaml.  It falls back to the
+  home hero if no section match is found.
+*/}}
+{{ $hero := .Site.Data.home.hero }}
+{{/* Choose the appropriate hero definition based on the section */}}
+{{ if eq .Section "enterprise" }}
+  {{ $hero = .Site.Data.enterprise.hero }}
+{{ else if or (eq .Section "ems") (eq .Section "") }}
+  {{ $hero = .Site.Data.home.hero }}
+{{ end }}
+
+{{ if $hero }}
 <section id="hero" class="hero">
   <div class="hero-background">
     <div class="hero-gradient"></div>
@@ -13,29 +29,58 @@
             <span>Enterprise-Grade AI</span>
           </div>
           
-          <h1 class="hero-title">
-            <span class="hero-title-main">Introducing</span>
-            <span class="hero-title-brand">InCheck</span>
-          </h1>
+          {{ with $hero.title }}
+            <h1 class="hero-title">{{ . }}</h1>
+          {{ else }}
+            <h1 class="hero-title">
+              <span class="hero-title-main">Introducing</span>
+              <span class="hero-title-brand">InCheck</span>
+            </h1>
+          {{ end }}
           
-          <h2 class="hero-subtitle">
-            <span class="hero-subtitle-highlight">Enterprise Grade</span>
-            <span class="hero-subtitle-main">Actual Intelligence</span>
-          </h2>
+          {{ with $hero.subtitle }}
+            <h2 class="hero-subtitle">{{ . }}</h2>
+          {{ else }}
+            <h2 class="hero-subtitle">
+              <span class="hero-subtitle-highlight">Enterprise Grade</span>
+              <span class="hero-subtitle-main">Actual Intelligence</span>
+            </h2>
+          {{ end }}
           
-          <h3 class="hero-tagline">for Real-World Decisions</h3>
+          {{ with $hero.tagline }}
+            <h3 class="hero-tagline">{{ . }}</h3>
+          {{ else }}
+            <h3 class="hero-tagline">for Real-World Decisions</h3>
+          {{ end }}
           
-          <p class="hero-description">
-            Transform emergency decision-making with AI-powered tools that serve as trusted mentors in the field. Get expert-verified guidance with enterprise-grade accuracy, security, and reliability.
-          </p>
+          {{ with $hero.description }}
+            <p class="hero-description">{{ . }}</p>
+          {{ else }}
+            <p class="hero-description">
+              Transform emergency decision-making with AI-powered tools that serve as trusted mentors in the field. Get expert-verified guidance with enterprise-grade accuracy, security, and reliability.
+            </p>
+          {{ end }}
           
           <div class="hero-actions">
-            <a href="/#products" class="btn btn-primary btn-lg">
-              <i class="bi bi-grid-3x3-gap me-2"></i>Explore Products
-            </a>
-            <a href="/#contact" class="btn btn-outline-primary btn-lg">
-              <i class="bi bi-calendar-check me-2"></i>Book Demo
-            </a>
+            {{ with $hero.primary }}
+              <a href="{{ .url }}" class="btn btn-primary btn-lg">
+                <i class="bi bi-grid-3x3-gap me-2"></i>{{ .label }}
+              </a>
+            {{ else }}
+              <a href="/#products" class="btn btn-primary btn-lg">
+                <i class="bi bi-grid-3x3-gap me-2"></i>Explore Products
+              </a>
+            {{ end }}
+            
+            {{ with $hero.secondary }}
+              <a href="{{ .url }}" class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-calendar-check me-2"></i>{{ .label }}
+              </a>
+            {{ else }}
+              <a href="/#contact" class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-calendar-check me-2"></i>Book Demo
+              </a>
+            {{ end }}
           </div>
           
           <div class="hero-stats">
@@ -74,7 +119,15 @@
         <div class="hero-visual">
           <div class="hero-image-container">
             <div class="hero-image-wrapper">
-              <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+              {{ with $hero.media }}
+                {{ if .image }}
+                  <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="hero-image">
+                {{ else }}
+                  <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                {{ end }}
+              {{ else }}
+                <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+              {{ end }}
               <div class="hero-overlay">
                 <div class="overlay-card">
                   <i class="bi bi-chat-dots"></i>
@@ -99,3 +152,4 @@
     </div>
   </div>
 </section>
+{{ end }}

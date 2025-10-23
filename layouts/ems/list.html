@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{/*
+    EMS landing page
+    This template composes the EMS landing page by reusing
+    the hero, capabilities, why, and call‑to‑action partials from
+    the home page.  If EMS requires bespoke components in
+    the future, they can be added here as additional partials.
+  */}}
+  {{ partial "hero.html" . }}
+  {{ partial "capabilities.html" . }}
+  {{ partial "why.html" . }}
+  {{ partial "cta-demo.html" . }}
+{{ end }}

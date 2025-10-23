@@ -8,3 +8,23 @@ enableRobotsTXT = true
   category = ""
 
 ignoreFiles = ["\\.DS_Store$", "public/.*", "hugo_build.lock"]
+
+[menu]
+  [[menu.main]]
+    name = "Product"
+    url = "/product/"
+  [[menu.main]]
+    name = "Pricing"
+    url = "/pricing/"
+  [[menu.main]]
+    name = "Docs"
+    url = "/docs/"
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+  [[menu.main]]
+    name = "Get Started"
+    url = "/get-started/"
+    weight = 100
+    [menu.main.params]
+      isButton = true
