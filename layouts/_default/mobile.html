@@ -126,8 +126,8 @@
         If you're not redirected automatically, please click one of the buttons below.
     </div>
 
-    <div id="not-available">
-        <h1>App for Apple will be available this year</h1>
+    <div id="not-available" style="display: none;">
+        <h1>Mobile apps coming soon</h1>
     </div>
 
     <!-- Web App Section -->
@@ -157,11 +157,11 @@
         <div class="qr-container">
             <div class="qr-code">
                 <h2>Apple App Store</h2>
-                <img src="/assets/img/apple_qr_code.png" alt="Apple App Store QR Code" width="200" height="200">
+                <img src="/assets/img/apple_qr_code.png" alt="QR code to download InCheck app from Apple App Store" width="200" height="200">
             </div>
             <div class="qr-code">
                 <h2>Google Play Store</h2>
-                <img src="/assets/img/android_qr_code.png" alt="Google Play Store QR Code" width="200" height="200">
+                <img src="/assets/img/android_qr_code.png" alt="QR code to download InCheck app from Google Play Store" width="200" height="200">
             </div>
         </div>
 
@@ -191,10 +191,10 @@
                     if (/android/i.test(userAgent)) {
                         window.location.href = "https://play.google.com/store/apps/details?id=ai.intellux.app";
                     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                        window.location.href = "https://apps.apple.com/us/app/eva-ai/id6504193677";
-                        // document.getElementById('redirecting').style.display = 'none';
-                        // document.getElementById('web-app-section').style.display = 'block';
-                        // document.getElementById('error-message').style.display = 'none';
+                        // Show web app option for iOS users since app may not be available
+                        document.getElementById('redirecting').style.display = 'none';
+                        document.getElementById('web-app-section').style.display = 'block';
+                        document.getElementById('qr-content').style.display = 'block';
                     } else {
                         // Desktop or unknown mobile device
                         document.getElementById('qr-content').style.display = 'block';

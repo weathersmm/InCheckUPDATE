@@ -7,24 +7,39 @@
 
     <nav id="navbar" class="navbar" aria-label="Main">
       <ul>
-        <li><a class="nav-link scrollto active" href="/#hero">EMS</a></li>
-        <li><a class="nav-link" href="/enterprise/">Enterprise</a></li>
+        <li class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/#products">AI Chat / Angel Mode</a></li>
+            <li><a class="dropdown-item" href="/#products">Nova</a></li>
+            <li><a class="dropdown-item" href="/#products">Policy & Procedure Agents</a></li>
+            <li><a class="dropdown-item" href="/#products">Customized Agents</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">For EMS</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/#products">Protocol Agent</a></li>
+            <li><a class="dropdown-item" href="/#products">Narrative Agent</a></li>
+            <li><a class="dropdown-item" href="/#products">Language Translation</a></li>
+            <li><a class="dropdown-item" href="/#products">Rampart (EMS Mode)</a></li>
+          </ul>
+        </li>
         <li><a class="nav-link scrollto" href="/#about-us">About Us</a></li>
-        <li><a class="nav-link scrollto" href="/#products">Products</a></li>
         <li><a class="nav-link scrollto" href="/#pricing">Pricing</a></li>
         <li><a class="nav-link scrollto" href="/#consulting">Consulting</a></li>
         <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
 
         <!-- Conditional buttons -->
-        <li id="signup-button"><a class="getstarted" href="https://signup.incheck.ai/" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
+        <li id="signup-button"><a class="getstarted" href="https://signup.incheck.ai/" target="_blank" rel="noopener noreferrer" title="Create a new InCheck account">Sign Up</a></li>
 
         <!-- Upgrade button (conditionally shown) -->
         <li id="upgrade-button" style="display: none;">
-          <a class="getstarted" id="upgrade-link" href="#" target="_blank" rel="noopener noreferrer">Upgrade Subscription</a>
+          <a class="getstarted" id="upgrade-link" href="#" target="_blank" rel="noopener noreferrer" title="Upgrade your InCheck subscription">Upgrade Subscription</a>
         </li>
 
-        <li><a class="getstarted" href="https://chat.incheck.ai" target="_blank" rel="noopener noreferrer">Login/Chat</a></li>
-        <li><a id="mobile-tab" class="getstarted mobile-tab" href="/mobile/" target="_blank" rel="noopener noreferrer">Install on Mobile</a></li>
+        <li><a class="getstarted" href="https://chat.incheck.ai" target="_blank" rel="noopener noreferrer" title="Access your InCheck account and chat interface">Login/Chat</a></li>
+        <li><a id="mobile-tab" class="getstarted mobile-tab" href="/mobile/" title="Download InCheck mobile app">Install on Mobile</a></li>
 
         <!-- REMOVED the social-media block that pushed into the hero -->
       </ul>

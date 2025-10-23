@@ -386,43 +386,69 @@
 
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
-  <div class="container" data-aos="fade-up" style="display: flex; flex-direction: column; align-items: center;">
-    <header class="section-header" style="text-align: center;">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
       <h3>Contact</h3>
-      <p>Contact Us</p>
+      <p>Get in Touch</p>
     </header>
 
-    <div class="row gy-4" style="justify-content: center; width: 100%; align-items: stretch;">
+    <div class="row gy-4">
       <div class="col-lg-6">
-        <div class="row gy-4 contact-options" style="justify-content: center;">
-          <div class="col-md-6" style="height: auto;">
-            <a href="mailto:info@incheck.ai" target="_blank" rel="noopener noreferrer">
-              <div class="info-box" style="text-align: center;">
-                <i class="bi bi-envelope"></i>
-                <h3>General Information</h3>
-                <p>info@incheck.ai</p>
-              </div>
-            </a>
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <h3>General Information</h3>
+              <p><a href="mailto:info@incheck.ai">info@incheck.ai</a></p>
+            </div>
           </div>
           <div class="col-md-6">
-            <a href="mailto:sales@incheck.ai" target="_blank" rel="noopener noreferrer">
-              <div class="info-box" style="text-align: center; height: 100%;">
-                <i class="bi bi-envelope"></i>
-                <h3>Sales</h3>
-                <p>sales@incheck.ai</p>
-              </div>
-            </a>
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <h3>Sales</h3>
+              <p><a href="mailto:sales@incheck.ai">sales@incheck.ai</a></p>
+            </div>
           </div>
           <div class="col-md-6">
-            <a href="tel:+14066420921" target="_blank" rel="noopener noreferrer">
-              <div class="info-box" style="text-align: center;">
-                <i class="bi bi-telephone"></i>
-                <h3>Call Us</h3>
-                <p>406-642-0921</p>
-              </div>
-            </a>
+            <div class="info-box">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p><a href="tel:+14066420921">406-642-0921</a></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box">
+              <i class="bi bi-clock"></i>
+              <h3>Business Hours</h3>
+              <p>Mon - Fri: 9AM - 6PM</p>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="col-lg-6">
+        <form action="https://formspree.io/f/xpwgqkqk" method="POST" class="php-email-form">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <button type="submit">Send Message</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>

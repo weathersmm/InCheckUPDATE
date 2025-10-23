@@ -59,7 +59,7 @@ products_section:
   title_one: Rampart (EMS Mode)
   title_two: Angel (Company Mode)
   title_three: Nova (Translate Mode)
-  title_four: "El Chat"
+  title_four: "AI Chat"
   sub_title_one: Revolutionizing Healthcare with AI-Powered Solutions
   sub_title_two: Leading Change for Safer, Smarter Outcomes at the Work Place
   sub_title_three: Breaking Language Barriers, Empowering Connections
@@ -119,9 +119,9 @@ products_section:
     
     <p>Nova gives your team the tools to communicate clearly and confidently, empowering them to perform at their best while reflecting your organization's commitment to excellence, inclusivity, and care for our people, patients, and partners.</p>
   content_four: >
-    <p><strong>Because life’s too short for bad decisions, botched plans, and bland takeout. </strong></p>
-    <p>Some days, you need a genius strategist. Other days, you just need to know where to get the best tacos. El Chat is your always-on, AI-powered assistant, here to help you navigate life with clarity, confidence, and a little extra flair. Unlike other AI tools, El Chat doesn’t learn from your prompts, store your data, or remember past conversations—your privacy stays yours.</p>
-    <p>What can El Chat do for you?</p>
+    <p><strong>Because life's too short for bad decisions, botched plans, and bland takeout. </strong></p>
+    <p>Some days, you need a genius strategist. Other days, you just need to know where to get the best tacos. AI Chat is your always-on, AI-powered assistant, here to help you navigate life with clarity, confidence, and a little extra flair. Unlike other AI tools, AI Chat doesn't learn from your prompts, store your data, or remember past conversations—your privacy stays yours.</p>
+    <p>What can AI Chat do for you?</p>
     <ul>
       <li><strong>Ace that homework assignment</strong> – Because "the dog ate it" won’t fly forever.</li>
       <li><strong>Find the best restaurant in town</strong> – No more settling for meh when you could have <span style="font-style: italic;">mind-blowing</span>.</li>
@@ -173,7 +173,7 @@ pricing_section:
   plans:
     - name: Free
       features:
-        - Access to Rampart (EMS Mode) and "El Chat".
+        - Access to Rampart (EMS Mode) and AI Chat.
         - Limited to 3 requests per 3 hours.
         - Basic assistance for both medical and general use.
       price: Free
@@ -198,7 +198,7 @@ pricing_section:
 
     - name: Standard
       features:
-        - Limited "El Chat" access.
+        - Limited AI Chat access.
         - Basic Rampart access.
         - General purpose use.
       price: $12.99/month

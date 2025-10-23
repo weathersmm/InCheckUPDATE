@@ -486,16 +486,11 @@ section {
 }
 .hero {
   width: 100%;
-  height: 100vh;
-  background-color: #f6f7ff !important;
-  background-image:
-    linear-gradient(to bottom, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%), /* Blend at top */
-    linear-gradient(to top, #f6f7ff 0%, rgba(246, 247, 255, 0) 12%), /* Blend at bottom */
-    url('/assets/img/ai-ems-brain.png');
-  background-size: auto 80%;
-  background-position: right;
-  background-repeat: no-repeat;
+  min-height: 60vh;
+  background-color: #ffffff !important;
+  background-image: none;
   position: relative;
+  padding: 80px 0;
 }
 
 .hero h1 {
