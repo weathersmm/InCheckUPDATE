@@ -1,13 +1,5 @@
-<footer class="mt-section bg-black/50 border-t border-white/10" role="contentinfo">
-  <div class="max-w-screen-xl mx-auto px-6 py-8 text-center text-light/80 text-sm">
-    <div class="flex items-center justify-center gap-6 mb-4">
-      <a href="/privacy-policy" class="hover:text-accent transition-colors">Privacy Policy</a>
-      <a href="/terms-of-service" class="hover:text-accent transition-colors">Terms of Service</a>
-    </div>
-    <p>&copy; {{ now.Year }} InCheck.ai. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="container">
+    <p>© {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
   </div>
 </footer>
-
-<!-- Scripts (defer to avoid blocking) -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
-<script src="/js/app.js" defer></script>

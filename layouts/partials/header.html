@@ -1,64 +1,21 @@
-<!-- header.html -->
-<header id="header" class="header fixed-top" aria-label="Primary navigation">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-    <a href="/" class="logo d-flex align-items-center" aria-label="InCheck home">
-      <img src="/assets/img/logo_hugo.png" alt="InCheck" title="InCheck" width="40" height="40" loading="eager">
-    </a>
+<header class="site-header">
+  <div class="container nav-wrapper">
+    <a class="brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
 
-    <nav id="navbar" class="navbar" aria-label="Main">
-      <ul class="navbar-nav">
-        <!--
-          Simplified primary navigation to emphasise clear sections.
-          Top‑level links now direct users to dedicated pages for EMS and Enterprise,
-          rather than exposing crowded dropdown menus. The remaining items point
-          to distinct pages rather than empty anchors.
-        -->
-        <li class="nav-item"><a class="nav-link" href="/ems/">EMS</a></li>
-        <li class="nav-item"><a class="nav-link" href="/enterprise/">Enterprise</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about/">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pricing/">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="/consulting/">Consulting</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-controls="site-nav" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL | relURL }}" class="{{ if .Params.isButton }}btn btn--primary{{ end }}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
       </ul>
-      
-      <div class="navbar-actions">
-        <a class="btn btn-outline-primary btn-sm" href="https://signup.incheck.ai/" target="_blank" rel="noopener noreferrer" title="Create a new InCheck account">
-          <i class="bi bi-person-plus me-1"></i>Sign Up
-        </a>
-        <a class="btn btn-primary btn-sm" href="https://chat.incheck.ai" target="_blank" rel="noopener noreferrer" title="Access your InCheck account and chat interface">
-          <i class="bi bi-chat-dots me-1"></i>Login/Chat
-        </a>
-        <a class="btn btn-secondary btn-sm" href="/mobile/" title="Download InCheck mobile app">
-          <i class="bi bi-phone me-1"></i>Mobile
-        </a>
-      </div>
-      
-      <i class="bi bi-list mobile-nav-toggle" aria-label="Toggle navigation"></i>
     </nav>
   </div>
 </header>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const incomingParam = urlParams.get('incoming');
-
-    if (incomingParam === 'jhgfsid96432') {
-      const signup = document.getElementById('signup-button');
-      const install = document.getElementById('install-button'); // may not exist
-      const upgradeBtn = document.getElementById('upgrade-button');
-      const upgradeLink = document.getElementById('upgrade-link');
-
-      if (signup) signup.style.display = 'none';
-      if (install) install.style.display = 'none';
-      if (upgradeBtn) upgradeBtn.style.display = 'block';
-
-      if (upgradeLink) {
-        upgradeLink.addEventListener('click', function (event) {
-          event.preventDefault();
-          window.location.href = 'https://signup.incheck.ai/?incoming=5487iuhgfdes';
-        });
-      }
-    }
-  });
-</script>
