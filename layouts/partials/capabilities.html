@@ -3,26 +3,30 @@
 {{ if $items }}
 <section id="capabilities" class="section capabilities">
   <div class="container">
-    {{ with .Site.Data.home.capabilitiesHeading }}
-      <h2 class="section__title">{{ . }}</h2>
-    {{ else }}
-      <h2 class="section__title">Core Capabilities</h2>
-    {{ end }}
+    <div class="section-header">
+      {{ with .Site.Data.home.capabilitiesHeading }}
+        <h2 class="section-title">{{ . }}</h2>
+      {{ else }}
+        <h2 class="section-title">Core Capabilities</h2>
+      {{ end }}
+      <p class="section-subtitle">Powerful AI tools designed for emergency services</p>
+    </div>
 
-    <div class="cards cards--grid">
+    <div class="capabilities-grid">
       {{ range $items }}
-      <article class="card">
-        {{ with .icon }}
-          {{ if templates.Exists "partials/icons/filled.html" }}
-            <div class="card__icon">{{ partial "icons/filled.html" (dict "name" .) }}</div>
-          {{ else }}
-            <div class="card__icon" aria-hidden="true"></div>
-          {{ end }}
-        {{ end }}
-        <h3 class="card__title">{{ .title }}</h3>
-        {{ with .description }}<p class="card__body">{{ . }}</p>{{ end }}
-        {{ with .benefit }}<p class="card__meta">{{ . }}</p>{{ end }}
-      </article>
+      <div class="capability-card">
+        <div class="capability-icon">
+          <i class="bi bi-{{ .icon }}"></i>
+        </div>
+        <div class="capability-content">
+          <h3 class="capability-title">{{ .title }}</h3>
+          <p class="capability-description">{{ .description }}</p>
+          <div class="capability-benefit">
+            <span class="benefit-label">Benefit:</span>
+            <span class="benefit-text">{{ .benefit }}</span>
+          </div>
+        </div>
+      </div>
       {{ end }}
     </div>
   </div>

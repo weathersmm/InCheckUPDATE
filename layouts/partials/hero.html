@@ -1,18 +1,53 @@
-<section id="hero" class="hero d-flex align-items-center">
+<section id="hero" class="hero">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        {{ with .Params.hero_section }}
-          {{ .content | safeHTML }}
-        {{ else }}
-          <h1>Welcome to InCheck</h1>
-          <p>Your AI partner for emergency decision-making</p>
-          <div class="text-center text-lg-start">
-            <a href="/#products" class="btn-get-started scrollto">Our Products</a>
-            <a href="/#contact" class="btn-get-started scrollto">Book a Demo</a>
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-6">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="hero-title-main">Introducing</span>
+            <span class="hero-title-brand">InCheck</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span class="hero-subtitle-highlight">Enterprise Grade</span>
+            <span class="hero-subtitle-main">Actual Intelligence</span>
+          </h2>
+          <h3 class="hero-tagline">for Real-World Decisions</h3>
+          <p class="hero-description">
+            Tools that serve as trusted mentors in the field, delivering expert-verified guidance with the accuracy, security, and reliability your enterprise expects, when and where you need it most.
+          </p>
+          <div class="hero-actions">
+            <a href="/#products" class="btn btn-primary btn-lg">Our Products</a>
+            <a href="/#contact" class="btn btn-outline-primary btn-lg">Book a Demo</a>
           </div>
-        {{ end }}
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">99%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Support</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">HIPAA</span>
+              <span class="stat-label">Compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform" class="hero-image">
+            <div class="hero-badge">
+              <span class="badge-text">AI-Powered</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="hero-background">
+    <div class="hero-pattern"></div>
   </div>
 </section>
