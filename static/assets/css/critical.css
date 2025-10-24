@@ -50,6 +50,12 @@
   position: relative;
 }
 
+/* Mobile guards at first paint: hide nav list, show toggle */
+@media (max-width: 991px) {
+  #navbar ul { display: none !important; }
+  .mobile-nav-toggle { display: block; }
+}
+
 /* Accessible skip link (visible on focus) */
 .skip-link {
   position: absolute;
