@@ -104,7 +104,10 @@
             <div class="hero-image-wrapper">
               {{ with $hero.media }}
                 {{ if .image }}
-                  <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="hero-image">
+                  <picture>
+                    <source srcset="{{ .image | replace ".png" ".webp" }}" type="image/webp">
+                    <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="hero-image" width="1024" height="768" decoding="async" fetchpriority="high" style="aspect-ratio: 4/3; height: auto;">
+                  </picture>
                 {{ else }}
                   <picture>
                     <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
@@ -141,12 +144,21 @@
         <div class="relative isolate">
           {{ with $hero.media }}
             {{ if .image }}
-              <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" width="1024" height="768" decoding="async" style="aspect-ratio: 4/3; height: auto;" />
+              <picture>
+                <source srcset="{{ .image | replace ".png" ".webp" }}" type="image/webp">
+                <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" width="1024" height="768" decoding="async" style="aspect-ratio: 4/3; height: auto;" />
+              </picture>
             {{ else }}
-              <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" width="1024" height="768" decoding="async" style="aspect-ratio: 4/3; height: auto;" />
+              <picture>
+                <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
+                <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" width="1024" height="768" decoding="async" style="aspect-ratio: 4/3; height: auto;" />
+              </picture>
             {{ end }}
           {{ else }}
-            <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" width="1024" height="768" decoding="async" style="aspect-ratio: 4/3; height: auto;" />
+            <picture>
+              <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
+              <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" width="1024" height="768" decoding="async" style="aspect-ratio: 4/3; height: auto;" />
+            </picture>
           {{ end }}
 
           <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-tr from-indigo-500/10 via-emerald-500/10 to-blue-500/10 blur-2xl"></div>

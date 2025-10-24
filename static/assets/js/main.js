@@ -21,6 +21,25 @@
   };
 
   /**
+   * Lightweight loader for optional libraries
+   */
+  const loadScript = (src) => new Promise((resolve, reject) => {
+    // Avoid duplicate loads
+    if (document.querySelector(`script[data-dynamic-src="${src}"]`)) {
+      resolve();
+      return;
+    }
+    const s = document.createElement('script');
+    s.src = src;
+    s.async = true;
+    s.defer = true;
+    s.dataset.dynamicSrc = src;
+    s.onload = () => resolve();
+    s.onerror = () => reject(new Error(`Failed to load script: ${src}`));
+    document.head.appendChild(s);
+  });
+
+  /**
    * Early initialization - critical functionality that shouldn't wait
    */
   const earlyInit = () => {
@@ -34,15 +53,21 @@
     // Add lazy loading to all images
     initLazyLoading();
 
-    // Initialize AOS immediately - don't wait for images
-    if (typeof AOS !== 'undefined') {
-      AOS.init({
-        duration: 800,
-        easing: "ease-in-out",
-        once: true,
-        mirror: false,
-        startEvent: 'DOMContentLoaded' // Start animations as soon as DOM is ready
-      });
+    // Initialize AOS if elements require it (lazy-load library)
+    if (document.querySelector('[data-aos]')) {
+      loadScript('/assets/vendor/aos/aos.js')
+        .then(() => {
+          if (typeof AOS !== 'undefined') {
+            AOS.init({
+              duration: 800,
+              easing: 'ease-in-out',
+              once: true,
+              mirror: false,
+              startEvent: 'DOMContentLoaded'
+            });
+          }
+        })
+        .catch(() => { /* non-critical */ });
     }
 
     // Remove loading class to enable animations
@@ -234,11 +259,17 @@
    * Add lazy loading to images
    */
   const initLazyLoading = () => {
-    const productImages = document.querySelectorAll('.image-product');
-    productImages.forEach(img => {
-      if (!img.hasAttribute('loading')) {
-        img.setAttribute('loading', 'lazy');
+    // Apply to all images except explicitly marked eager/critical
+    const allImages = document.querySelectorAll('img');
+    allImages.forEach(img => {
+      const isCritical = img.getAttribute('fetchpriority') === 'high' || img.classList.contains('hero-image') || img.closest('#header');
+      if (!isCritical) {
+        if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
+        img.setAttribute('decoding', 'async');
       }
+      // Always set explicit dimensions when possible to reduce CLS
+      if (!img.hasAttribute('width') && img.naturalWidth) img.setAttribute('width', String(img.naturalWidth));
+      if (!img.hasAttribute('height') && img.naturalHeight) img.setAttribute('height', String(img.naturalHeight));
     });
   };
 
@@ -399,25 +430,26 @@
     // Scroll functions
     initScrollFunctions();
 
-    //customers trusted
-    new Swiper('.swiper-customers', {
-      slidesPerView: 'auto',
-      spaceBetween: 50, 
-      loop: true,
-      speed: 6000,
-      allowTouchMove: true,
-      freeMode: true,
-      freeModeMomentum: false,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false
-      },
-      breakpoints: {
-        768: {
-          spaceBetween: 200
-        },
-      }
-    });
+    // Initialize customers carousel only if present (lazy-load Swiper)
+    if (document.querySelector('.swiper-customers')) {
+      loadScript('/assets/vendor/swiper/swiper-bundle.min.js')
+        .then(() => {
+          if (typeof Swiper !== 'undefined') {
+            new Swiper('.swiper-customers', {
+              slidesPerView: 'auto',
+              spaceBetween: 50,
+              loop: true,
+              speed: 6000,
+              allowTouchMove: true,
+              freeMode: true,
+              freeModeMomentum: false,
+              autoplay: { delay: 0, disableOnInteraction: false },
+              breakpoints: { 768: { spaceBetween: 200 } }
+            });
+          }
+        })
+        .catch(() => { /* non-critical */ });
+    }
 
   });
 

@@ -76,9 +76,10 @@
   z-index: 1001;
 }
 
-/* Desktop-only inline nav list */
+/* Desktop-only inline nav list and spacing */
 @media (min-width: 992px) {
-  #navbar ul { display: flex !important; }
+  #navbar ul { display: flex !important; gap: 0.75rem; }
+  #navbar ul li { white-space: nowrap; }
 }
 
 /* Mobile: hide list until toggled by JS */

@@ -27,12 +27,16 @@ test.describe('Homepage layout guardrails', () => {
       expect(headerBox.height).toBeLessThanOrEqual(120);
     }
 
-    // 2) Navbar list is display:flex at width=1200
+    // 2) Navbar list is display:flex at width=1200 and no mobile state
     await page.setViewportSize({ width: 1200, height: 900 });
     const navList = page.locator('#navbar .navbar-nav');
     await expect(navList).toBeVisible();
     const display = await navList.evaluate((el) => getComputedStyle(el).display);
     expect(display).toBe('flex');
+
+    // Guard: navbar should not have mobile class at desktop width
+    const hasNavbarMobile = await page.locator('#navbar.navbar-mobile').count();
+    expect(hasNavbarMobile).toBe(0);
 
     // 3) .section.hero top padding ≥ var(--header-height)
     // Read the custom property from :root (or body)

@@ -3,12 +3,16 @@
 # Root document: preload critical CSS for faster first paint
 / 
   Link: </assets/css/critical.css>; rel=preload; as=style
-  Link: </assets/css/theme.css>; rel=preload; as=style
+  # Theme CSS is render-blocking but loaded once; no duplicate preload
 
 # Cache static assets aggressively (immutable hashed files)
 /assets/js/*
   Cache-Control: public, max-age=31536000, immutable
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
 /assets/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/vendor/bootstrap-icons/fonts/*
   Cache-Control: public, max-age=31536000, immutable
 /assets/css/*
   Cache-Control: public, max-age=31536000

@@ -23,6 +23,9 @@
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <!-- Icon font preconnect/preload; ensure swap to avoid FOIT -->
+  <link rel="preconnect" href="/assets/vendor/bootstrap-icons/" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" crossorigin>
 
   <!-- Favicons -->
   <link href="/assets/img/logo_hugo.png" rel="icon" />
@@ -36,11 +39,9 @@
   <link href="/assets/css/critical.css" rel="stylesheet">
 
   <!-- Theme CSS (tokens and base styles) -->
-  <link href="/assets/css/theme.css" rel="preload" as="style">
   <link href="/assets/css/theme.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="preload" as="style" />
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
