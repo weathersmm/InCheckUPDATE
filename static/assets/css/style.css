@@ -150,6 +150,14 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* Ensure header container behaves as flex without Bootstrap */
+.header > .container-fluid,
+.header > .container-xl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .card {
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
@@ -191,6 +199,35 @@ body {
   font-size: 0.875rem;
   color: #6b7280;
 }
-   display: flex !important;
+
+/* --- Responsive fixes for mobile navigation and content --- */
+@media (max-width: 991px) {
+  /* Show actions inside the mobile nav overlay */
+  #navbar.navbar-mobile .navbar-actions {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0 1rem 1rem;
+  }
+
+  /* Ensure product image rows don't cramp on mobile */
+  .images-product { 
+    width: 100% !important; 
+    justify-content: center;
+  }
+
+  /* Make customer logos scale nicely */
+  .customer_img { max-width: 180px; width: 60%; height: auto; }
+}
+
+/* Make policy tables scroll horizontally on small screens to avoid overflow */
+@media (max-width: 767px) {
+  .policy table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
