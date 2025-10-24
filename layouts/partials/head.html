@@ -27,8 +27,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon_32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon_48.png">
 
-  <!-- Critical CSS - loaded with highest priority -->
-  <link href="/assets/css/critical.css" rel="stylesheet" />
+  <!-- Theme CSS (includes tokens + component mappings) -->
+  <link href="/assets/css/theme.css" rel="stylesheet" />
 
   <!-- Site theme (layout, grids, utilities) -->
   <link href="/assets/css/theme.css" rel="stylesheet" />
@@ -37,16 +37,7 @@
   <link rel="preload" href="/assets/img/ai-ems-brain.png" as="image" media="(min-width: 1026px)">
   <link rel="preload" href="/assets/img/ai-ems-brain-mobile.png" as="image" media="(max-width: 1025px)">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet"
-  />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  
 
   <!-- Font Awesome loaded with defer strategy -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
@@ -59,8 +50,8 @@
   <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" media="print" onload="this.media='all'" />
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
 
-  <!-- Main CSS File - loaded with lower priority after critical CSS -->
-  <link href="/assets/css/style.css" rel="stylesheet" media="print" onload="this.media='all'" />
+  <!-- Legacy overrides (optional) -->
+  <!-- <link href="/assets/css/style.css" rel="stylesheet" media="print" onload="this.media='all'" /> -->
 
   <!-- Fallback for browsers that don't support JS -->
   <noscript>
@@ -71,6 +62,6 @@
     <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
     <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <link href="/assets/css/style.css" rel="stylesheet" />
+    <!-- <link href="/assets/css/style.css" rel="stylesheet" /> -->
   </noscript>
 </head>

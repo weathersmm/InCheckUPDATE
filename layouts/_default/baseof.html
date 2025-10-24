@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+
+  <link rel="icon" href="/favicon.ico" />
+</head>
   {{ partial "head.html" . }}
 <body>
   {{ partial "header.html" . }}
   <main id="main-content">{{ block "main" . }}{{ end }}</main>
   {{ partial "footer.html" . }}
 
+  <script src="/js/nav.js" defer></script>
   <!-- Main JS (handles mobile nav, hero bg, etc.) -->
   <script src="/assets/js/main.js" defer></script>
 </body>
