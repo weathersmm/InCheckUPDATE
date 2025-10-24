@@ -1,16 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-{{ partial "head.html" . }}
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
-  {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-
-  <link rel="stylesheet" href="/assets/css/theme.css" />
-
-  <link rel="icon" href="/favicon.ico" />
-</head>
   {{ partial "head.html" . }}
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>

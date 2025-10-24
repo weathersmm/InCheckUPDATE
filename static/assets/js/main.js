@@ -116,6 +116,32 @@
       }
     }, true);
 
+    // Resize guard: ensure mobile state is cleared on desktop widths
+    const clearMobileStateIfWide = () => {
+      if (window.innerWidth >= 992) {
+        const navbar = select('#navbar');
+        const toggleBtn = select('.mobile-nav-toggle');
+        if (navbar && navbar.classList.contains('navbar-mobile')) {
+          navbar.classList.remove('navbar-mobile');
+        }
+        if (toggleBtn) {
+          toggleBtn.setAttribute('aria-expanded', 'false');
+          const icon = toggleBtn.querySelector('i');
+          if (icon) {
+            icon.classList.add('bi-list');
+            icon.classList.remove('bi-x');
+          }
+        }
+      }
+    };
+
+    // Run once and on resize (debounced)
+    clearMobileStateIfWide();
+    let navResizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(navResizeTimer);
+      navResizeTimer = setTimeout(clearMobileStateIfWide, 150);
+    });
     // Ensure desktop state on resize
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 992) {
