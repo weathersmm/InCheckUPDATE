@@ -50,3 +50,23 @@
   min-height: calc(100svh - var(--header-height));
   position: relative;
 }
+
+/* Accessible skip link (visible on focus) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: #111;
+  color: #fff;
+  z-index: 1001;
+}

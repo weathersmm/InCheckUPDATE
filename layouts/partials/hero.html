@@ -97,6 +97,45 @@
           </div>
         </div>
       </div>
+      
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <div class="hero-image-wrapper">
+              {{ with $hero.media }}
+                {{ if .image }}
+                  <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="hero-image">
+                {{ else }}
+                  <picture>
+                    <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
+                    <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                  </picture>
+                {{ end }}
+              {{ else }}
+                <picture>
+                  <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
+                  <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                </picture>
+              {{ end }}
+              <div class="hero-overlay">
+                <div class="overlay-card">
+                  <i class="bi bi-chat-dots"></i>
+                  <span>AI Chat Assistant</span>
+                </div>
+                <div class="overlay-card">
+                  <i class="bi bi-translate"></i>
+                  <span>Real-time Translation</span>
+                </div>
+                <div class="overlay-card">
+                  <i class="bi bi-clipboard-check"></i>
+                  <span>Protocol Guidance</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-badge">
+              <span class="badge-text">AI-Powered</span>
+            </div>
+          </div>
 
       <div>
         <div class="relative isolate">
