@@ -14,103 +14,86 @@
 {{ end }}
 
 {{ if $hero }}
-<section id="hero" class="hero">
-  <div class="hero-background">
-    <div class="hero-gradient"></div>
-    <div class="hero-pattern"></div>
-  </div>
-  
-  <div class="container">
-    <div class="row align-items-center min-vh-100">
-      <div class="col-lg-6">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <i class="bi bi-shield-check"></i>
-            <span>Enterprise-Grade AI</span>
+<section id="hero" class="relative overflow-hidden py-16 md:py-24">
+  <div class="absolute inset-x-0 -top-40 -z-10 h-[70%] animate-gradient-shift bg-gradient-to-r from-indigo-500/10 via-emerald-500/10 to-blue-500/10 blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid items-center gap-10 md:grid-cols-2">
+      <div>
+        <div class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-sm text-light ring-1 ring-white/10">
+          <i class="bi bi-shield-check"></i>
+          <span>Enterprise-Grade AI</span>
+        </div>
+
+        {{ with $hero.title }}
+          <h1 class="mt-6 text-4xl/tight font-extrabold tracking-tight text-white md:text-5xl">{{ . }}</h1>
+        {{ else }}
+          <h1 class="mt-6 text-4xl/tight font-extrabold tracking-tight text-white md:text-5xl">
+            <span class="opacity-90">Introducing</span>
+            <span class="ml-2 text-accent">InCheck</span>
+          </h1>
+        {{ end }}
+
+        {{ with $hero.subtitle }}
+          <h2 class="mt-4 text-2xl font-semibold text-light md:text-3xl">{{ . }}</h2>
+        {{ else }}
+          <h2 class="mt-4 text-2xl font-semibold text-light md:text-3xl">
+            <span class="text-accent">Enterprise Grade</span>
+            <span class="ml-2">Actual Intelligence</span>
+          </h2>
+        {{ end }}
+
+        {{ with $hero.tagline }}
+          <h3 class="mt-3 text-lg text-light/80">{{ . }}</h3>
+        {{ else }}
+          <h3 class="mt-3 text-lg text-light/80">for Real-World Decisions</h3>
+        {{ end }}
+
+        {{ with $hero.description }}
+          <p class="mt-6 max-w-2xl text-base text-light/80">{{ . }}</p>
+        {{ else }}
+          <p class="mt-6 max-w-2xl text-base text-light/80">
+            Transform emergency decision-making with AI-powered tools that serve as trusted mentors in the field. Get expert-verified guidance with enterprise-grade accuracy, security, and reliability.
+          </p>
+        {{ end }}
+
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          {{ with $hero.primary }}
+            <a href="{{ .url }}" class="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 font-semibold text-slate-900 shadow-sm hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-accent/50">
+              <i class="bi bi-grid-3x3-gap"></i>{{ .label }}
+            </a>
+          {{ else }}
+            <a href="/#products" class="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 font-semibold text-slate-900 shadow-sm hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-accent/50">
+              <i class="bi bi-grid-3x3-gap"></i>Explore Products
+            </a>
+          {{ end }}
+
+          {{ with $hero.secondary }}
+            <a href="{{ .url }}" class="inline-flex items-center gap-2 rounded-xl border border-white/20 px-5 py-3 font-semibold text-light hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30">
+              <i class="bi bi-calendar-check"></i>{{ .label }}
+            </a>
+          {{ else }}
+            <a href="/#contact" class="inline-flex items-center gap-2 rounded-xl border border-white/20 px-5 py-3 font-semibold text-light hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30">
+              <i class="bi bi-calendar-check"></i>Book Demo
+            </a>
+          {{ end }}
+        </div>
+
+        <div class="mt-10 grid grid-cols-3 gap-4 text-center text-light/80">
+          <div class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10">
+            <i class="bi bi-graph-up-arrow text-xl"></i>
+            <div class="mt-2 text-2xl font-bold text-white">99%</div>
+            <div class="text-xs uppercase tracking-wide">Accuracy</div>
           </div>
-          
-          {{ with $hero.title }}
-            <h1 class="hero-title">{{ . }}</h1>
-          {{ else }}
-            <h1 class="hero-title">
-              <span class="hero-title-main">Introducing</span>
-              <span class="hero-title-brand">InCheck</span>
-            </h1>
-          {{ end }}
-          
-          {{ with $hero.subtitle }}
-            <h2 class="hero-subtitle">{{ . }}</h2>
-          {{ else }}
-            <h2 class="hero-subtitle">
-              <span class="hero-subtitle-highlight">Enterprise Grade</span>
-              <span class="hero-subtitle-main">Actual Intelligence</span>
-            </h2>
-          {{ end }}
-          
-          {{ with $hero.tagline }}
-            <h3 class="hero-tagline">{{ . }}</h3>
-          {{ else }}
-            <h3 class="hero-tagline">for Real-World Decisions</h3>
-          {{ end }}
-          
-          {{ with $hero.description }}
-            <p class="hero-description">{{ . }}</p>
-          {{ else }}
-            <p class="hero-description">
-              Transform emergency decision-making with AI-powered tools that serve as trusted mentors in the field. Get expert-verified guidance with enterprise-grade accuracy, security, and reliability.
-            </p>
-          {{ end }}
-          
-          <div class="hero-actions">
-            {{ with $hero.primary }}
-              <a href="{{ .url }}" class="btn btn-primary btn-lg">
-                <i class="bi bi-grid-3x3-gap me-2"></i>{{ .label }}
-              </a>
-            {{ else }}
-              <a href="/#products" class="btn btn-primary btn-lg">
-                <i class="bi bi-grid-3x3-gap me-2"></i>Explore Products
-              </a>
-            {{ end }}
-            
-            {{ with $hero.secondary }}
-              <a href="{{ .url }}" class="btn btn-outline-primary btn-lg">
-                <i class="bi bi-calendar-check me-2"></i>{{ .label }}
-              </a>
-            {{ else }}
-              <a href="/#contact" class="btn btn-outline-primary btn-lg">
-                <i class="bi bi-calendar-check me-2"></i>Book Demo
-              </a>
-            {{ end }}
+          <div class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10">
+            <i class="bi bi-clock text-xl"></i>
+            <div class="mt-2 text-2xl font-bold text-white">24/7</div>
+            <div class="text-xs uppercase tracking-wide">Support</div>
           </div>
-          
-          <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <div class="stat-content">
-                <span class="stat-number">99%</span>
-                <span class="stat-label">Accuracy</span>
-              </div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-clock"></i>
-              </div>
-              <div class="stat-content">
-                <span class="stat-number">24/7</span>
-                <span class="stat-label">Support</span>
-              </div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <div class="stat-content">
-                <span class="stat-number">HIPAA</span>
-                <span class="stat-label">Compliant</span>
-              </div>
-            </div>
+          <div class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10">
+            <i class="bi bi-shield-check text-xl"></i>
+            <div class="mt-2 text-2xl font-bold text-white">HIPAA</div>
+            <div class="text-xs uppercase tracking-wide">Compliant</div>
           </div>
         </div>
       </div>
@@ -123,10 +106,16 @@
                 {{ if .image }}
                   <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="hero-image">
                 {{ else }}
-                  <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                  <picture>
+                    <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
+                    <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                  </picture>
                 {{ end }}
               {{ else }}
-                <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                <picture>
+                  <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
+                  <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                </picture>
               {{ end }}
               <div class="hero-overlay">
                 <div class="overlay-card">
@@ -147,6 +136,20 @@
               <span class="badge-text">AI-Powered</span>
             </div>
           </div>
+
+      <div>
+        <div class="relative isolate">
+          {{ with $hero.media }}
+            {{ if .image }}
+              <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" />
+            {{ else }}
+              <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" />
+            {{ end }}
+          {{ else }}
+            <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="mx-auto w-full max-w-xl rounded-2xl shadow-2xl ring-1 ring-white/10" />
+          {{ end }}
+
+          <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-tr from-indigo-500/10 via-emerald-500/10 to-blue-500/10 blur-2xl"></div>
         </div>
       </div>
     </div>

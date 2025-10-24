@@ -1,21 +1,23 @@
 {{define "main"}}
-{{/* modernised homepage */}}
-{{ partial "hero.html" . }}
-{{ partial "capabilities.html" . }}
-{{ partial "why.html" . }}
-{{ partial "cta-demo.html" . }}
+<div class="space-y-24 md:space-y-32">
+  {{ partial "hero.html" . }}
+  {{ partial "capabilities.html" . }}
+  {{ partial "why.html" . }}
+  {{ partial "cta-demo.html" . }}
+  
+  {{/* Optional legacy sections kept below, lightly Tailwind-ified wrappers */}}
 
 {{/* (optional) keep deployed/about/customers sections below if you still want them) */}}
 <!-- Begin Coverage Area-->
 <!-- ======= Deployed Section ======= -->
 {{with .Params.deployed_section}}
 <section id="deployed" class="deployed">
-  <div class="container" data-aos="fade-up">
+  <div class="container mx-auto px-4" data-aos="fade-up">
     <div class="row gx-0 align-items-center">
     
       <!-- Text Column -->
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="content">
+        <div class="content space-y-4">
           <h3>{{.title}}</h3>
           <h2>{{.description}}</h2>
           <div class="row">
@@ -42,7 +44,8 @@
       
       <!-- Image Column -->
       <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-        <img src="{{.image}}" class="img-fluid" alt="Deployed States Image" />
+        <img src="{{.image}}" class="img-fluid" alt="Deployed States Image" loading="lazy" decoding="async" />
+        <img src="{{.image}}" class="img-fluid w-full h-auto" alt="Deployed States Image" />
       </div>
       
     </div>
@@ -52,7 +55,7 @@
   {{ $deployedCount := len .states }}
   {{ $progress := mul (div (float $deployedCount) (float $totalStates)) 100 }}
 
-  <div class="progress deployed-progress" data-aos="fade-up" data-aos-delay="400">
+  <div class="progress deployed-progress mt-6" data-aos="fade-up" data-aos-delay="400">
     <div class="progress-bar" role="progressbar" style="width: {{ printf "%.0f" $progress }}%;" aria-valuenow="{{ printf "%.0f" $progress }}" aria-valuemin="0" aria-valuemax="100">{{ printf "%.0f" $progress }}% Deployed</div>
   </div>
 
@@ -65,7 +68,7 @@
 <!-- ======= About Section ======= -->
 {{with .Params.about_us_section}}
 <section id="about-us" class="about_us section-titles">
-  <div class="container" data-aos="fade-up">
+  <div class="container mx-auto px-4" data-aos="fade-up">
     <header class="section-header">
       <h3>About us</h3>
       {{ .title | safeHTML }}
@@ -93,7 +96,7 @@
 <!-- ======= Customers Section ======= -->
 {{ with .Params.customers_section }}
 <section id="customers" class="customers section-titles">
-  <div class="container" data-aos="fade-up">
+  <div class="container mx-auto px-4" data-aos="fade-up">
     <header class="section-header">
       <h3>Trusted by</h3>
     </header>
@@ -112,16 +115,16 @@
       {{ end }}
     </div>
 
-    <div class="swiper-customers">
+    <div class="swiper-customers mt-6">
       <div class="swiper-wrapper align-items-center">
         {{ range .customers }}
           <div class="swiper-slide">
             {{ if .link }}
               <a href="{{ .link }}" target="_blank" rel="noopener">
-                <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" />
+                <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" loading="lazy" decoding="async" />
               </a>
             {{ else }}
-              <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" />
+              <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" loading="lazy" decoding="async" />
             {{ end }}
           </div>
         {{ end }}
@@ -223,7 +226,7 @@
 <!-- ======= Products Section ======= -->
 {{with .Params.products_section}}
 <section id="products" class="products section-titles">
-  <div class="container" data-aos="fade-up">
+  <div class="container mx-auto px-4" data-aos="fade-up">
     <header class="section-header">
       <h3>Products</h3>
       <p>Our products</p>
@@ -239,8 +242,14 @@
           <h3>{{.title_one}}</h3>
           <h2>{{.sub_title_one}}</h2>
           <div class="images-product">
-            <img src="/assets/img/products/image-1.png" alt="Rampart" class="image-product" />
-            <img src="/assets/img/products/image-3.png" alt="Rampart" class="image-product" />
+            <picture>
+              <source srcset="/assets/img/products/image-1.webp" type="image/webp">
+              <img src="/assets/img/products/image-1.png" alt="Rampart" class="image-product" loading="lazy" decoding="async" />
+            </picture>
+            <picture>
+              <source srcset="/assets/img/products/image-3.webp" type="image/webp">
+              <img src="/assets/img/products/image-3.png" alt="Rampart" class="image-product" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p>{{.content_one | safeHTML}}</p>
           <div class="text-center text-lg-start">
@@ -258,8 +267,14 @@
           <h3>{{.title_two}}</h3>
           <h2>{{.sub_title_two}}</h2>
           <div class="images-product">
-            <img src="/assets/img/products/image-2.png" alt="Angel" class="image-product" />
-            <img src="/assets/img/products/image-4.jpg" alt="Angel" class="image-product" />
+            <picture>
+              <source srcset="/assets/img/products/image-2.webp" type="image/webp">
+              <img src="/assets/img/products/image-2.png" alt="Angel" class="image-product" loading="lazy" decoding="async" />
+            </picture>
+            <picture>
+              <source srcset="/assets/img/products/image-4.webp" type="image/webp">
+              <img src="/assets/img/products/image-4.jpg" alt="Angel" class="image-product" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p>{{.content_two | safeHTML}}</p>
           <div class="text-center text-lg-start">
@@ -277,7 +292,10 @@
           <h3>{{.title_three}}</h3>
           <h2>{{.sub_title_three}}</h2>
           <div class="images-product image-product-nova">
-            <img src="/assets/img/products/image-5.png" alt="Nova" class="image-product" />
+            <picture>
+              <source srcset="/assets/img/products/image-5.webp" type="image/webp">
+              <img src="/assets/img/products/image-5.png" alt="Nova" class="image-product" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p>{{.content_three | safeHTML}}</p>
           <div class="text-center text-lg-start">
@@ -295,7 +313,10 @@
           <h3>{{.title_four}}</h3>
           <h2>{{.sub_title_four}}</h2>
           <div class="images-product">
-            <img src="/assets/img/products/image-6.png" alt="Angel" class="image-product" />
+            <picture>
+              <source srcset="/assets/img/products/image-6.webp" type="image/webp">
+              <img src="/assets/img/products/image-6.png" alt="Angel" class="image-product" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p>{{.content_four | safeHTML}}</p>
           <div class="text-center text-lg-start">
@@ -338,7 +359,7 @@
 <!-- ======= Pricing Section ======= -->
 {{ with .Params.pricing_section }}
 <section id="pricing" class="pricing section-titles">
-  <div class="container" data-aos="fade-up">
+  <div class="container mx-auto px-4" data-aos="fade-up">
     <header class="section-header">
       <h3>{{ .title }}</h3>
       <p>{{ .sub_title }}</p>
@@ -387,7 +408,7 @@
 <!-- ======= F.A.Q Section ======= -->
 {{ with .Params.faq_section }}
 <section id="faq" class="faq section-titles">
-  <div class="container" data-aos="fade-up">
+  <div class="container mx-auto px-4" data-aos="fade-up">
     <header class="section-header">
       <h3>{{ .title }}</h3>
       <p>{{ .sub_title }}</p>
@@ -438,7 +459,7 @@
 <!-- ======= Consulting Section ======= -->
 {{ with .Params.consulting_section }}
 <section id="consulting" class="consulting section-titles">
-  <div class="container" data-aos="fade-up" style="display: flex; flex-direction: column; align-items: center;">
+  <div class="container mx-auto px-4" data-aos="fade-up" style="display: flex; flex-direction: column; align-items: center;">
     <header class="section-header" style="text-align: center;">
       <h3>{{ .title }}</h3>
       <p>{{ .subtitle }}</p>
@@ -470,7 +491,7 @@
 
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
-  <div class="container" data-aos="fade-up">
+  <div class="container mx-auto px-4" data-aos="fade-up">
     <header class="section-header">
       <h3>Contact</h3>
       <p>Get in Touch</p>

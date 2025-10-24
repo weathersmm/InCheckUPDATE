@@ -17,107 +17,24 @@
     </noscript>
 
     <title>InCheck Mobile App Download</title>
+    <link rel="stylesheet" href="/assets/css/theme.css">
 
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #DCECF8;
-            color: #045DE8;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .qr-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-            gap: 20px;
-        }
-        @media (min-width: 768px) {
-            .qr-container {
-                flex-direction: row;
-                justify-content: center;
-            }
-        }
-        .qr-code {
-            margin: 20px 0;
-            border: 2px solid #045DE8;
-            padding: 20px;
-            background-color: #F9FBFF;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .qr-code:hover {
-            transform: translateY(-5px);
-        }
-        .web-app-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 30px;
-            text-align: center;
-            background-color: #F9FBFF;
-            border: 2px solid #045DE8;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        button {
-            background-color: #045DE8;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin: 10px;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #007AFF;
-            transform: translateY(-2px);
-        }
-        .notice {
-            background-color: #FFF3CD;
-            border: 1px solid #FFEEBA;
-            color: #856404;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        .store-buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        @media (min-width: 768px) {
-            .store-buttons {
-                flex-direction: row;
-                justify-content: center;
-            }
-        }
-        #redirecting {
-            animation: fade 2s infinite;
-        }
-        @keyframes fade {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        .error-message {
-            display: none;
-            color: #dc3545;
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #dc3545;
-            border-radius: 5px;
-        }
+        body { font-family: var(--font-sans); background: var(--surface); color: var(--text); text-align: center; padding: 20px; margin: 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .qr-container { display: flex; flex-direction: column; align-items: center; margin-top: var(--space-4); gap: var(--space-4); }
+        @media (min-width: 768px) { .qr-container { flex-direction: row; justify-content: center; } }
+        .qr-code { margin: 20px 0; border: 1px solid var(--border); padding: var(--space-4); background-color: #fff; border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: transform 0.3s ease; }
+        .qr-code:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .web-app-section { max-width: 800px; margin: 20px auto; padding: var(--space-5); text-align: center; background-color: #fff; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+        button { background-color: var(--brand); color: #fff; padding: 12px 24px; border: none; border-radius: var(--radius); cursor: pointer; font-size: 16px; margin: 10px; box-shadow: var(--shadow-sm); }
+        button:hover { background-color: var(--brand-700); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+        .notice { background-color: var(--surface); border: 1px solid var(--border); color: var(--muted); padding: 15px; margin-top: 20px; border-radius: var(--radius); }
+        .store-buttons { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 20px; }
+        @media (min-width: 768px) { .store-buttons { flex-direction: row; justify-content: center; } }
+        #redirecting { animation: fade 2s infinite; }
+        @keyframes fade { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .error-message { display: none; color: #dc3545; margin-top: 20px; padding: 10px; border: 1px solid #dc3545; border-radius: var(--radius); }
     </style>
 </head>
 <body>
@@ -157,11 +74,11 @@
         <div class="qr-container">
             <div class="qr-code">
                 <h2>Apple App Store</h2>
-                <img src="/assets/img/apple_qr_code.png" alt="QR code to download InCheck app from Apple App Store" width="200" height="200">
+                <img src="/assets/img/apple_qr_code.png" alt="QR code to download InCheck app from Apple App Store" width="200" height="200" loading="lazy" decoding="async">
             </div>
             <div class="qr-code">
                 <h2>Google Play Store</h2>
-                <img src="/assets/img/android_qr_code.png" alt="QR code to download InCheck app from Google Play Store" width="200" height="200">
+                <img src="/assets/img/android_qr_code.png" alt="QR code to download InCheck app from Google Play Store" width="200" height="200" loading="lazy" decoding="async">
             </div>
         </div>
 

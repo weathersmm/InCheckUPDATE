@@ -55,15 +55,11 @@
    expectations and improves readability across devices. */
 
 /* Prevent the primary navigation from wrapping to multiple lines and add
-
-
    consistent spacing between items. */
 #navbar ul {
   flex-wrap: wrap;
   gap: 0.75rem;
-  }
-
-
+}
 
 /* Ensure individual list items never wrap text and remain on a single line. */
 #navbar ul li {
@@ -110,40 +106,14 @@
   background-color: #d97706;
 }
 
-
-/* Hide nav items by default on mobile and display only when toggled */
-@media (max-width: 991px) {
-  #navbar ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-  #navbar.navbar-mobile ul {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 /* Prevent horizontal scrolling on the site */
 body {
   overflow-x: hidden;
 }
 
-
-/* Improved mobile navigation: hide nav items by default and show when toggled */
-@media (max-width: 991px) {
-  #navbar ul {
-    display: none !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    margin-top: 1rem;
-  }
- .navbar-mobile ul {
-}
-}
 /* Card styling enhancements
  *
- * Refine the visual presentation of the capability cards to look more modern and engaging. Adds a soft border, rounded corners, subtle shadow, and improved typography. Also uses an auto-fitting grid layout so cards wrap naturally on smaller screens without looking cramped.
+ * Refine the visual presentation of the capability cards to look more modern and engaging. Adds a soft border, rounded corners, subtle shadow, and improved typography. Also uses an auto-fitting layout for responsiveness.
  */
 .cards--grid {
   /* Use auto-fit to fill available space and wrap cards responsively */
@@ -202,6 +172,30 @@ body {
 
 /* --- Responsive fixes for mobile navigation and content --- */
 @media (max-width: 991px) {
+/* --- Header container flex adjustments (non-Bootstrap) --- */
+.header > .container-fluid,
+.header > .container-xl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- Responsive fixes for mobile navigation and content --- */
+@media (max-width: 991px) {
+  /* Hide nav items by default and display only when toggled */
+  #navbar ul {
+    display: none !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+  #navbar.navbar-mobile ul {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
   /* Show actions inside the mobile nav overlay */
   #navbar.navbar-mobile .navbar-actions {
     display: flex !important;
@@ -210,6 +204,25 @@ body {
     gap: 0.5rem;
     width: 100%;
     padding: 0 1rem 1rem;
+  }
+
+  /* Ensure product image rows don't cramp on mobile */
+  .images-product { 
+    width: 100% !important; 
+    justify-content: center;
+  }
+
+  /* Make customer logos scale nicely */
+  .customer_img { max-width: 180px; width: 60%; height: auto; }
+}
+
+/* Make policy tables scroll horizontally on small screens to avoid overflow */
+@media (max-width: 767px) {
+  .policy table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   /* Ensure product image rows don't cramp on mobile */
