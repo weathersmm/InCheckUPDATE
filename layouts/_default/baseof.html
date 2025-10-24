@@ -6,8 +6,14 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 
+  {{/* Build Tailwind from assets/css/input.css via PostCSS */}}
+  {{ $tailwind := resources.Get "css/input.css" | resources.PostCSS (dict "config" "postcss.config.js") | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $tailwind.Permalink }}" integrity="{{ $tailwind.Data.Integrity }}" />
+
+  {{/* Legacy theme.css can remain as fallback if needed
   {{ $styles := resources.Get "css/theme.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" />
+  */}}
 
   <link rel="icon" href="/favicon.ico" />
 </head>
