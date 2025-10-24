@@ -53,7 +53,36 @@
    * Mobile navigation initialization
    */
   const initMobileNav = () => {
+    const ensureDesktopNavState = () => {
+      if (window.innerWidth < 992) return;
+      const navbar = select('#navbar');
+      if (!navbar) return;
+
+      navbar.classList.remove('navbar-mobile');
+
+      // Close any mobile-only dropdown states
+      select('.dropdown-active', true).forEach(element => {
+        element.classList.remove('dropdown-active');
+      });
+
+      const toggleBtn = select('.mobile-nav-toggle');
+      if (toggleBtn) {
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        const icon = toggleBtn.querySelector('i');
+        if (icon) {
+          icon.classList.add('bi-list');
+          icon.classList.remove('bi-x');
+        }
+      }
+    };
+
     on('click', '.mobile-nav-toggle', function(e) {
+      // Guard: never allow mobile state on desktop widths
+      if (window.innerWidth >= 992) {
+        ensureDesktopNavState();
+        return;
+      }
+
       const navbar = select('#navbar');
       const icon = this.querySelector('i');
       const isOpen = navbar.classList.toggle('navbar-mobile');
@@ -86,6 +115,16 @@
         this.nextElementSibling.classList.toggle('dropdown-active');
       }
     }, true);
+
+    // Ensure desktop state on resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 992) {
+        ensureDesktopNavState();
+      }
+    });
+
+    // Ensure correct state on init for desktop widths
+    ensureDesktopNavState();
   };
 
   /**
