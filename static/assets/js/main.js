@@ -163,17 +163,23 @@
   // Function to determine and load the appropriate image
     const loadAppropriateImage = () => {
       const isMobile = window.innerWidth <= 1025;
-      const bgImageUrl = isMobile ?
-        '/assets/img/ai-ems-brain-mobile.png' :
-        '/assets/img/ai-ems-brain.png';
+      // Prefer modern formats with fallback
+      const webpUrl = isMobile ? '/assets/img/ai-ems-brain-mobile.webp' : '/assets/img/ai-ems-brain.webp';
+      const pngUrl = isMobile ? '/assets/img/ai-ems-brain-mobile.png' : '/assets/img/ai-ems-brain.png';
+      const bgImageUrl = webpUrl;
 
     // Load new image
       const bgImage = new Image();
 
       bgImage.onerror = function() {
-        console.warn("Failed to load hero background image");
+        // Try PNG fallback once
+        if (bgImage.src.endsWith('.webp')) {
+          bgImage.src = pngUrl;
+          return;
+        }
+        console.warn('Failed to load hero background image');
         heroElement.classList.add('loaded');
-        heroElement.style.backgroundColor = "#f6f7ff";
+        heroElement.style.backgroundColor = '#f6f7ff';
       };
 
       bgImage.onload = function() {
