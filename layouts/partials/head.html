@@ -3,22 +3,26 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SXJCHDDH4C"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);} 
     gtag('js', new Date());
-
     gtag('config', 'G-SXJCHDDH4C');
   </script>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>{{.Title}}</title>
+  <title>{{ .Title }}</title>
   <meta content="" name="description" />
-
   <meta content="" name="keywords" />
-
   <meta name="google-site-verification" content="PS-PZwyWXUT4Iz_1UrpkfaRrdfNlJXTXZC7Jpd9F0Jo" />
-
   <meta name="robots" content="index, follow">
+
+  <!-- Canonical and preferred hostname -->
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- Performance hints -->
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 
   <!-- Favicons -->
   <link href="/assets/img/logo_hugo.png" rel="icon" />
@@ -27,26 +31,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon_32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon_48.png">
 
-  <!-- Critical CSS: first-paint essentials (header/nav/hero) -->
-  <link href="/assets/css/critical.css" rel="stylesheet" />
-  <!-- Critical CSS: first-paint fixes for header/nav & hero -->
-  <link href="/assets/css/critical.css" rel="preload" as="style" />
-  <link href="/assets/css/critical.css" rel="stylesheet" />
+  <!-- Above-the-fold CSS -->
+  <link href="/assets/css/critical.css" rel="preload" as="style">
+  <link href="/assets/css/critical.css" rel="stylesheet">
 
-  <!-- Theme CSS (includes tokens + component mappings) -->
-  <link href="/assets/css/theme.css" rel="stylesheet" />
-
-  <!-- Site theme (layout, grids, utilities) -->
-  <link href="/assets/css/theme.css" rel="stylesheet" />
-
-  <!-- Theme CSS -->
-  <link href="/assets/css/theme.css" rel="stylesheet" />
-
-  <!-- Preload hero image to start loading it early -->
-  <link rel="preload" href="/assets/img/ai-ems-brain.png" as="image" media="(min-width: 1026px)">
-  <link rel="preload" href="/assets/img/ai-ems-brain-mobile.png" as="image" media="(max-width: 1025px)">
-
-  
+  <!-- Theme CSS (tokens and base styles) -->
+  <link href="/assets/css/theme.css" rel="preload" as="style">
+  <link href="/assets/css/theme.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="preload" as="style" />
@@ -55,13 +46,12 @@
   <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Critical CSS: header/hero guards and desktop overrides -->
-  <link href="/assets/css/critical.css" rel="stylesheet" />
+  <!-- Main CSS File (defer non-critical) -->
+  <link href="/assets/css/style.css" rel="stylesheet" media="print" onload="this.media='all'" />
 
-  <!-- Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet" />
-  <!-- Legacy overrides (optional) -->
-  <!-- <link href="/assets/css/style.css" rel="stylesheet" media="print" onload="this.media='all'" /> -->
+  <!-- Preload hero image early (prefer WebP) -->
+  <link rel="preload" href="/assets/img/ai-ems-brain.webp" as="image" type="image/webp" media="(min-width: 1026px)" fetchpriority="high">
+  <link rel="preload" href="/assets/img/ai-ems-brain-mobile.webp" as="image" type="image/webp" media="(max-width: 1025px)" fetchpriority="high">
 
   <!-- Fallback for browsers that don't support JS -->
   <noscript>
@@ -69,6 +59,6 @@
     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <!-- <link href="/assets/css/style.css" rel="stylesheet" /> -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
   </noscript>
 </head>

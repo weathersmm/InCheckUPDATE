@@ -27,5 +27,8 @@
     "http-server": "^14.1.1",
     "puppeteer": "^24.26.1",
     "sharp-cli": "^5.2.0"
+  },
+  "dependencies": {
+    "lighthouse": "^12.8.2"
   }
 }
