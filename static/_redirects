@@ -1,0 +1,11 @@
+# Enforce canonical HTTPS apex host
+# Redirect all www to apex
+https://www.intellux.ai/* https://intellux.ai/:splat 301!
+http://www.intellux.ai/* https://intellux.ai/:splat 301!
+
+# Force HTTPS on apex
+http://intellux.ai/* https://intellux.ai/:splat 301!
+
+# Development preview domains to apex (Pages preview/site aliases)
+http://*.pages.dev/* https://intellux.ai/:splat 301!
+https://*.pages.dev/* https://intellux.ai/:splat 301!

@@ -1,35 +1,5 @@
-/* --- APPEND to the end: reinforce desktop nav, hero spacing, and grids --- */
-
-:root { --header-height: 88px; }
-
-/* Always clear the fixed header */
-.section.hero { padding-top: var(--header-height); }
-.hero { height: auto !important; min-height: calc(100svh - var(--header-height)); }
-
-/* Remove bullets and keep inline layout on desktop */
-#navbar ul, #navbar li { list-style: none !important; }
-#navbar ul {
-  margin: 0 !important;
-  padding: 0 !important;
-  align-items: center !important;
-}
-@media (min-width: 992px) {
-  .mobile-nav-toggle { display: none !important; }
-  #navbar ul { display: flex !important; }
-
-  /* Neutralize mobile overlay styles on desktop in case JS toggled it */
-  .navbar-mobile {
-    position: static !important;
-    overflow: visible !important;
-    background: transparent !important;
-  }
-  .navbar-mobile ul {
-    position: static !important;
-    display: flex !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-}
+/* --- Keep style.css focused on non-critical presentation. Critical nav/hero
+   guards and header offset live in critical.css to avoid duplication. --- */
 
 /* Capabilities / Advantage grids: consistent columns and card heights */
 .cards { display: grid; gap: 20px; align-items: stretch; }
@@ -54,16 +24,10 @@
    typography and button styles, the page better aligns with modern design
    expectations and improves readability across devices. */
 
-/* Prevent the primary navigation from wrapping to multiple lines and add
-   consistent spacing between items. */
-#navbar ul {
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-/* Ensure individual list items never wrap text and remain on a single line. */
-#navbar ul li {
-  white-space: nowrap;
+/* Non-critical spacing tweaks for nav list on wide screens */
+@media (min-width: 992px) {
+  #navbar ul { gap: 0.75rem; }
+  #navbar ul li { white-space: nowrap; }
 }
 
 /* Reduce the gap between the logo and the navigation for a tighter header. */
@@ -107,9 +71,7 @@
 }
 
 /* Prevent horizontal scrolling on the site */
-body {
-  overflow-x: hidden;
-}
+body { overflow-x: hidden; }
 
 /* Card styling enhancements
  *
