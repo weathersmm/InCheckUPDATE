@@ -14,12 +14,11 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* Never show bullets; layout inline on desktop at first paint */
+/* Never show bullets; prepare nav list */
 #navbar ul, #navbar li { list-style: none !important; }
 #navbar ul {
   margin: 0 !important;
   padding: 0 !important;
-  display: flex !important;
   align-items: center !important;
   gap: 0.25rem;
 }
@@ -44,11 +43,17 @@
 }
 
 /* Hero should clear the fixed header and not force a full viewport height */
-.section.hero { padding-top: var(--header-height); }
+#hero { padding-top: var(--header-height); }
 .hero {
   height: auto !important;
   min-height: calc(100svh - var(--header-height));
   position: relative;
+}
+
+/* Mobile guards at first paint: hide nav list, show toggle */
+@media (max-width: 991px) {
+  #navbar ul { display: none !important; }
+  .mobile-nav-toggle { display: block; }
 }
 
 /* Accessible skip link (visible on focus) */
@@ -69,4 +74,21 @@
   background: #111;
   color: #fff;
   z-index: 1001;
+}
+
+/* Desktop-only inline nav list */
+@media (min-width: 992px) {
+  #navbar ul { display: flex !important; }
+}
+
+/* Mobile: hide list until toggled by JS */
+@media (max-width: 991px) {
+  #navbar ul { display: none !important; }
+}
+
+/* Extra guard: never allow overlay styles to leak into desktop */
+@media (min-width: 992px) {
+  #navbar.navbar-mobile,
+  .navbar-mobile { position: static !important; overflow: visible !important; background: transparent !important; }
+  #navbar.navbar-mobile ul { position: static !important; display: flex !important; background: transparent !important; box-shadow: none !important; }
 }
