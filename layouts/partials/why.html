@@ -1,19 +1,19 @@
 {{/* Reads from /data/why.yaml -> list of { advantage, detail } */}}
 {{ $reasons := .Site.Data.why }}
 {{ if $reasons }}
-<section id="why" class="section why">
-  <div class="container">
+<section id="why" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4">
     {{ with .Site.Data.home.whyHeading }}
       <h2 class="section__title">{{ . }}</h2>
     {{ else }}
       <h2 class="section__title">Why InCheck</h2>
     {{ end }}
 
-    <div class="grid grid--three">
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {{ range $reasons }}
-      <div class="feature">
-        <h3 class="feature__title">{{ .advantage }}</h3>
-        {{ with .detail }}<p class="feature__body">{{ . }}</p>{{ end }}
+      <div class="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
+        <h3 class="text-xl font-semibold text-white">{{ .advantage }}</h3>
+        {{ with .detail }}<p class="mt-2 text-light/80">{{ . }}</p>{{ end }}
       </div>
       {{ end }}
     </div>

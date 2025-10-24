@@ -10,11 +10,14 @@
 
   <link rel="icon" href="/favicon.ico" />
 </head>
+  {{ partial "head.html" . }}
 <body>
   {{ partial "header.html" . }}
   <main id="main-content">{{ block "main" . }}{{ end }}</main>
   {{ partial "footer.html" . }}
 
   <script src="/js/nav.js" defer></script>
+  <!-- Main JS (handles mobile nav, hero bg, etc.) -->
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
