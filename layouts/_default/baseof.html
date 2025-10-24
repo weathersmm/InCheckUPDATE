@@ -6,8 +6,7 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   {{ with .Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 
-  {{ $styles := resources.Get "css/theme.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
 
   <link rel="icon" href="/favicon.ico" />
 </head>
@@ -16,7 +15,6 @@
   <main id="main-content">{{ block "main" . }}{{ end }}</main>
   {{ partial "footer.html" . }}
 
-  {{ $script := resources.Get "js/nav.js" | minify | fingerprint }}
-  <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+  <script src="/js/nav.js" defer></script>
 </body>
 </html>
