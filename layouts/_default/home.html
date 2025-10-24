@@ -42,7 +42,7 @@
       
       <!-- Image Column -->
       <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-        <img src="{{.image}}" class="img-fluid" alt="Deployed States Image" />
+        <img src="{{.image}}" class="img-fluid" alt="Deployed States Image" loading="lazy" decoding="async" />
       </div>
       
     </div>
@@ -118,10 +118,10 @@
           <div class="swiper-slide">
             {{ if .link }}
               <a href="{{ .link }}" target="_blank" rel="noopener">
-                <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" />
+                <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" loading="lazy" decoding="async" />
               </a>
             {{ else }}
-              <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" />
+              <img src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}" class="customer_img" loading="lazy" decoding="async" />
             {{ end }}
           </div>
         {{ end }}
@@ -239,8 +239,14 @@
           <h3>{{.title_one}}</h3>
           <h2>{{.sub_title_one}}</h2>
           <div class="images-product">
-            <img src="/assets/img/products/image-1.png" alt="Rampart" class="image-product" />
-            <img src="/assets/img/products/image-3.png" alt="Rampart" class="image-product" />
+            <picture>
+              <source srcset="/assets/img/products/image-1.webp" type="image/webp">
+              <img src="/assets/img/products/image-1.png" alt="Rampart" class="image-product" loading="lazy" decoding="async" />
+            </picture>
+            <picture>
+              <source srcset="/assets/img/products/image-3.webp" type="image/webp">
+              <img src="/assets/img/products/image-3.png" alt="Rampart" class="image-product" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p>{{.content_one | safeHTML}}</p>
           <div class="text-center text-lg-start">
@@ -258,8 +264,14 @@
           <h3>{{.title_two}}</h3>
           <h2>{{.sub_title_two}}</h2>
           <div class="images-product">
-            <img src="/assets/img/products/image-2.png" alt="Angel" class="image-product" />
-            <img src="/assets/img/products/image-4.jpg" alt="Angel" class="image-product" />
+            <picture>
+              <source srcset="/assets/img/products/image-2.webp" type="image/webp">
+              <img src="/assets/img/products/image-2.png" alt="Angel" class="image-product" loading="lazy" decoding="async" />
+            </picture>
+            <picture>
+              <source srcset="/assets/img/products/image-4.webp" type="image/webp">
+              <img src="/assets/img/products/image-4.jpg" alt="Angel" class="image-product" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p>{{.content_two | safeHTML}}</p>
           <div class="text-center text-lg-start">
@@ -277,7 +289,10 @@
           <h3>{{.title_three}}</h3>
           <h2>{{.sub_title_three}}</h2>
           <div class="images-product image-product-nova">
-            <img src="/assets/img/products/image-5.png" alt="Nova" class="image-product" />
+            <picture>
+              <source srcset="/assets/img/products/image-5.webp" type="image/webp">
+              <img src="/assets/img/products/image-5.png" alt="Nova" class="image-product" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p>{{.content_three | safeHTML}}</p>
           <div class="text-center text-lg-start">
@@ -295,7 +310,10 @@
           <h3>{{.title_four}}</h3>
           <h2>{{.sub_title_four}}</h2>
           <div class="images-product">
-            <img src="/assets/img/products/image-6.png" alt="Angel" class="image-product" />
+            <picture>
+              <source srcset="/assets/img/products/image-6.webp" type="image/webp">
+              <img src="/assets/img/products/image-6.png" alt="Angel" class="image-product" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <p>{{.content_four | safeHTML}}</p>
           <div class="text-center text-lg-start">

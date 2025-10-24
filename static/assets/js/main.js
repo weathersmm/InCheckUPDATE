@@ -54,17 +54,28 @@
    */
   const initMobileNav = () => {
     on('click', '.mobile-nav-toggle', function(e) {
-      select('#navbar').classList.toggle('navbar-mobile');
-      this.classList.toggle('bi-list');
-      this.classList.toggle('bi-x');
+      const navbar = select('#navbar');
+      const icon = this.querySelector('i');
+      const isOpen = navbar.classList.toggle('navbar-mobile');
+      if (icon) {
+        icon.classList.toggle('bi-list', !isOpen);
+        icon.classList.toggle('bi-x', isOpen);
+      }
+      this.setAttribute('aria-expanded', String(isOpen));
     });
 
     on('click', '#navbar', function(e) {
       if (e.target.classList.contains('nav-link')) {
-        if (select('.mobile-nav-toggle').classList.contains('bi-x')) {
-          select('#navbar').classList.toggle('navbar-mobile');
-          select('.mobile-nav-toggle').classList.remove('bi-x');
-          select('.mobile-nav-toggle').classList.add('bi-list');
+        const toggleBtn = select('.mobile-nav-toggle');
+        const navbar = select('#navbar');
+        if (navbar.classList.contains('navbar-mobile') && toggleBtn) {
+          navbar.classList.remove('navbar-mobile');
+          toggleBtn.setAttribute('aria-expanded', 'false');
+          const icon = toggleBtn.querySelector('i');
+          if (icon) {
+            icon.classList.add('bi-list');
+            icon.classList.remove('bi-x');
+          }
         }
       }
     });

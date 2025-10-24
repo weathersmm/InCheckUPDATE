@@ -123,10 +123,16 @@
                 {{ if .image }}
                   <img src="{{ .image }}" alt="{{ .alt | default `InCheck AI Platform Dashboard` }}" class="hero-image">
                 {{ else }}
-                  <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                  <picture>
+                    <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
+                    <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                  </picture>
                 {{ end }}
               {{ else }}
-                <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                <picture>
+                  <source srcset="/assets/img/ai-ems-brain.webp" type="image/webp">
+                  <img src="/assets/img/ai-ems-brain.png" alt="InCheck AI Platform Dashboard" class="hero-image">
+                </picture>
               {{ end }}
               <div class="hero-overlay">
                 <div class="overlay-card">
